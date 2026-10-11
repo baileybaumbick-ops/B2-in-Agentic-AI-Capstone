@@ -419,45 +419,54 @@ class Enricher:
             self._jev_fallback(refused[:cap])
         rows = self.state.db.execute(
             """SELECT r.review_id, s.review_text, r.attempts FROM records r JOIN source s USING(review_id)
-               WHERE r.status='quarantined' AND (r.reason LIKE 'invalid_model_output%' OR r.reason LIKE 'fallback_invalid%')
+               WHERE r.status='quarantined' AND (r.reason LIKE 'invalid_model_output%' OR r.reason LIKE 'fallback_invalid%'
+                                                  OR r.reason = 'model_output_error')
                ORDER BY s.row_idx""").fetchall()
         if not rows:
             return 0
         lc = label_config(self.cfg, "fallback")
         done = 0
-        for rid, text, prior in rows[:cap]:
-            user = format_batch([("r1", text)])
+
+        def ask(row):  # model call only (worker thread); all saving happens on the main thread
+            rid, text, prior = row
             try:
-                # fallback always uses the v1 single-review prompt and schema (its label_config says prompt=enrich_v1)
-                parsed, call = self.gw.call(
+                # fallback uses the v1 single-review prompt with a combined topic.subtopic field (label_config says so)
+                return row, *self.gw.call(
                     role="enrich", model=fc["model"], effort=fc["effort"], instructions=instructions("enrich_v1") + FALLBACK_NOTE,
-                    user_input=user, schema=fallback_schema(), review_ids=[rid], label_config=lc,
+                    user_input=format_batch([("r1", text)]), schema=fallback_schema(), review_ids=[rid], label_config=lc,
                     max_output_tokens=fc["max_output_tokens"], mock_fn=_mock_fallback)
-            except BudgetExceeded:
-                break
             except Exception as e:
-                self.log("fallback", "failed", review_id=rid, error=str(e)[:200])
-                continue
-            items = parsed.get("results", [])
-            item = dict(items[0]) if items else None
-            if item and "." in str(item.get("issue", "")):
-                item["topic"], item["subtopic"] = item.pop("issue").split(".", 1)
-            if item and item.get("intent") in INTENTS and type(item.get("severity")) is int:
-                item["severity"] = tx.consistent_severity(item["intent"], item["severity"])
-            clean, err = validate_item(item, text) if item else (None, "missing_id_in_output")
-            if clean is None and item and err == "quote_not_in_source":
-                clean = force_quote(item, text)
-            if clean is None:
-                self.state.db.execute("UPDATE records SET reason=?, attempts=? WHERE review_id=?",
-                                      (f"fallback_invalid:{err}", prior + 1, rid))
-                continue
-            rec = dict(clean, review_id=rid, label_config=lc, cache_source_id=None, enrich_request_id=call["request_id"],
-                       attempts=prior + 1, run_phase=self.gw.phase)
-            dups = [r[0] for r in self.state.db.execute(
-                "SELECT review_id FROM records WHERE reason=?", ("duplicate_of_quarantined:" + rid,))]
-            batch = [rec] + [dict(rec, review_id=d, cache_source_id=rid, enrich_request_id=None, attempts=0) for d in dups]
-            self.state.save_batch(batch, [])
-            done += 1
+                return row, e, None
+
+        workers = max(1, min(8, self.cfg["limits"]["workers"]))
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            for (rid, text, prior), parsed, call in pool.map(ask, rows[:cap]):
+                if isinstance(parsed, BudgetExceeded):
+                    self.log("fallback", "budget stop", detail=str(parsed))
+                    continue
+                if isinstance(parsed, Exception):
+                    self.log("fallback", "failed", review_id=rid, error=str(parsed)[:200])
+                    continue
+                items = parsed.get("results", [])
+                item = dict(items[0]) if items else None
+                if item and "." in str(item.get("issue", "")):
+                    item["topic"], item["subtopic"] = item.pop("issue").split(".", 1)
+                if item and item.get("intent") in INTENTS and type(item.get("severity")) is int:
+                    item["severity"] = tx.consistent_severity(item["intent"], item["severity"])
+                clean, err = validate_item(item, text) if item else (None, "missing_id_in_output")
+                if clean is None and item and err == "quote_not_in_source":
+                    clean = force_quote(item, text)
+                if clean is None:
+                    self.state.db.execute("UPDATE records SET reason=?, attempts=? WHERE review_id=?",
+                                          (f"fallback_invalid:{err}", prior + 1, rid))
+                    continue
+                rec = dict(clean, review_id=rid, label_config=lc, cache_source_id=None, enrich_request_id=call["request_id"],
+                           attempts=prior + 1, run_phase=self.gw.phase)
+                dups = [r[0] for r in self.state.db.execute(
+                    "SELECT review_id FROM records WHERE reason=?", ("duplicate_of_quarantined:" + rid,))]
+                batch = [rec] + [dict(rec, review_id=d, cache_source_id=rid, enrich_request_id=None, attempts=0) for d in dups]
+                self.state.save_batch(batch, [])
+                done += 1
         self.stats["fallback_items"] = done
         self.log("fallback", "done", attempted=min(len(rows), cap), completed=done, cap=cap, eligible=len(rows))
         return done
