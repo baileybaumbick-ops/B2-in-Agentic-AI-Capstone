@@ -37,22 +37,10 @@ def cmd_import(a):
     ws = load_workbook(a.sheet or SHEET, data_only=True)["label_here"]
     header = [c.value for c in ws[1]]
     rows, problems, warnings = [], [], []
-    corrections = {}
-    corr_path = GOLD_DIR / "human_corrections.csv"
-    if corr_path.exists():
-        for c in csv.DictReader(corr_path.open(encoding="utf-8", newline="")):
-            corrections.setdefault(c["row"], []).append(c)
     for r in ws.iter_rows(min_row=2, values_only=True):
         d = {h: ("" if v is None else str(v).strip()) for h, v in zip(header, r)}
         if not d["review_id"]:
             continue
-        for c in corrections.get(d["#"], []):  # human-approved corrections, logged in human_corrections.csv
-            if c["field"] == "evidence_quote":
-                d["evidence_quote"] = d["evidence_quote"].replace(c["old"], c["new"])
-            else:
-                if d[c["field"]] != c["old"]:
-                    problems.append(f"{d['#']}: correction expects {c['field']}={c['old']!r}, sheet has {d[c['field']]!r}")
-                d[c["field"]] = c["new"]
         for f, allowed in (("topic", TOPICS), ("intent", INTENTS)):
             if d[f] not in allowed:
                 problems.append(f"{d['#']}: {f}={d[f]!r}")
