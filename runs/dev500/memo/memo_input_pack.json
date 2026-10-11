@@ -1,0 +1,841 @@
+{
+  "claims": [
+    {
+      "claim_id": "C01",
+      "display": "47",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C02",
+      "display": "136",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C03",
+      "display": "2.893617",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C04",
+      "display": "136",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C05",
+      "display": "5",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C06",
+      "display": "51",
+      "issue_id": "other.general_negative",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C07",
+      "display": "106",
+      "issue_id": "other.general_negative",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C08",
+      "display": "2.078431",
+      "issue_id": "other.general_negative",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C09",
+      "display": "106",
+      "issue_id": "other.general_negative",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C10",
+      "display": "6",
+      "issue_id": "other.general_negative",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C11",
+      "display": "26",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C12",
+      "display": "56",
+      "issue_id": "usability.ads",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C13",
+      "display": "2.153846",
+      "issue_id": "usability.ads",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C14",
+      "display": "56",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C15",
+      "display": "1",
+      "issue_id": "usability.ads",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C16",
+      "display": "12",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C17",
+      "display": "43",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C18",
+      "display": "3.583333",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C19",
+      "display": "43",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C20",
+      "display": "1",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C21",
+      "display": "10",
+      "issue_id": "playback.connectivity_errors",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C22",
+      "display": "36",
+      "issue_id": "playback.connectivity_errors",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C23",
+      "display": "3.600000",
+      "issue_id": "playback.connectivity_errors",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C24",
+      "display": "36",
+      "issue_id": "playback.connectivity_errors",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C25",
+      "display": "1",
+      "issue_id": "playback.connectivity_errors",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C26",
+      "display": "7",
+      "issue_id": "access.login_failure",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C27",
+      "display": "28",
+      "issue_id": "access.login_failure",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C28",
+      "display": "4.000000",
+      "issue_id": "access.login_failure",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C29",
+      "display": "28",
+      "issue_id": "access.login_failure",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C30",
+      "display": "1",
+      "issue_id": "access.login_failure",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C31",
+      "display": "7",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C32",
+      "display": "28",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C33",
+      "display": "4.000000",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C34",
+      "display": "28",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C35",
+      "display": "1",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C36",
+      "display": "9",
+      "issue_id": "usability.queue_playlist_management",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C37",
+      "display": "26",
+      "issue_id": "usability.queue_playlist_management",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C38",
+      "display": "2.888889",
+      "issue_id": "usability.queue_playlist_management",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C39",
+      "display": "26",
+      "issue_id": "usability.queue_playlist_management",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C40",
+      "display": "0",
+      "issue_id": "usability.queue_playlist_management",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C41",
+      "display": "9",
+      "issue_id": "usability.ui_redesign",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C42",
+      "display": "22",
+      "issue_id": "usability.ui_redesign",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C43",
+      "display": "2.444444",
+      "issue_id": "usability.ui_redesign",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C44",
+      "display": "22",
+      "issue_id": "usability.ui_redesign",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C45",
+      "display": "0",
+      "issue_id": "usability.ui_redesign",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C46",
+      "display": "6",
+      "issue_id": "catalog.missing_content",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C47",
+      "display": "18",
+      "issue_id": "catalog.missing_content",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C48",
+      "display": "3.000000",
+      "issue_id": "catalog.missing_content",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C49",
+      "display": "18",
+      "issue_id": "catalog.missing_content",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C50",
+      "display": "1",
+      "issue_id": "catalog.missing_content",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C51",
+      "display": "7",
+      "issue_id": "other.boycott_or_offtopic",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C52",
+      "display": "17",
+      "issue_id": "other.boycott_or_offtopic",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C53",
+      "display": "2.428571",
+      "issue_id": "other.boycott_or_offtopic",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C54",
+      "display": "17",
+      "issue_id": "other.boycott_or_offtopic",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C55",
+      "display": "3",
+      "issue_id": "other.boycott_or_offtopic",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "claim_id": "C56",
+      "display": "5",
+      "issue_id": "playback.device_integration",
+      "metric": "complaint_count",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C57",
+      "display": "17",
+      "issue_id": "playback.device_integration",
+      "metric": "severity_sum",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C58",
+      "display": "3.400000",
+      "issue_id": "playback.device_integration",
+      "metric": "mean_severity",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C59",
+      "display": "17",
+      "issue_id": "playback.device_integration",
+      "metric": "priority_score",
+      "scope": "issue"
+    },
+    {
+      "claim_id": "C60",
+      "display": "1",
+      "issue_id": "playback.device_integration",
+      "metric": "cancellation_intent_members",
+      "scope": "issue_context"
+    },
+    {
+      "area": "outside_four_areas",
+      "claim_id": "A1COM",
+      "display": "85",
+      "issue_id": "",
+      "metric": "complaints",
+      "scope": "area"
+    },
+    {
+      "area": "outside_four_areas",
+      "claim_id": "A1CAN",
+      "display": "16",
+      "issue_id": "",
+      "metric": "cancellations",
+      "scope": "area"
+    },
+    {
+      "area": "outside_four_areas",
+      "claim_id": "A1SEV",
+      "display": "203",
+      "issue_id": "",
+      "metric": "severity_sum",
+      "scope": "area"
+    },
+    {
+      "area": "outside_four_areas",
+      "claim_id": "A1SEV",
+      "display": "10",
+      "issue_id": "",
+      "metric": "sev4plus",
+      "scope": "area"
+    },
+    {
+      "area": "outside_four_areas",
+      "claim_id": "A1MEA",
+      "display": "2.388235",
+      "issue_id": "",
+      "metric": "mean_severity",
+      "scope": "area"
+    },
+    {
+      "area": "billing_support",
+      "claim_id": "A2COM",
+      "display": "52",
+      "issue_id": "",
+      "metric": "complaints",
+      "scope": "area"
+    },
+    {
+      "area": "billing_support",
+      "claim_id": "A2CAN",
+      "display": "6",
+      "issue_id": "",
+      "metric": "cancellations",
+      "scope": "area"
+    },
+    {
+      "area": "billing_support",
+      "claim_id": "A2SEV",
+      "display": "154",
+      "issue_id": "",
+      "metric": "severity_sum",
+      "scope": "area"
+    },
+    {
+      "area": "billing_support",
+      "claim_id": "A2SEV",
+      "display": "10",
+      "issue_id": "",
+      "metric": "sev4plus",
+      "scope": "area"
+    },
+    {
+      "area": "billing_support",
+      "claim_id": "A2MEA",
+      "display": "2.961538",
+      "issue_id": "",
+      "metric": "mean_severity",
+      "scope": "area"
+    },
+    {
+      "area": "playback",
+      "claim_id": "A3COM",
+      "display": "38",
+      "issue_id": "",
+      "metric": "complaints",
+      "scope": "area"
+    },
+    {
+      "area": "playback",
+      "claim_id": "A3CAN",
+      "display": "4",
+      "issue_id": "",
+      "metric": "cancellations",
+      "scope": "area"
+    },
+    {
+      "area": "playback",
+      "claim_id": "A3SEV",
+      "display": "135",
+      "issue_id": "",
+      "metric": "severity_sum",
+      "scope": "area"
+    },
+    {
+      "area": "playback",
+      "claim_id": "A3SEV",
+      "display": "23",
+      "issue_id": "",
+      "metric": "sev4plus",
+      "scope": "area"
+    },
+    {
+      "area": "playback",
+      "claim_id": "A3MEA",
+      "display": "3.552632",
+      "issue_id": "",
+      "metric": "mean_severity",
+      "scope": "area"
+    },
+    {
+      "area": "usability",
+      "claim_id": "A4COM",
+      "display": "52",
+      "issue_id": "",
+      "metric": "complaints",
+      "scope": "area"
+    },
+    {
+      "area": "usability",
+      "claim_id": "A4CAN",
+      "display": "3",
+      "issue_id": "",
+      "metric": "cancellations",
+      "scope": "area"
+    },
+    {
+      "area": "usability",
+      "claim_id": "A4SEV",
+      "display": "125",
+      "issue_id": "",
+      "metric": "severity_sum",
+      "scope": "area"
+    },
+    {
+      "area": "usability",
+      "claim_id": "A4SEV",
+      "display": "3",
+      "issue_id": "",
+      "metric": "sev4plus",
+      "scope": "area"
+    },
+    {
+      "area": "usability",
+      "claim_id": "A4MEA",
+      "display": "2.403846",
+      "issue_id": "",
+      "metric": "mean_severity",
+      "scope": "area"
+    },
+    {
+      "area": "access",
+      "claim_id": "A5COM",
+      "display": "8",
+      "issue_id": "",
+      "metric": "complaints",
+      "scope": "area"
+    },
+    {
+      "area": "access",
+      "claim_id": "A5CAN",
+      "display": "1",
+      "issue_id": "",
+      "metric": "cancellations",
+      "scope": "area"
+    },
+    {
+      "area": "access",
+      "claim_id": "A5SEV",
+      "display": "33",
+      "issue_id": "",
+      "metric": "severity_sum",
+      "scope": "area"
+    },
+    {
+      "area": "access",
+      "claim_id": "A5SEV",
+      "display": "8",
+      "issue_id": "",
+      "metric": "sev4plus",
+      "scope": "area"
+    },
+    {
+      "area": "access",
+      "claim_id": "A5MEA",
+      "display": "4.125000",
+      "issue_id": "",
+      "metric": "mean_severity",
+      "scope": "area"
+    },
+    {
+      "claim_id": "K01",
+      "display": "500",
+      "issue_id": "",
+      "metric": "source_rows",
+      "scope": "coverage"
+    },
+    {
+      "claim_id": "K02",
+      "display": "500",
+      "issue_id": "",
+      "metric": "completed_records",
+      "scope": "coverage"
+    },
+    {
+      "claim_id": "K03",
+      "display": "0",
+      "issue_id": "",
+      "metric": "quarantined_records",
+      "scope": "coverage"
+    },
+    {
+      "claim_id": "K04",
+      "display": "0",
+      "issue_id": "",
+      "metric": "pending_records",
+      "scope": "coverage"
+    },
+    {
+      "claim_id": "K05",
+      "display": "0",
+      "issue_id": "",
+      "metric": "empty_text_quarantines",
+      "scope": "coverage"
+    }
+  ],
+  "issues": [
+    {
+      "coherence": "high",
+      "description": "Users complain free accounts are forced into shuffle, have skip/repeat limits, and are blocked from picking or replaying songs without premium.",
+      "examples": [
+        {
+          "quote": "This new update is not good because I don't agree to to auto shuffle and I want in order in free.",
+          "review_id": "af53cf35-c680-4ccb-b30c-cfd85bb61c57"
+        },
+        {
+          "quote": "Eyy fodey, charge me for breathing also. You mad or something? Now I need premium to repeat and skip the song to a certain part.",
+          "review_id": "61e0ddbb-6ec4-4d3a-acd3-41eb5f64afb7"
+        },
+        {
+          "quote": "I am not like now they are so much charges to listen music or replay again the music there is a charger so that's why I don't like it this app now 😕",
+          "review_id": "58511d69-67c2-4432-84d8-f3c556592f2b"
+        }
+      ],
+      "issue_id": "billing.free_tier_restrictions",
+      "name": "Free tier forced shuffle and limits"
+    },
+    {
+      "coherence": "high",
+      "description": "Users express broad dissatisfaction or say the app is bad or worse after updates without citing a specific feature.",
+      "examples": [
+        {
+          "quote": "After the update the app is very irritating! Spotify has removed all the basic features for which we used to love this app. It used be my favourite app.. This is ridiculous!",
+          "review_id": "adc4c3e4-3717-4888-ad86-c9381c224d2f"
+        },
+        {
+          "quote": "No good",
+          "review_id": "5fb51bd0-dbe9-4a19-a466-a77f0c14393e"
+        },
+        {
+          "quote": "Useless app",
+          "review_id": "36f1617b-e4f7-44fb-a7a9-a8236e4c3531"
+        }
+      ],
+      "issue_id": "other.general_negative",
+      "name": "Generic negative feedback about app"
+    },
+    {
+      "coherence": "high",
+      "description": "Users complain about too many, long, or intrusive ads interrupting music listening and making the app unusable without premium.",
+      "examples": [
+        {
+          "quote": "Have a lot of ads",
+          "review_id": "aa86aa43-19d5-40b4-8b03-535a96346e18"
+        },
+        {
+          "quote": "I am kind of disappointed that they play music in between ad's",
+          "review_id": "864e390b-135e-411a-9d03-f28648086cfd"
+        },
+        {
+          "quote": "Great except for the comercials",
+          "review_id": "80e2b39e-11a5-485a-aace-8a8d8c564dc1"
+        }
+      ],
+      "issue_id": "usability.ads",
+      "name": "Excessive or frequent ads interrupt listening"
+    },
+    {
+      "coherence": "high",
+      "description": "Users report music or podcasts pausing, stopping, skipping, or the app playing different songs than selected during playback.",
+      "examples": [
+        {
+          "quote": "Doesn't let me play songs",
+          "review_id": "4c34f240-76d4-451a-ac74-5bc6bd484825"
+        },
+        {
+          "quote": "Continously pauses songs and podcasts randomly.",
+          "review_id": "f1abd13b-2391-4b04-8109-efa7f3cfed0b"
+        },
+        {
+          "quote": "I have a Samsung and after a week of using this app it like wouldn't let me listen to music",
+          "review_id": "d3b74f36-aa48-42af-ae4a-d4a8b0499a60"
+        }
+      ],
+      "issue_id": "playback.stops_or_skips",
+      "name": "Playback stops, pauses, or plays wrong songs"
+    },
+    {
+      "coherence": "high",
+      "description": "Users report the app frequently reports no internet or goes offline/loses connection despite the device having working network access.",
+      "examples": [
+        {
+          "quote": "Always say no internet connection Most of my favourite Bollywood songs are not present",
+          "review_id": "3df77a78-ad9a-4456-8be8-8178ffd43d67"
+        },
+        {
+          "quote": "Iam a premium user. But this app if i using wifi not able to connect Internet. But if using mobile data it will work. Some songs quality also very poor comparing to the YouTube music.",
+          "review_id": "4ab2089a-ffa8-49e7-a8a3-aeb583a96796"
+        },
+        {
+          "quote": "Latest update is stupid. App says no internet connection available, but clearly I do otherwise how else did would I have downloaded the update? Magic??",
+          "review_id": "c64af4d8-ac17-48fe-ae38-fd54b41b16b1"
+        }
+      ],
+      "issue_id": "playback.connectivity_errors",
+      "name": "App reports no internet / connection errors"
+    },
+    {
+      "coherence": "high",
+      "description": "Users cannot sign in or are being logged out and encounter errors like invalid tokens, password rejection, or connection checks that prevent login.",
+      "examples": [
+        {
+          "quote": "It not letting me into my account and there are to many ads",
+          "review_id": "32fb340f-4f9f-4551-8dae-755221e58d6a"
+        },
+        {
+          "quote": "@spotifyindia worst one ever my premium account got logged out automatically which was linked with my phone number now when I try to log in using my phone number it shows check your number and try again even though my number is correct.",
+          "review_id": "f6f9c680-0970-443f-b422-b1a6ad85e7ce"
+        },
+        {
+          "quote": "Login problems faced many times. Every time demanding new contact number. Worst experience.",
+          "review_id": "84acb6b0-dd91-4330-944f-2686cbd15ce0"
+        }
+      ],
+      "issue_id": "access.login_failure",
+      "name": "Unable to log in / unexpected logouts"
+    },
+    {
+      "coherence": "high",
+      "description": "Users describe the app crashing, freezing, showing a black or stuck loading screen, or becoming unusable after updates.",
+      "examples": [
+        {
+          "quote": "So this app has become unusable on ipads.",
+          "review_id": "1cdc5bb2-8e8d-4267-8853-6c1dd4c7ef13"
+        },
+        {
+          "quote": "Black screen of death. Having to Uninstaller and reinstall after closing and opening app 5x to see if it would work.",
+          "review_id": "065c418e-7f18-42a3-b241-fe693b7a2b0c"
+        },
+        {
+          "quote": "When I playing song the app is shoutdowning",
+          "review_id": "0fcf89b2-0b81-4838-bf5f-41c684e43b2d"
+        }
+      ],
+      "issue_id": "playback.crash_or_freeze",
+      "name": "App crashes, freezes, or won't load"
+    },
+    {
+      "coherence": "high",
+      "description": "Users report that playlists/liked lists and queue controls are broken or behave unexpectedly (shuffle/repeat issues, inability to add to queue, missing search/viewing of playlists).",
+      "examples": [
+        {
+          "quote": "Love it, the Dj absolutely sucks he plays the same songs over and over, maybe 1 or two new songs.",
+          "review_id": "544a8481-e12b-4878-92d0-ec3a5256e13a"
+        },
+        {
+          "quote": "I want to listen to the music I click on NOT whatever other stuff you throw into my playlists.",
+          "review_id": "4f6a50a1-9440-468c-b35f-961bca94fd88"
+        },
+        {
+          "quote": "The new drop down menu where it only lets me shuffle. Bad design wrecking me here have a playlist in an order for reason",
+          "review_id": "f8a85378-c4dd-40e2-b548-beebcdf3b991"
+        }
+      ],
+      "issue_id": "usability.queue_playlist_management",
+      "name": "Playlist and queue control problems"
+    }
+  ],
+  "limitations": [
+    "Self-selected Google Play reviews, May 2022-Nov 2023; not a customer population sample.",
+    "No revenue, plan tier or observed churn; cancellation language is stated intent.",
+    "Labels come from a small model; see golden-set and verifier agreement.",
+    "Unresolved or quarantined records are excluded from aggregates (see coverage claims)."
+  ],
+  "method": {
+    "area_mapping": "access=access; usability=usability; playback=playback; billing_support=billing+support; downloads/catalog/other are outside the four areas",
+    "baseline": "priority = complaint_count x mean_severity = severity_sum over complaint+cancellation records; one issue per record (topic.subtopic)",
+    "verifier_agreement": {
+      "all3": 0.75,
+      "intent": 0.9,
+      "severity": 0.9,
+      "severity_within_1": 1.0,
+      "subtopic": 0.7,
+      "topic": 0.85
+    },
+    "verifier_sample": 20
+  },
+  "question": "Where should the next quarter of product effort go: access, usability, playback, or billing/support?"
+}

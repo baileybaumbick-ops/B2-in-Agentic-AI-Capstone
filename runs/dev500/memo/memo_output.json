@@ -1,0 +1,96 @@
+{
+  "cited_issue_claims": [
+    {
+      "claim_id": "C01",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "value": "47"
+    },
+    {
+      "claim_id": "C02",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "value": "136"
+    },
+    {
+      "claim_id": "C03",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "mean_severity",
+      "value": "2.893617"
+    },
+    {
+      "claim_id": "C04",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "priority_score",
+      "value": "136"
+    },
+    {
+      "claim_id": "C12",
+      "issue_id": "usability.ads",
+      "metric": "severity_sum",
+      "value": "56"
+    },
+    {
+      "claim_id": "C17",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "severity_sum",
+      "value": "43"
+    },
+    {
+      "claim_id": "C22",
+      "issue_id": "playback.connectivity_errors",
+      "metric": "severity_sum",
+      "value": "36"
+    },
+    {
+      "claim_id": "C27",
+      "issue_id": "access.login_failure",
+      "metric": "severity_sum",
+      "value": "28"
+    },
+    {
+      "claim_id": "C37",
+      "issue_id": "usability.queue_playlist_management",
+      "metric": "severity_sum",
+      "value": "26"
+    }
+  ],
+  "input_fingerprint": "e329490323618a96a55f900112421a78068bd8b8d881b2ddeced697be8ecd447",
+  "memo": {
+    "body_markdown": "Recommendation\n\nPrioritize the billing/support area this quarter, focusing first on the Free tier forced shuffle and limits (billing.free_tier_restrictions) and then on billing-related user communication and support flows that surface around those constraints. Concrete first steps: (1) reduce user-facing friction and clarify which actions require Premium (skip/repeat/replay policies), (2) improve in‑app messaging and billing FAQ/appeals paths to lower stated cancellation intent, and (3) instrument support flows to measure resolution and follow‑up.\n\nEvidence\n\n- The single highest priority issue by our baseline is Free tier forced shuffle and limits: 47 complaints [C01], severity_sum 136 [C02] (priority_score 136) [C04], mean_severity 2.893617 [C03], with 5 members expressing cancellation intent [C05].\n- Billing/support is the highest‑severity area among the four: billing_support severity_sum 154 [A2SEV], complaints 52 [A2COM], mean_severity 2.961538 [A2MEA], cancellations 6 [A2CAN].\n- Representative user sentiment for the free‑tier problem: “I don't agree to to auto shuffle” (`af53cf35-c680-4ccb-b30c-cfd85bb61c57`) and “I am not like now they are so much charges to listen music” (`58511d69-67c2-4432-84d8-f3c556592f2b`).\n\nAlternatives considered\n\n- Playback: high severity per‑incident but lower aggregate volume than billing. Playback area has complaints 38 [A3COM] and severity_sum 135 [A3SEV] with mean_severity 3.552632 [A3MEA]. Top playback issues include stops/ skips (severity_sum 43) [C17] and connectivity errors (severity_sum 36) [C22]. Because the billing.free_tier_restrictions issue is both the top issue by priority_score and sits in the highest‑severity area, it ranks ahead of playback for next quarter effort.\n\n- Usability: equal complaint volume to billing but lower aggregate severity. Usability has complaints 52 [A4COM] and severity_sum 125 [A4SEV]. Notable usability items include ads (severity_sum 56) [C12] and queue/playlist management (severity_sum 26) [C37]. These are important but currently have lower severity_sum than the top billing issue.\n\n- Access: high mean severity but low volume. Access has complaints 8 [A5COM], severity_sum 33 [A5SEV], and mean_severity 4.125000 [A5MEA]. Login failures (severity_sum 28) [C27] are painful per user but are fewer reports overall than billing/support issues.\n\nRisks and limitations\n\n- Data coverage: source_rows 500 [K01], completed_records 500 [K02]. Reviews are self‑selected Google Play reviews (May 2022–Nov 2023) and are not a population sample; cancellation figures are expressed intent, not observed churn (method limitations).\n- Labeling: topic/subtopic/severity labels derive from a small model with verifier agreement; see method notes (possible label noise).\n\nWhat would change this recommendation\n\n- If we observed actual cancellations tied to billing changes (rather than stated intent), or had revenue/segment data showing outsized premium churn linked to playback or access failures, I would reprioritize accordingly.\n- If follow‑up instrumentation shows the free‑tier issue is concentrated in a small, low‑value segment, whereas playback errors are causing broader premium pain, shift effort to playback.\n\nBottom line: billing/support (free‑tier restrictions and clearer billing/support flows) is the highest priority by our baseline severity_sum and complaint counts; address it first and instrument for impact.",
+    "cited_claim_ids": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "A2SEV",
+      "A2COM",
+      "A2MEA",
+      "A2CAN",
+      "A3COM",
+      "A3SEV",
+      "A3MEA",
+      "C17",
+      "C22",
+      "A4COM",
+      "A4SEV",
+      "C12",
+      "C37",
+      "A5COM",
+      "A5SEV",
+      "A5MEA",
+      "C27",
+      "K01",
+      "K02"
+    ],
+    "cited_review_ids": [
+      "af53cf35-c680-4ccb-b30c-cfd85bb61c57",
+      "58511d69-67c2-4432-84d8-f3c556592f2b"
+    ],
+    "recommended_area": "billing_support",
+    "title": "Prioritize billing/support: fix free‑tier restrictions and billing communication"
+  },
+  "validation": "pass",
+  "violations": []
+}

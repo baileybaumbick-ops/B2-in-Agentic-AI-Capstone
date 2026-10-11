@@ -1,0 +1,20 @@
+{
+  "agreement": {
+    "all3": 0.7353,
+    "intent": 0.8529,
+    "severity": 0.8824,
+    "severity_within_1": 1.0,
+    "subtopic": 0.8235,
+    "topic": 0.9118
+  },
+  "disagreement_count": 9,
+  "needs_review_rate_among_disagreements": 0.2222,
+  "sample_size_declared": 34,
+  "severity_mae": 0.1176,
+  "topic_confusion": {
+    "other->catalog": 1,
+    "usability->other": 1,
+    "usability->playback": 1
+  },
+  "verified": 34
+}

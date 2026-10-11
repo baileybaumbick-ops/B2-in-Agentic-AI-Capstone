@@ -1,0 +1,34 @@
+rank,issue_id,name,area,complaint_count,cancellations,severity_sum,mean_severity,priority_score
+1,billing.free_tier_restrictions,Free tier locked behind premium features,billing_support,833,158,2424,2.909964,2424
+2,other.general_negative,Generic negative app complaints,outside_four_areas,1059,67,2187,2.065156,2187
+3,usability.ads,Too many or intrusive ads,usability,499,37,1080,2.164329,1080
+4,playback.stops_or_skips,"Playback stops, wrong tracks, or won't play",playback,264,31,888,3.363636,888
+5,playback.crash_or_freeze,"Crashes, freezes, and app not opening",playback,161,13,588,3.652174,588
+6,usability.queue_playlist_management,Playlists and queue play unwanted songs,usability,187,9,556,2.973262,556
+7,usability.controls,Playback controls and interface missing/broken,usability,162,23,498,3.074074,498
+8,access.login_failure,Users unable to log in or get logged out,access,125,11,497,3.976000,497
+9,usability.ui_redesign,Disliked new home screen and layout,usability,114,15,293,2.570175,293
+10,playback.connectivity_errors,Connection/loading and offline errors,playback,61,1,219,3.590164,219
+11,catalog.missing_content,Songs or artists missing/removed,outside_four_areas,70,9,218,3.114286,218
+12,billing.subscription_activation,Paid premium not activating or entitlement missing,billing_support,51,7,187,3.666667,187
+13,catalog.lyrics,Lyrics not showing or failing to load,outside_four_areas,61,4,183,3.000000,183
+14,other.other_specific,Miscellaneous specific complaints or requests,outside_four_areas,64,12,170,2.656250,170
+15,playback.device_integration,"Bluetooth, car, and device integration problems",playback,50,6,161,3.220000,161
+16,downloads.offline_playback,Offline playback or downloads not playing offline,outside_four_areas,44,3,150,3.409091,150
+17,playback.audio_quality,Audio quality and volume issues,playback,49,6,141,2.877551,141
+18,playback.performance_battery,"App performance, background use, and size",playback,45,2,131,2.911111,131
+19,other.boycott_or_offtopic,Off-topic/hostile or political comments,outside_four_areas,57,15,122,2.140351,122
+20,usability.other_usability,Other usability and navigation problems,usability,39,3,117,3.000000,117
+21,downloads.download_failure,Unable to download songs or downloads fail,outside_four_areas,32,3,113,3.531250,113
+22,billing.price,Users find premium plans too expensive,billing_support,48,3,99,2.062500,99
+23,downloads.downloads_disappear,Downloaded content disappearing or removed,outside_four_areas,22,3,82,3.727273,82
+24,catalog.recommendations,Poor or repetitive recommendations/algorithm,outside_four_areas,35,3,81,2.314286,81
+25,catalog.search_discovery,Search failing or not finding songs,outside_four_areas,22,1,70,3.181818,70
+26,billing.charges_refunds,"Unexpected charges, refunds, and cancellation issues",billing_support,17,4,63,3.705882,63
+27,access.signup_verification,Sign-up and verification (OTP/region/age) failures,access,16,0,59,3.687500,59
+28,other.general_praise,General positive/neutral praise,outside_four_areas,28,6,59,2.107143,59
+29,access.account_compromised,Users report hacked or compromised accounts,access,6,0,30,5.000000,30
+30,catalog.podcasts_audiobooks,Podcast content and availability issues,outside_four_areas,6,2,17,2.833333,17
+31,support.support_unresponsive,No or insufficient support responses,billing_support,5,2,15,3.000000,15
+32,access.account_management,Problems with account/family membership management,access,4,0,14,3.500000,14
+33,support.support_unhelpful,Support responded but did not help,billing_support,4,0,13,3.250000,13

@@ -1,0 +1,24 @@
+{
+  "agreement": {
+    "all3": 0.5294,
+    "intent": 0.8529,
+    "severity": 0.7941,
+    "severity_within_1": 0.9118,
+    "subtopic": 0.8235,
+    "topic": 0.7941
+  },
+  "disagreement_count": 16,
+  "needs_review_rate_among_disagreements": 0.125,
+  "sample_size_declared": 34,
+  "severity_mae": 0.2941,
+  "topic_confusion": {
+    "access->billing": 1,
+    "access->downloads": 1,
+    "access->other": 1,
+    "access->usability": 1,
+    "other->catalog": 1,
+    "usability->other": 1,
+    "usability->playback": 1
+  },
+  "verified": 34
+}

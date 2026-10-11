@@ -1,0 +1,10 @@
+review_id,enrich_topic,enrich_subtopic,enrich_intent,enrich_severity,verify_topic,verify_subtopic,verify_intent,verify_severity,verify_confidence,enrich_needs_review,fields_disagreeing
+c28abc2f-5c30-4bcb-b149-cae0b05f562d,usability,ui_redesign,complaint,2,usability,ui_redesign,request,1,high,0,"intent,severity"
+d3f5af6f-f59f-4374-b2df-ae2b38ecd94a,billing,free_tier_restrictions,complaint,2,billing,free_tier_restrictions,complaint,3,high,0,severity
+b361b1e1-1c3a-45ea-8d2a-da74f6b565cc,usability,controls,complaint,2,usability,controls,request,2,high,0,intent
+be89d88a-95a3-48dc-a9f9-e11a05833766,usability,queue_playlist_management,praise,1,other,general_praise,praise,1,high,0,topic
+dc7d37e6-ac6e-41a4-a36c-eec8296153c7,other,boycott_or_offtopic,unclear,1,other,general_praise,praise,1,high,0,intent
+d2961f3d-021f-4518-9a47-68755c29672e,usability,ads,unclear,1,usability,ads,complaint,2,high,0,"intent,severity"
+f8f6df9a-fef7-4ee7-b394-7c3d40564021,usability,other_usability,praise,1,playback,device_integration,praise,1,high,1,topic
+d084db91-d039-4f22-a18a-c677566250d5,other,general_negative,unclear,1,other,general_negative,complaint,2,high,1,"intent,severity"
+e642de30-b9c3-4189-b88d-47a9bb30bdc3,other,general_praise,praise,1,catalog,podcasts_audiobooks,praise,1,high,0,topic

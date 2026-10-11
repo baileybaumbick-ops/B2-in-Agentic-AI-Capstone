@@ -1,0 +1,747 @@
+[
+  {
+    "claim_id": "C01",
+    "display": "9",
+    "issue_id": "billing.free_tier_restrictions",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "9"
+  },
+  {
+    "claim_id": "C02",
+    "display": "25",
+    "issue_id": "billing.free_tier_restrictions",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "25"
+  },
+  {
+    "claim_id": "C03",
+    "display": "2.777778",
+    "issue_id": "billing.free_tier_restrictions",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.777778"
+  },
+  {
+    "claim_id": "C04",
+    "display": "25",
+    "issue_id": "billing.free_tier_restrictions",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "25"
+  },
+  {
+    "claim_id": "C05",
+    "display": "1",
+    "issue_id": "billing.free_tier_restrictions",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "1"
+  },
+  {
+    "claim_id": "C06",
+    "display": "10",
+    "issue_id": "other.general_negative",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "10"
+  },
+  {
+    "claim_id": "C07",
+    "display": "21",
+    "issue_id": "other.general_negative",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "21"
+  },
+  {
+    "claim_id": "C08",
+    "display": "2.100000",
+    "issue_id": "other.general_negative",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.100000"
+  },
+  {
+    "claim_id": "C09",
+    "display": "21",
+    "issue_id": "other.general_negative",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "21"
+  },
+  {
+    "claim_id": "C10",
+    "display": "2",
+    "issue_id": "other.general_negative",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "2"
+  },
+  {
+    "claim_id": "C11",
+    "display": "7",
+    "issue_id": "usability.ads",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "7"
+  },
+  {
+    "claim_id": "C12",
+    "display": "14",
+    "issue_id": "usability.ads",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "14"
+  },
+  {
+    "claim_id": "C13",
+    "display": "2.000000",
+    "issue_id": "usability.ads",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.000000"
+  },
+  {
+    "claim_id": "C14",
+    "display": "14",
+    "issue_id": "usability.ads",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "14"
+  },
+  {
+    "claim_id": "C15",
+    "display": "1",
+    "issue_id": "usability.ads",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "1"
+  },
+  {
+    "claim_id": "C16",
+    "display": "4",
+    "issue_id": "usability.controls",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "4"
+  },
+  {
+    "claim_id": "C17",
+    "display": "11",
+    "issue_id": "usability.controls",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "11"
+  },
+  {
+    "claim_id": "C18",
+    "display": "2.750000",
+    "issue_id": "usability.controls",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.750000"
+  },
+  {
+    "claim_id": "C19",
+    "display": "11",
+    "issue_id": "usability.controls",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "11"
+  },
+  {
+    "claim_id": "C20",
+    "display": "2",
+    "issue_id": "usability.controls",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "2"
+  },
+  {
+    "claim_id": "C21",
+    "display": "2",
+    "issue_id": "access.login_failure",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "2"
+  },
+  {
+    "claim_id": "C22",
+    "display": "8",
+    "issue_id": "access.login_failure",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "8"
+  },
+  {
+    "claim_id": "C23",
+    "display": "4.000000",
+    "issue_id": "access.login_failure",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "4.000000"
+  },
+  {
+    "claim_id": "C24",
+    "display": "8",
+    "issue_id": "access.login_failure",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "8"
+  },
+  {
+    "claim_id": "C25",
+    "display": "0",
+    "issue_id": "access.login_failure",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "0"
+  },
+  {
+    "claim_id": "C26",
+    "display": "2",
+    "issue_id": "playback.crash_or_freeze",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "2"
+  },
+  {
+    "claim_id": "C27",
+    "display": "8",
+    "issue_id": "playback.crash_or_freeze",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "8"
+  },
+  {
+    "claim_id": "C28",
+    "display": "4.000000",
+    "issue_id": "playback.crash_or_freeze",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "4.000000"
+  },
+  {
+    "claim_id": "C29",
+    "display": "8",
+    "issue_id": "playback.crash_or_freeze",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "8"
+  },
+  {
+    "claim_id": "C30",
+    "display": "0",
+    "issue_id": "playback.crash_or_freeze",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "0"
+  },
+  {
+    "claim_id": "C31",
+    "display": "3",
+    "issue_id": "other.boycott_or_offtopic",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "3"
+  },
+  {
+    "claim_id": "C32",
+    "display": "6",
+    "issue_id": "other.boycott_or_offtopic",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "6"
+  },
+  {
+    "claim_id": "C33",
+    "display": "2.000000",
+    "issue_id": "other.boycott_or_offtopic",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.000000"
+  },
+  {
+    "claim_id": "C34",
+    "display": "6",
+    "issue_id": "other.boycott_or_offtopic",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "6"
+  },
+  {
+    "claim_id": "C35",
+    "display": "1",
+    "issue_id": "other.boycott_or_offtopic",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "1"
+  },
+  {
+    "claim_id": "C36",
+    "display": "2",
+    "issue_id": "catalog.lyrics",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "2"
+  },
+  {
+    "claim_id": "C37",
+    "display": "5",
+    "issue_id": "catalog.lyrics",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "5"
+  },
+  {
+    "claim_id": "C38",
+    "display": "2.500000",
+    "issue_id": "catalog.lyrics",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.500000"
+  },
+  {
+    "claim_id": "C39",
+    "display": "5",
+    "issue_id": "catalog.lyrics",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "5"
+  },
+  {
+    "claim_id": "C40",
+    "display": "0",
+    "issue_id": "catalog.lyrics",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "0"
+  },
+  {
+    "claim_id": "C41",
+    "display": "2",
+    "issue_id": "catalog.missing_content",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "2"
+  },
+  {
+    "claim_id": "C42",
+    "display": "5",
+    "issue_id": "catalog.missing_content",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "5"
+  },
+  {
+    "claim_id": "C43",
+    "display": "2.500000",
+    "issue_id": "catalog.missing_content",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.500000"
+  },
+  {
+    "claim_id": "C44",
+    "display": "5",
+    "issue_id": "catalog.missing_content",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "5"
+  },
+  {
+    "claim_id": "C45",
+    "display": "0",
+    "issue_id": "catalog.missing_content",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "0"
+  },
+  {
+    "claim_id": "C46",
+    "display": "2",
+    "issue_id": "catalog.recommendations",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "2"
+  },
+  {
+    "claim_id": "C47",
+    "display": "5",
+    "issue_id": "catalog.recommendations",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "5"
+  },
+  {
+    "claim_id": "C48",
+    "display": "2.500000",
+    "issue_id": "catalog.recommendations",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "2.500000"
+  },
+  {
+    "claim_id": "C49",
+    "display": "5",
+    "issue_id": "catalog.recommendations",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "5"
+  },
+  {
+    "claim_id": "C50",
+    "display": "1",
+    "issue_id": "catalog.recommendations",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "1"
+  },
+  {
+    "claim_id": "C51",
+    "display": "1",
+    "issue_id": "downloads.offline_playback",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "1"
+  },
+  {
+    "claim_id": "C52",
+    "display": "4",
+    "issue_id": "downloads.offline_playback",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "4"
+  },
+  {
+    "claim_id": "C53",
+    "display": "4.000000",
+    "issue_id": "downloads.offline_playback",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "4.000000"
+  },
+  {
+    "claim_id": "C54",
+    "display": "4",
+    "issue_id": "downloads.offline_playback",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "4"
+  },
+  {
+    "claim_id": "C55",
+    "display": "0",
+    "issue_id": "downloads.offline_playback",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "0"
+  },
+  {
+    "claim_id": "C56",
+    "display": "1",
+    "issue_id": "playback.device_integration",
+    "metric": "complaint_count",
+    "scope": "issue",
+    "value": "1"
+  },
+  {
+    "claim_id": "C57",
+    "display": "4",
+    "issue_id": "playback.device_integration",
+    "metric": "severity_sum",
+    "scope": "issue",
+    "value": "4"
+  },
+  {
+    "claim_id": "C58",
+    "display": "4.000000",
+    "issue_id": "playback.device_integration",
+    "metric": "mean_severity",
+    "scope": "issue",
+    "value": "4.000000"
+  },
+  {
+    "claim_id": "C59",
+    "display": "4",
+    "issue_id": "playback.device_integration",
+    "metric": "priority_score",
+    "scope": "issue",
+    "value": "4"
+  },
+  {
+    "claim_id": "C60",
+    "display": "0",
+    "issue_id": "playback.device_integration",
+    "metric": "cancellation_intent_members",
+    "scope": "issue_context",
+    "value": "0"
+  },
+  {
+    "area": "outside_four_areas",
+    "claim_id": "A1COM",
+    "display": "22",
+    "issue_id": "",
+    "metric": "complaints",
+    "scope": "area",
+    "value": "22"
+  },
+  {
+    "area": "outside_four_areas",
+    "claim_id": "A1CAN",
+    "display": "6",
+    "issue_id": "",
+    "metric": "cancellations",
+    "scope": "area",
+    "value": "6"
+  },
+  {
+    "area": "outside_four_areas",
+    "claim_id": "A1SEV",
+    "display": "50",
+    "issue_id": "",
+    "metric": "severity_sum",
+    "scope": "area",
+    "value": "50"
+  },
+  {
+    "area": "outside_four_areas",
+    "claim_id": "A1SEV",
+    "display": "2",
+    "issue_id": "",
+    "metric": "sev4plus",
+    "scope": "area",
+    "value": "2"
+  },
+  {
+    "area": "outside_four_areas",
+    "claim_id": "A1MEA",
+    "display": "2.272727",
+    "issue_id": "",
+    "metric": "mean_severity",
+    "scope": "area",
+    "value": "2.272727"
+  },
+  {
+    "area": "usability",
+    "claim_id": "A2COM",
+    "display": "13",
+    "issue_id": "",
+    "metric": "complaints",
+    "scope": "area",
+    "value": "13"
+  },
+  {
+    "area": "usability",
+    "claim_id": "A2CAN",
+    "display": "3",
+    "issue_id": "",
+    "metric": "cancellations",
+    "scope": "area",
+    "value": "3"
+  },
+  {
+    "area": "usability",
+    "claim_id": "A2SEV",
+    "display": "30",
+    "issue_id": "",
+    "metric": "severity_sum",
+    "scope": "area",
+    "value": "30"
+  },
+  {
+    "area": "usability",
+    "claim_id": "A2SEV",
+    "display": "0",
+    "issue_id": "",
+    "metric": "sev4plus",
+    "scope": "area",
+    "value": "0"
+  },
+  {
+    "area": "usability",
+    "claim_id": "A2MEA",
+    "display": "2.307692",
+    "issue_id": "",
+    "metric": "mean_severity",
+    "scope": "area",
+    "value": "2.307692"
+  },
+  {
+    "area": "billing_support",
+    "claim_id": "A3COM",
+    "display": "9",
+    "issue_id": "",
+    "metric": "complaints",
+    "scope": "area",
+    "value": "9"
+  },
+  {
+    "area": "billing_support",
+    "claim_id": "A3CAN",
+    "display": "1",
+    "issue_id": "",
+    "metric": "cancellations",
+    "scope": "area",
+    "value": "1"
+  },
+  {
+    "area": "billing_support",
+    "claim_id": "A3SEV",
+    "display": "25",
+    "issue_id": "",
+    "metric": "severity_sum",
+    "scope": "area",
+    "value": "25"
+  },
+  {
+    "area": "billing_support",
+    "claim_id": "A3SEV",
+    "display": "0",
+    "issue_id": "",
+    "metric": "sev4plus",
+    "scope": "area",
+    "value": "0"
+  },
+  {
+    "area": "billing_support",
+    "claim_id": "A3MEA",
+    "display": "2.777778",
+    "issue_id": "",
+    "metric": "mean_severity",
+    "scope": "area",
+    "value": "2.777778"
+  },
+  {
+    "area": "playback",
+    "claim_id": "A4COM",
+    "display": "6",
+    "issue_id": "",
+    "metric": "complaints",
+    "scope": "area",
+    "value": "6"
+  },
+  {
+    "area": "playback",
+    "claim_id": "A4CAN",
+    "display": "0",
+    "issue_id": "",
+    "metric": "cancellations",
+    "scope": "area",
+    "value": "0"
+  },
+  {
+    "area": "playback",
+    "claim_id": "A4SEV",
+    "display": "21",
+    "issue_id": "",
+    "metric": "severity_sum",
+    "scope": "area",
+    "value": "21"
+  },
+  {
+    "area": "playback",
+    "claim_id": "A4SEV",
+    "display": "3",
+    "issue_id": "",
+    "metric": "sev4plus",
+    "scope": "area",
+    "value": "3"
+  },
+  {
+    "area": "playback",
+    "claim_id": "A4MEA",
+    "display": "3.500000",
+    "issue_id": "",
+    "metric": "mean_severity",
+    "scope": "area",
+    "value": "3.500000"
+  },
+  {
+    "area": "access",
+    "claim_id": "A5COM",
+    "display": "2",
+    "issue_id": "",
+    "metric": "complaints",
+    "scope": "area",
+    "value": "2"
+  },
+  {
+    "area": "access",
+    "claim_id": "A5CAN",
+    "display": "0",
+    "issue_id": "",
+    "metric": "cancellations",
+    "scope": "area",
+    "value": "0"
+  },
+  {
+    "area": "access",
+    "claim_id": "A5SEV",
+    "display": "8",
+    "issue_id": "",
+    "metric": "severity_sum",
+    "scope": "area",
+    "value": "8"
+  },
+  {
+    "area": "access",
+    "claim_id": "A5SEV",
+    "display": "2",
+    "issue_id": "",
+    "metric": "sev4plus",
+    "scope": "area",
+    "value": "2"
+  },
+  {
+    "area": "access",
+    "claim_id": "A5MEA",
+    "display": "4.000000",
+    "issue_id": "",
+    "metric": "mean_severity",
+    "scope": "area",
+    "value": "4.000000"
+  },
+  {
+    "claim_id": "K01",
+    "display": "100",
+    "issue_id": "",
+    "metric": "source_rows",
+    "scope": "coverage",
+    "value": "100"
+  },
+  {
+    "claim_id": "K02",
+    "display": "100",
+    "issue_id": "",
+    "metric": "completed_records",
+    "scope": "coverage",
+    "value": "100"
+  },
+  {
+    "claim_id": "K03",
+    "display": "0",
+    "issue_id": "",
+    "metric": "quarantined_records",
+    "scope": "coverage",
+    "value": "0"
+  },
+  {
+    "claim_id": "K04",
+    "display": "0",
+    "issue_id": "",
+    "metric": "pending_records",
+    "scope": "coverage",
+    "value": "0"
+  },
+  {
+    "claim_id": "K05",
+    "display": "0",
+    "issue_id": "",
+    "metric": "empty_text_quarantines",
+    "scope": "coverage",
+    "value": "0"
+  }
+]

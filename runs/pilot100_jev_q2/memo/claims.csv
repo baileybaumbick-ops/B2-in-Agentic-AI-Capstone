@@ -1,0 +1,13 @@
+claim_id,issue_id,metric,value
+C01,billing.free_tier_restrictions,complaint_count,9
+C02,billing.free_tier_restrictions,severity_sum,25
+C03,billing.free_tier_restrictions,mean_severity,2.777778
+C04,billing.free_tier_restrictions,priority_score,25
+C11,usability.ads,complaint_count,7
+C14,usability.ads,priority_score,15
+C16,usability.controls,complaint_count,4
+C19,usability.controls,priority_score,11
+C21,access.login_failure,complaint_count,2
+C24,access.login_failure,priority_score,8
+C26,playback.crash_or_freeze,complaint_count,2
+C29,playback.crash_or_freeze,priority_score,8

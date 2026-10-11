@@ -1,0 +1,12 @@
+{
+  "completed_records": 9997,
+  "issues": 33,
+  "members": 4532,
+  "top5": [
+    "billing.free_tier_restrictions",
+    "other.general_negative",
+    "usability.ads",
+    "playback.stops_or_skips",
+    "playback.crash_or_freeze"
+  ]
+}

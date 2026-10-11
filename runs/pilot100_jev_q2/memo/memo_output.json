@@ -1,0 +1,122 @@
+{
+  "cited_issue_claims": [
+    {
+      "claim_id": "C01",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "value": "9"
+    },
+    {
+      "claim_id": "C02",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "value": "25"
+    },
+    {
+      "claim_id": "C03",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "mean_severity",
+      "value": "2.777778"
+    },
+    {
+      "claim_id": "C04",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "priority_score",
+      "value": "25"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "value": "7"
+    },
+    {
+      "claim_id": "C14",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "value": "15"
+    },
+    {
+      "claim_id": "C16",
+      "issue_id": "usability.controls",
+      "metric": "complaint_count",
+      "value": "4"
+    },
+    {
+      "claim_id": "C19",
+      "issue_id": "usability.controls",
+      "metric": "priority_score",
+      "value": "11"
+    },
+    {
+      "claim_id": "C21",
+      "issue_id": "access.login_failure",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C24",
+      "issue_id": "access.login_failure",
+      "metric": "priority_score",
+      "value": "8"
+    },
+    {
+      "claim_id": "C26",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C29",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "priority_score",
+      "value": "8"
+    }
+  ],
+  "input_fingerprint": "724e7eb4819b5ab26f52d46d1515af19cd707db32e2dc0404db8cc86746c8769",
+  "memo": {
+    "body_markdown": "Recommendation\n\nPrioritize the billing/support area this quarter, with the immediate focus on (1) Free tier playback and skip restrictions and (2) related messaging/FAQ/support flows that explain limits to free users. The issue billing.free_tier_restrictions has the highest baseline priority_score at 25 [C04], so it should be the first engineering and comms effort this quarter. A secondary, short workstream should coordinate with usability to monitor ads/controls impact on perceived value (see Alternatives below).\n\nEvidence\n\n- The top-ranked issue by our baseline priority (complaint_count x mean_severity = severity_sum) is Free tier playback and skip restrictions: complaint_count 9 [C01], severity_sum 25 [C02], mean_severity 2.777778 [C03], priority_score 25 [C04], cancellation_intent_members 1 [C05].\n- Billing/support area totals align with that concentration: complaints 9 [A3COM], severity_sum 25 [A3SEV], mean_severity 2.777778 [A3MEA].\n- Representative user comments (examples): `d146397f-4a94-4980-be00-ae9212eca3a7` (\"you can't even pick a certain song without Spotify premium\"), `89a8e180-7846-4421-a2b6-fa7787e9d0d2` (\"Too much restrictions\"), `88439ec2-7c49-4c57-bedb-c5e098692aff` (\"I would request to remove all the new features .\").\n\nAlternatives considered\n\n- Usability: the usability area has complaints 13 [A2COM] and severity_sum 31 [A2SEV] with mean_severity 2.384615 [A2MEA]. Its top sub-issues include Excessive and intrusive ads (complaint_count 7 [C11], priority_score 15 [C14]) and Missing/worsened playback controls (complaint_count 4 [C16], priority_score 11 [C19]). These are important but their top issue priority_score 15 [C14] is below the billing top issue priority_score 25 [C04], so they are recommended as secondary or coordinated work.\n- Playback: playback area shows complaints 6 [A4COM], severity_sum 21 [A4SEV], mean_severity 3.500000 [A4MEA]; the crash/freeze issue has complaint_count 2 [C26] and priority_score 8 [C29]. Playback stability matters (and has higher mean severity) but currently ranks lower by baseline priority than the billing free‑tier issue.\n- Access: access area has complaints 2 [A5COM], severity_sum 8 [A5SEV], mean_severity 4.000000 [A5MEA]; the login_failure issue has complaint_count 2 [C21] and priority_score 8 [C24]. Access problems are high-severity for affected users but are smaller in volume in this sample than the billing free‑tier complaints.\n\nRisks and limitations\n\n- Data are self-selected Google Play reviews (May 2022–Nov 2023); not a customer population sample. The method notes state cancellation language is expressed intent, not observed churn.\n- Coverage shows source_rows 100 [K01] and completed_records 100 [K02]; quarantined/pending are 0 [K03][K04][K05]. Verifier agreement and label quality are imperfect (see method notes). These limitations mean priority ordering could shift if we observed: (a) measured cancellations or support ticket volume tied to billing changes, (b) broader telemetry showing widespread login or crash failures, or (c) a different distribution in other app stores or support channels.\n\nWhat would change this recommendation\n\n- If product telemetry or support tickets show materially higher actual cancellations or assists attributable to playback restrictions than reflected here, escalate to a cross‑functional fix and reallocate resources accordingly. If instead crashes or access failures surface at scale in telemetry, shift to playback or access work.",
+    "cited_claim_ids": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "A3COM",
+      "A3SEV",
+      "A3MEA",
+      "A2COM",
+      "A2SEV",
+      "A2MEA",
+      "C11",
+      "C14",
+      "C16",
+      "C19",
+      "A4COM",
+      "A4SEV",
+      "A4MEA",
+      "C26",
+      "C29",
+      "A5COM",
+      "A5SEV",
+      "A5MEA",
+      "C21",
+      "C24",
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05"
+    ],
+    "cited_review_ids": [
+      "d146397f-4a94-4980-be00-ae9212eca3a7",
+      "89a8e180-7846-4421-a2b6-fa7787e9d0d2",
+      "88439ec2-7c49-4c57-bedb-c5e098692aff",
+      "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726"
+    ],
+    "recommended_area": "billing_support",
+    "title": "Quarterly recommendation: prioritize billing/support (address free‑tier playback restrictions first)"
+  },
+  "validation": "pass",
+  "violations": []
+}

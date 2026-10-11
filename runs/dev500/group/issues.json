@@ -1,0 +1,584 @@
+{
+  "config": {
+    "effort": "low",
+    "examples_per_issue": 12,
+    "issues_per_call": 8,
+    "max_output_tokens": 6000,
+    "model": "gpt-5-mini",
+    "prompt": "group_v1"
+  },
+  "input_fingerprint": "fca6461899cf57222e23d6a5cdab3f91fe60e8d5cd57550d901f4a47329e3766",
+  "issues": [
+    {
+      "coherence": "high",
+      "definition": "Login, signup, password or account access (incl. hacked/locked accounts, verification). Subtopic: account hacked, taken over, email changed by someone else",
+      "description": "Users report their accounts were hacked and they can't recover playlists or access content set by them.",
+      "issue_id": "access.account_compromised",
+      "member_count": 1,
+      "misfit_review_ids": [],
+      "name": "Account hacked and data lost",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "d87536c5-6fe0-4b38-b0b1-c47936e4a0d8"
+      ],
+      "subtopic": "account_compromised",
+      "topic": "access"
+    },
+    {
+      "coherence": "high",
+      "definition": "Login, signup, password or account access (incl. hacked/locked accounts, verification). Subtopic: cannot log in / logged out / login loop / password reset fails",
+      "description": "Users cannot sign in or are being logged out and encounter errors like invalid tokens, password rejection, or connection checks that prevent login.",
+      "issue_id": "access.login_failure",
+      "member_count": 7,
+      "misfit_review_ids": [],
+      "name": "Unable to log in / unexpected logouts",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "32fb340f-4f9f-4551-8dae-755221e58d6a",
+        "f6f9c680-0970-443f-b422-b1a6ad85e7ce",
+        "84acb6b0-dd91-4330-944f-2686cbd15ce0",
+        "de0a9cdf-8974-48bc-802f-331228df4619",
+        "12efd15d-4d4f-4a71-8e71-69d03b6f983a",
+        "686fa8a8-f220-4ddd-b283-d61dd242051a",
+        "0a7f2420-1b49-41fa-8cfc-0b2e178bea6b"
+      ],
+      "subtopic": "login_failure",
+      "topic": "access"
+    },
+    {
+      "coherence": "high",
+      "definition": "Price, charges, subscriptions, paywalls, premium entitlement; explicitly premium-only controls (skip limits, can't pick songs/forced shuffle on free) go here. Subtopic: premium-only controls: skip limits, forced shuffle, can't choose songs, features paywalled",
+      "description": "Users complain free accounts are forced into shuffle, have skip/repeat limits, and are blocked from picking or replaying songs without premium.",
+      "issue_id": "billing.free_tier_restrictions",
+      "member_count": 47,
+      "misfit_review_ids": [],
+      "name": "Free tier forced shuffle and limits",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "af53cf35-c680-4ccb-b30c-cfd85bb61c57",
+        "61e0ddbb-6ec4-4d3a-acd3-41eb5f64afb7",
+        "58511d69-67c2-4432-84d8-f3c556592f2b",
+        "be84cf74-541f-49c8-8262-fe6e9faedfb8",
+        "88439ec2-7c49-4c57-bedb-c5e098692aff",
+        "50626053-301c-42fa-91aa-2f88aef82e64",
+        "d146397f-4a94-4980-be00-ae9212eca3a7",
+        "89a8e180-7846-4421-a2b6-fa7787e9d0d2",
+        "7a5919ad-16d4-4f29-8e6e-1041415d7eee",
+        "890aeb60-e7cf-4f0d-a321-03a1c8b65757",
+        "5c581e49-727a-4221-be0a-a59344c78d60",
+        "c13dcedc-50da-48a8-a90d-cfb037a66478"
+      ],
+      "subtopic": "free_tier_restrictions",
+      "topic": "billing"
+    },
+    {
+      "coherence": "high",
+      "definition": "Price, charges, subscriptions, paywalls, premium entitlement; explicitly premium-only controls (skip limits, can't pick songs/forced shuffle on free) go here. Subtopic: too expensive, price increase",
+      "description": "A user says formerly basic features are now premium and criticizes the cost of premium.",
+      "issue_id": "billing.price",
+      "member_count": 1,
+      "misfit_review_ids": [],
+      "name": "Premium perceived as too expensive",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "67835dbd-10ac-4325-b93e-453d1bd5ec36"
+      ],
+      "subtopic": "price",
+      "topic": "billing"
+    },
+    {
+      "coherence": "high",
+      "definition": "Price, charges, subscriptions, paywalls, premium entitlement; explicitly premium-only controls (skip limits, can't pick songs/forced shuffle on free) go here. Subtopic: premium not activating, plan/entitlement lost, payment fails",
+      "description": "Users report problems signing up for premium, purchases not activating, being shown paused subscription screens, or payment prompts failing.",
+      "issue_id": "billing.subscription_activation",
+      "member_count": 4,
+      "misfit_review_ids": [],
+      "name": "Premium purchase or activation failures",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "1d1480fb-0142-46da-8570-45bf3983bf6d",
+        "16929558-ce1e-4b87-8738-a1de3f557f66",
+        "a7b7539a-c8d3-4f4e-9edd-d46cd1b1fd12",
+        "57aca404-d58b-4bb4-97b1-c64db92f054a"
+      ],
+      "subtopic": "subscription_activation",
+      "topic": "billing"
+    },
+    {
+      "coherence": "high",
+      "definition": "Missing songs/artists, search/discovery, recommendations, lyrics availability, podcasts content. Subtopic: lyrics missing, paywalled lyrics, lyrics wrong",
+      "description": "Users report that lyrics for some songs do not load or are missing intermittently despite app updates or refreshes.",
+      "issue_id": "catalog.lyrics",
+      "member_count": 5,
+      "misfit_review_ids": [],
+      "name": "Song lyrics failing to load",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "d218ffde-42f9-48f8-a793-832507454b35",
+        "9f7a013a-082e-4ec1-8a65-a1e0a0395d20",
+        "47becad0-8ae5-4a10-9731-fde8f2091862",
+        "59f31721-b2c8-40c5-ba3c-b9fe64a58d68",
+        "e0127547-4edd-44a0-8d5e-e8398bc07086"
+      ],
+      "subtopic": "lyrics",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "high",
+      "definition": "Missing songs/artists, search/discovery, recommendations, lyrics availability, podcasts content. Subtopic: songs/artists/albums missing or removed, greyed out",
+      "description": "Users complain songs or full tracks are missing, removed, or only available as short clips, reducing available content.",
+      "issue_id": "catalog.missing_content",
+      "member_count": 6,
+      "misfit_review_ids": [],
+      "name": "Songs or full tracks unavailable",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "0b716a9d-85bf-4f4e-8e2e-be71e4a379a6",
+        "4b3ace8e-b199-40b3-8ad4-5c0580e38203",
+        "9f3626e0-1bcb-4788-a412-f812102502d1",
+        "10775595-01b9-4623-9163-51619e2a0fa9",
+        "4d327494-7846-481a-bf00-f4b5abc099c4",
+        "0658feaa-5bec-416e-b6b0-3de2a4c14580"
+      ],
+      "subtopic": "missing_content",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "high",
+      "definition": "Missing songs/artists, search/discovery, recommendations, lyrics availability, podcasts content. Subtopic: podcast/audiobook content",
+      "description": "A user selected Spotify specifically to listen to a particular podcast and prefers it over other services for that content.",
+      "issue_id": "catalog.podcasts_audiobooks",
+      "member_count": 1,
+      "misfit_review_ids": [],
+      "name": "Podcast content availability",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-9bb86222727a4248",
+      "sample_review_ids": [
+        "b9a3e661-0eac-4cc9-a30e-7b1e11ef1315"
+      ],
+      "subtopic": "podcasts_audiobooks",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "high",
+      "definition": "Missing songs/artists, search/discovery, recommendations, lyrics availability, podcasts content. Subtopic: bad/repetitive recommendations, algorithm, autoplay picks",
+      "description": "Users report the app keeps playing or recommending songs they don't want, including recommendations persisting after turning settings off.",
+      "issue_id": "catalog.recommendations",
+      "member_count": 4,
+      "misfit_review_ids": [],
+      "name": "Unwanted or repetitive recommendations",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "ed8efdfe-43e3-4baa-bbed-317807663531",
+        "618d1dbb-0186-4537-923a-7b4dabf19afb",
+        "7c5d9a4d-1bb1-4da3-bc3b-2500ae0246f1",
+        "1807cc68-ba99-4edc-b6f1-2a1478e69109"
+      ],
+      "subtopic": "recommendations",
+      "topic": "catalog"
+    },
+    {
+      "coherence": "high",
+      "definition": "Downloading, saved music, offline listening, disappearing downloads. Subtopic: cannot download / download stuck",
+      "description": "Users say they cannot download music or downloads get stuck running in the background until the app is opened.",
+      "issue_id": "downloads.download_failure",
+      "member_count": 3,
+      "misfit_review_ids": [],
+      "name": "Unable or stuck downloading songs",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "5a4a0f00-ce5f-448d-8425-48eeeba76b4d",
+        "1d3f978e-b31f-4a4b-ab17-ec46ab4966b3",
+        "2ffdf599-a0d5-4c01-bf26-025215d44c06"
+      ],
+      "subtopic": "download_failure",
+      "topic": "downloads"
+    },
+    {
+      "coherence": "high",
+      "definition": "Downloading, saved music, offline listening, disappearing downloads. Subtopic: downloaded music deleted or missing",
+      "description": "Users report downloaded music or favorite content is gone after downloading, often when offline or after some time.",
+      "issue_id": "downloads.downloads_disappear",
+      "member_count": 2,
+      "misfit_review_ids": [],
+      "name": "Downloaded content disappearing",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "5be3399d-dcd2-405b-a931-29b02ffc966e",
+        "a862b037-7542-4a3e-94ef-836b7092f4ef"
+      ],
+      "subtopic": "downloads_disappear",
+      "topic": "downloads"
+    },
+    {
+      "coherence": "mixed",
+      "definition": "Downloading, saved music, offline listening, disappearing downloads. Subtopic: offline mode doesn't work or asks to go online",
+      "description": "Users complain that offline playback isn't working or the app requires going online to play downloaded content.",
+      "issue_id": "downloads.offline_playback",
+      "member_count": 3,
+      "misfit_review_ids": [
+        "1f13c3a2-e57b-460c-b569-964e6b2b1f31",
+        "b03d6dc9-449a-4647-b112-559186656759"
+      ],
+      "name": "Offline playback not working",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "1f13c3a2-e57b-460c-b569-964e6b2b1f31",
+        "b03d6dc9-449a-4647-b112-559186656759",
+        "dcff57c6-abd6-413b-b255-aec3dc34fcbd"
+      ],
+      "subtopic": "offline_playback",
+      "topic": "downloads"
+    },
+    {
+      "coherence": "high",
+      "definition": "General praise/criticism with no specific feature, unrelated content, boycott slogans, or no supported specific topic. Subtopic: boycott slogans, politics, unrelated or meaningless text",
+      "description": "Reviews contain boycott statements, political or religious complaints, insults, and unrelated rants rather than product feedback.",
+      "issue_id": "other.boycott_or_offtopic",
+      "member_count": 7,
+      "misfit_review_ids": [],
+      "name": "Boycott, political or off-topic rants",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "08c07310-e802-4a88-bd97-2a5f240c0b44",
+        "486d1d7a-d6f6-41ea-81ad-ed875452729c",
+        "d27e9b26-a7af-469c-9a4e-8deea2db72ae",
+        "7fd63051-28ec-4e51-a06e-97f7010eae40",
+        "3e82cf28-6b0a-4980-902c-b6aa154d353a",
+        "33526c6f-7a49-4b3d-bd20-d1bc191c494c",
+        "b0d0660d-b859-4d87-97e8-7420f05d1f94"
+      ],
+      "subtopic": "boycott_or_offtopic",
+      "topic": "other"
+    },
+    {
+      "coherence": "high",
+      "definition": "General praise/criticism with no specific feature, unrelated content, boycott slogans, or no supported specific topic. Subtopic: generic 'bad app' with no specific defect",
+      "description": "Users express broad dissatisfaction or say the app is bad or worse after updates without citing a specific feature.",
+      "issue_id": "other.general_negative",
+      "member_count": 51,
+      "misfit_review_ids": [],
+      "name": "Generic negative feedback about app",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "adc4c3e4-3717-4888-ad86-c9381c224d2f",
+        "5fb51bd0-dbe9-4a19-a466-a77f0c14393e",
+        "36f1617b-e4f7-44fb-a7a9-a8236e4c3531",
+        "178c3b49-b689-4fe4-92a2-2257a58e6d95",
+        "02777996-211f-447b-94c4-99b61f049f78",
+        "39e472ad-2038-4978-a559-d052e3844e59",
+        "5d5e08d1-1686-4c86-b9bd-cb0f3a719e0b",
+        "bb77bfb2-6eb8-4c6c-88bb-491c7da75196",
+        "b0fb4c8e-e2be-432d-84bc-b4f30b0d2aa5",
+        "a0036cd0-72ae-4d2d-98a1-c12938dd166c",
+        "68107809-52c1-469d-a78a-569280e49ed6",
+        "8b6e028a-5f63-4011-9841-cbbade4830eb"
+      ],
+      "subtopic": "general_negative",
+      "topic": "other"
+    },
+    {
+      "coherence": "high",
+      "definition": "General praise/criticism with no specific feature, unrelated content, boycott slogans, or no supported specific topic. Subtopic: a specific point that fits no other topic",
+      "description": "Users raise specific but uncategorized points such as not installing, uninstalling due to updates, or limited gospel music.",
+      "issue_id": "other.other_specific",
+      "member_count": 3,
+      "misfit_review_ids": [],
+      "name": "Miscellaneous specific complaints",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "4e4c0ec8-e42b-4428-b192-d527c3384aab",
+        "62b53e0a-0397-4200-826f-122d18fdde32",
+        "a1a28752-3256-4f81-b888-3e943343529f"
+      ],
+      "subtopic": "other_specific",
+      "topic": "other"
+    },
+    {
+      "coherence": "high",
+      "definition": "Playback failure, crashes, lag, connection failures, audio quality, battery/resource use, device/car/Bluetooth playback. Subtopic: sound quality, volume, glitches, lag in audio",
+      "description": "Users report issues related to sound quality or audio controls (requests for hi‑res audio and bugs with music adjustment).",
+      "issue_id": "playback.audio_quality",
+      "member_count": 2,
+      "misfit_review_ids": [],
+      "name": "Audio quality and playback glitches",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-88828ff63bcd457b",
+      "sample_review_ids": [
+        "d26566f7-a898-4298-a06a-50bd3f7319c1",
+        "9c9757da-6b99-4c95-a0e7-0661ee858027"
+      ],
+      "subtopic": "audio_quality",
+      "topic": "playback"
+    },
+    {
+      "coherence": "high",
+      "definition": "Playback failure, crashes, lag, connection failures, audio quality, battery/resource use, device/car/Bluetooth playback. Subtopic: connection/no internet errors while online, loading forever",
+      "description": "Users report the app frequently reports no internet or goes offline/loses connection despite the device having working network access.",
+      "issue_id": "playback.connectivity_errors",
+      "member_count": 10,
+      "misfit_review_ids": [],
+      "name": "App reports no internet / connection errors",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "3df77a78-ad9a-4456-8be8-8178ffd43d67",
+        "4ab2089a-ffa8-49e7-a8a3-aeb583a96796",
+        "c64af4d8-ac17-48fe-ae38-fd54b41b16b1",
+        "bcdf315e-c82d-41f0-9fcd-ba5933dfe77e",
+        "98d936e1-fd1d-475a-89ee-0e1517cb60d3",
+        "01124066-b5dd-4c79-8618-d1bea99d197a",
+        "9ce5f16c-aef0-48eb-ace1-91905796bc3d",
+        "179d79f7-d052-490f-a9d6-f97525b32642",
+        "f87fb3d9-501a-4119-bc40-b0669270ae44",
+        "05fa5b8a-a49b-43be-bab5-38af789a65a7"
+      ],
+      "subtopic": "connectivity_errors",
+      "topic": "playback"
+    },
+    {
+      "coherence": "high",
+      "definition": "Playback failure, crashes, lag, connection failures, audio quality, battery/resource use, device/car/Bluetooth playback. Subtopic: app crashes, freezes, won't open, black screen",
+      "description": "Users describe the app crashing, freezing, showing a black or stuck loading screen, or becoming unusable after updates.",
+      "issue_id": "playback.crash_or_freeze",
+      "member_count": 7,
+      "misfit_review_ids": [],
+      "name": "App crashes, freezes, or won't load",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "1cdc5bb2-8e8d-4267-8853-6c1dd4c7ef13",
+        "065c418e-7f18-42a3-b241-fe693b7a2b0c",
+        "0fcf89b2-0b81-4838-bf5f-41c684e43b2d",
+        "89be32ab-664a-4647-a5e3-e4006a67e4e1",
+        "55cc3abf-c295-4591-8c3a-78085cfdefaa",
+        "66a29b3c-c14d-440e-b722-b23e0c99ae82",
+        "4a806587-0dde-4fb4-b4f1-f5c7d197c927"
+      ],
+      "subtopic": "crash_or_freeze",
+      "topic": "playback"
+    },
+    {
+      "coherence": "high",
+      "definition": "Playback failure, crashes, lag, connection failures, audio quality, battery/resource use, device/car/Bluetooth playback. Subtopic: Bluetooth, car/Android Auto, smartwatch, speakers, Connect",
+      "description": "Users cannot connect, cast, or control playback on other devices (Google Assistant, alarms, consoles, PC) or get incorrect playback when connected.",
+      "issue_id": "playback.device_integration",
+      "member_count": 5,
+      "misfit_review_ids": [],
+      "name": "Problems connecting or casting to other devices",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "145ea602-b8fb-41c1-bfdd-79293a18681f",
+        "8b9d84a8-f650-4272-b332-4d60cb42377d",
+        "4526d439-a6e4-4e0a-b0bc-ae0f9ce5bd96",
+        "46ff0c74-5e86-4e5b-b4cd-36201aab0f9e",
+        "c7df9cb8-7bec-4036-a6a1-1353d2d705d8"
+      ],
+      "subtopic": "device_integration",
+      "topic": "playback"
+    },
+    {
+      "coherence": "high",
+      "definition": "Playback failure, crashes, lag, connection failures, audio quality, battery/resource use, device/car/Bluetooth playback. Subtopic: slow, laggy UI, battery drain, storage/data use",
+      "description": "Users report the app starting itself despite permissions being disabled and experiencing lag during podcasts/playback.",
+      "issue_id": "playback.performance_battery",
+      "member_count": 2,
+      "misfit_review_ids": [],
+      "name": "Background start and playback lag issues",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "8cd35162-9223-42d1-8097-06e22fde94ea",
+        "3899ed22-7b96-4c4f-9706-42985b8d8049"
+      ],
+      "subtopic": "performance_battery",
+      "topic": "playback"
+    },
+    {
+      "coherence": "high",
+      "definition": "Playback failure, crashes, lag, connection failures, audio quality, battery/resource use, device/car/Bluetooth playback. Subtopic: music stops, pauses, skips by itself, won't play",
+      "description": "Users report music or podcasts pausing, stopping, skipping, or the app playing different songs than selected during playback.",
+      "issue_id": "playback.stops_or_skips",
+      "member_count": 12,
+      "misfit_review_ids": [
+        "06d4c78d-73b4-4b54-9ef3-3d5a0d18cb96"
+      ],
+      "name": "Playback stops, pauses, or plays wrong songs",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "06d4c78d-73b4-4b54-9ef3-3d5a0d18cb96",
+        "4c34f240-76d4-451a-ac74-5bc6bd484825",
+        "f1abd13b-2391-4b04-8109-efa7f3cfed0b",
+        "d3b74f36-aa48-42af-ae4a-d4a8b0499a60",
+        "039112fc-bbed-4540-83cc-890fcb129751",
+        "232c669e-8bfe-4642-b0c9-229c2911cc6c",
+        "6c257eba-3dca-49f6-b7f0-4c4484d81e26",
+        "0e5a2a0d-7f67-48a5-9edd-27064f670656",
+        "a0cbc9d6-51bb-46f0-9ba9-ad4f4593c266",
+        "77a53aa5-a453-4bcb-8267-d4f44a492dd3",
+        "651e6e7b-f93e-4369-9631-15c73ddcd4ad",
+        "509915ba-cf86-4baa-9bea-a73af229ca48"
+      ],
+      "subtopic": "stops_or_skips",
+      "topic": "playback"
+    },
+    {
+      "coherence": "high",
+      "definition": "Navigation, controls, layout, queue/playlist management, ad interruptions. Subtopic: too many/long/loud ads, ads interrupting listening",
+      "description": "Users complain about too many, long, or intrusive ads interrupting music listening and making the app unusable without premium.",
+      "issue_id": "usability.ads",
+      "member_count": 26,
+      "misfit_review_ids": [
+        "caa9bb7e-814c-4895-b872-10637419b9ba"
+      ],
+      "name": "Excessive or frequent ads interrupt listening",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "aa86aa43-19d5-40b4-8b03-535a96346e18",
+        "caa9bb7e-814c-4895-b872-10637419b9ba",
+        "864e390b-135e-411a-9d03-f28648086cfd",
+        "80e2b39e-11a5-485a-aace-8a8d8c564dc1",
+        "85e978f0-13e5-4264-8d3d-251ac5c36461",
+        "7f057d48-0855-4325-950b-44f9e6fc2ee1",
+        "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726",
+        "71095e1c-86d0-4639-8db0-9b74afdf6d4e",
+        "5e42046c-b29b-4035-ba83-a8e222789e98",
+        "92c43612-30bb-4514-bd51-cb7419c7e4d2",
+        "cc7b79ef-bf37-40fc-a02e-4917b86e422c",
+        "035213ba-b1b9-411c-b028-70296e5f0e73"
+      ],
+      "subtopic": "ads",
+      "topic": "usability"
+    },
+    {
+      "coherence": "high",
+      "definition": "Navigation, controls, layout, queue/playlist management, ad interruptions. Subtopic: buttons, gestures, widget, lock-screen controls, sleep timer, settings",
+      "description": "Users report removal or breakage of basic player controls (repeat, skip, seek, smart shuffle) and reduced control over playback.",
+      "issue_id": "usability.controls",
+      "member_count": 5,
+      "misfit_review_ids": [],
+      "name": "Missing or changed playback controls/features",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "9e5f9745-f8be-48d3-b9de-4d118507d94a",
+        "d108ae38-c395-4789-9b6b-661d1efb60d7",
+        "e16a4550-43e7-4ae1-b538-a65cc652c31b",
+        "7084ced1-0428-4093-9328-442f74719b4f",
+        "3a88c96b-2760-4eb8-9271-6c55e2304392"
+      ],
+      "subtopic": "controls",
+      "topic": "usability"
+    },
+    {
+      "coherence": "high",
+      "definition": "Navigation, controls, layout, queue/playlist management, ad interruptions. Subtopic: other usability issue",
+      "description": "Users describe the app as not user-friendly, buggy, or having features (like Spotify Wrap) that won't open.",
+      "issue_id": "usability.other_usability",
+      "member_count": 3,
+      "misfit_review_ids": [],
+      "name": "General usability problems and bugs",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-ebf4bc78eb8647af",
+      "sample_review_ids": [
+        "e8f2fb9b-ad3b-4fec-8194-ab67956ee50a",
+        "91755919-64e7-4613-94f9-4cfb44976c44",
+        "c1726764-f0ce-4abc-ad9e-6cd143e1b2c7"
+      ],
+      "subtopic": "other_usability",
+      "topic": "usability"
+    },
+    {
+      "coherence": "high",
+      "definition": "Navigation, controls, layout, queue/playlist management, ad interruptions. Subtopic: queue, playlists, liked songs, library sorting/editing",
+      "description": "Users report that playlists/liked lists and queue controls are broken or behave unexpectedly (shuffle/repeat issues, inability to add to queue, missing search/viewing of playlists).",
+      "issue_id": "usability.queue_playlist_management",
+      "member_count": 9,
+      "misfit_review_ids": [],
+      "name": "Playlist and queue control problems",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-3b9638bf18984f7a",
+      "sample_review_ids": [
+        "544a8481-e12b-4878-92d0-ec3a5256e13a",
+        "4f6a50a1-9440-468c-b35f-961bca94fd88",
+        "f8a85378-c4dd-40e2-b548-beebcdf3b991",
+        "bfda45a9-d2a3-4aa6-8530-9abe87a63df8",
+        "7f27bbab-ef19-4fb1-80d8-cd014da3e002",
+        "991dc66a-aba8-4844-be48-816539680877",
+        "5c9c17d3-9d6a-4fa1-a2a4-ae98eefbbd25",
+        "b4f4440f-d952-405d-bf7b-f19fb0adf484",
+        "e393cec1-67e8-4f58-a484-8d9d76dc8fd6"
+      ],
+      "subtopic": "queue_playlist_management",
+      "topic": "usability"
+    },
+    {
+      "coherence": "high",
+      "definition": "Navigation, controls, layout, queue/playlist management, ad interruptions. Subtopic: layout, navigation, home screen, redesign, confusing UI",
+      "description": "Users complain the new layout/home screen and UI changes (fonts, autoplaying elements, navigation) make the app harder to use and cause difficulty finding content.",
+      "issue_id": "usability.ui_redesign",
+      "member_count": 9,
+      "misfit_review_ids": [],
+      "name": "Confusing or disruptive UI redesign",
+      "name_source": "gpt-5-mini",
+      "rejected_unknown_ids": [],
+      "request_id": "local-3b9638bf18984f7a",
+      "sample_review_ids": [
+        "2aae0ce4-ae4a-46ce-b2fe-0d901eb23c06",
+        "e5e362d7-1057-43bf-a3ca-8ffd93f80789",
+        "2e2480c1-7799-4a66-be67-a947a2d99680",
+        "0070e713-4cb7-4d78-954f-1764d5593c91",
+        "d455c11e-c530-4c03-a395-38f5a5cdb8d3",
+        "94c9f2f9-36fa-4c11-936e-660514fe7a35",
+        "0e71515c-ecf1-4b23-b783-00f58e51d96a",
+        "0853c56b-0fa1-4d12-9cb9-6817d52233f5",
+        "dd89d3d3-e4c1-446e-b899-fc038cfbcf95"
+      ],
+      "subtopic": "ui_redesign",
+      "topic": "usability"
+    }
+  ],
+  "membership_rule": "issue_id = topic.subtopic for every completed complaint/cancellation record; one issue per record"
+}

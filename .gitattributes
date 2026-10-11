@@ -1,0 +1,6 @@
+# Keep every file byte-for-byte: dataset checksums and row hashes depend on exact bytes (incl. multiline review text).
+* -text
+*.gz binary
+*.xlsx binary
+*.sqlite binary
+*.mp4 binary

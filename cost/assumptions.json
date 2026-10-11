@@ -1,0 +1,51 @@
+{
+  "full_run": {
+    "rows": 660622,
+    "nonempty_rows": 660609,
+    "empty_quarantines": 13,
+    "distinct_nonempty_texts": 484189
+  },
+  "measured_settings": {
+    "enrich_batch_size": 50,
+    "versions": "enrich enrich_v2/s2/t1 (gpt-6-luna, effort none, Flex tier, prompt_cache_key), verify jev_verify_q1 (jev-1.13.0), group_v1, memo_v1 (gpt-5-mini)"
+  },
+  "verify": {
+    "sample_fraction": 0.004,
+    "min_sample": 20,
+    "max_sample": 2000
+  },
+  "fixed": {
+    "group_cost_multiplier": 4.5,
+    "note": "full run has ~35 issues vs ~10-20 in the pilot; group calls scale with issues; memo is one call either way"
+  },
+  "fallback": {
+    "model": "gpt-5-mini",
+    "input_tokens_per_review": 2500,
+    "output_tokens_per_review": 400
+  },
+  "scenarios": {
+    "base": {
+      "retry_rate": 0.05,
+      "fallback_fraction": 0.0005,
+      "workers": 16,
+      "parallel_efficiency": 0.8,
+      "fixed_overhead_s": 900
+    },
+    "conservative": {
+      "retry_rate": 0.15,
+      "fallback_fraction": 0.002,
+      "workers": 8,
+      "parallel_efficiency": 0.6,
+      "fixed_overhead_s": 1800
+    }
+  },
+  "controls": {
+    "spending_limit_usd": 10.0,
+    "output_token_cap": 4000,
+    "max_workers": 16,
+    "max_fallback_fraction": 0.002
+  },
+  "local_compute": {
+    "note": "Local work (CSV parsing, SQLite, hashing, ranking) runs on a laptop CPU; measured inside the wall-clock times. Electricity/hardware cost is not metered and is listed as unknown, not zero."
+  }
+}

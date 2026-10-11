@@ -1,0 +1,17 @@
+review_id,enrich_topic,enrich_subtopic,enrich_intent,enrich_severity,verify_topic,verify_subtopic,verify_intent,verify_severity,verify_confidence,enrich_needs_review,fields_disagreeing
+e9a34387-a2a7-4adc-868b-5207dcaec1aa,access,free_tier_restrictions,complaint,3,billing,free_tier_restrictions,complaint,3,high,0,topic
+c28abc2f-5c30-4bcb-b149-cae0b05f562d,usability,ui_redesign,complaint,2,usability,ui_redesign,request,1,high,0,"intent,severity"
+89f75cd0-552e-406f-b370-ae4e1922cfd0,other,other_specific,unclear,3,other,other_specific,unclear,1,low,0,severity
+9c04d0c8-655d-4afc-a3b6-3c4e606e8d5f,other,general_praise,praise,3,other,general_praise,praise,1,high,0,severity
+d3f5af6f-f59f-4374-b2df-ae2b38ecd94a,billing,free_tier_restrictions,complaint,2,billing,free_tier_restrictions,complaint,3,high,0,severity
+b361b1e1-1c3a-45ea-8d2a-da74f6b565cc,usability,controls,complaint,2,usability,controls,request,2,high,0,intent
+d3d11e18-6bc3-4487-9134-d3d1fa47a788,access,ads,complaint,3,usability,ads,complaint,3,high,0,topic
+be89d88a-95a3-48dc-a9f9-e11a05833766,usability,queue_playlist_management,praise,1,other,general_praise,praise,1,high,0,topic
+dc7d37e6-ac6e-41a4-a36c-eec8296153c7,other,boycott_or_offtopic,unclear,1,other,general_praise,praise,1,high,0,intent
+20873bd6-d252-4c5c-a552-5766f558457b,access,general_praise,praise,1,other,general_praise,praise,1,high,0,topic
+d2961f3d-021f-4518-9a47-68755c29672e,usability,ads,unclear,3,usability,ads,complaint,2,high,0,"intent,severity"
+f8f6df9a-fef7-4ee7-b394-7c3d40564021,usability,other_usability,praise,1,playback,device_integration,praise,1,high,1,topic
+d084db91-d039-4f22-a18a-c677566250d5,other,general_negative,unclear,1,other,general_negative,complaint,2,high,1,"intent,severity"
+c6b1b49a-f921-4481-b6d0-5b7f5c535439,access,download_failure,request,1,downloads,download_failure,request,1,medium,0,topic
+e642de30-b9c3-4189-b88d-47a9bb30bdc3,other,general_praise,praise,1,catalog,podcasts_audiobooks,praise,1,high,0,topic
+1cf1a1ac-15e3-42d8-889b-a6c7963ad384,playback,crash_or_freeze,complaint,5,playback,crash_or_freeze,complaint,3,high,0,severity

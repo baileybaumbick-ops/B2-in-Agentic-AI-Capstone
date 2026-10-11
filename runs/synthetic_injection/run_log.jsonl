@@ -1,0 +1,6 @@
+{"cap": 0.25, "event": "session start", "mock": false, "phase": "initial", "prior_spend": 0.0, "run_id": "run-20261011-115150", "stage": "run", "ts": "2026-10-11T18:51:53+00:00", "workers": 1}
+{"distinct_texts": 8, "empty": 1, "event": "done", "records": 9, "run_id": "run-20261011-115150", "seconds": 0.007, "stage": "ingest", "ts": "2026-10-11T18:51:53+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "jev-1.13.0|effort=None|prompt=jev_q2|schema=s1|taxonomy=t1|thr=injection:0.5,intent:0.5,severity:0.4,subtopic_mass:0.3,topic:0.5", "run_id": "run-20261011-115150", "stage": "enrich", "ts": "2026-10-11T18:51:53+00:00"}
+{"batches": 8, "distinct_texts": 8, "event": "queued", "run_id": "run-20261011-115150", "stage": "enrich", "ts": "2026-10-11T18:51:53+00:00", "workers": 1}
+{"cache_hits": 0, "completed": 8, "counts": {"completed": 8, "quarantined": 1}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 0, "quote_fallbacks": 0, "requests": 8, "retried_items": 0, "run_id": "run-20261011-115150", "seconds": 1.211, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-11T18:51:54+00:00"}
+{"calls": 8, "counts": {"completed": 8, "quarantined": 1}, "event": "session end", "run_id": "run-20261011-115150", "spend": 0.000672, "stage": "run", "ts": "2026-10-11T18:51:54+00:00", "wall_s": 1.278}

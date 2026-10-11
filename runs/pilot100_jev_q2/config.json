@@ -1,0 +1,58 @@
+{
+  "enrich": {
+    "batch_size": 1,
+    "effort": null,
+    "max_output_tokens": 0,
+    "model": "jev-1.13.0",
+    "prompt": "jev_q2",
+    "provider": "jev",
+    "schema": "s1",
+    "taxonomy": "t1",
+    "thresholds": {
+      "injection": 0.5,
+      "intent": 0.5,
+      "severity": 0.4,
+      "subtopic_mass": 0.3,
+      "topic": 0.5
+    }
+  },
+  "fallback": {
+    "effort": "low",
+    "max_fraction": 0.002,
+    "max_output_tokens": 1500,
+    "model": "gpt-5-mini"
+  },
+  "group": {
+    "effort": "low",
+    "examples_per_issue": 12,
+    "issues_per_call": 8,
+    "max_output_tokens": 6000,
+    "model": "gpt-5-mini",
+    "prompt": "group_v1"
+  },
+  "limits": {
+    "consecutive_failure_stop": 3,
+    "max_attempts": 4,
+    "spend_cap_usd": 2.0,
+    "workers": 1
+  },
+  "memo": {
+    "effort": "medium",
+    "max_output_tokens": 12000,
+    "model": "gpt-5-mini",
+    "prompt": "memo_v1",
+    "quotes_per_issue": 3,
+    "top_issues": 12
+  },
+  "verify": {
+    "batch_size": 25,
+    "effort": "low",
+    "max_output_tokens": 5000,
+    "max_sample": 2000,
+    "min_sample": 20,
+    "model": "gpt-5-mini",
+    "prompt": "verify_v1",
+    "sample_fraction": 0.004,
+    "seed": "verify-2026-10"
+  }
+}

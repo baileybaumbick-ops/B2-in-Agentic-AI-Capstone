@@ -1,0 +1,146 @@
+{
+  "cited_issue_claims": [
+    {
+      "claim_id": "C01",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "value": "920"
+    },
+    {
+      "claim_id": "C02",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "value": "2654"
+    },
+    {
+      "claim_id": "C03",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "mean_severity",
+      "value": "2.884783"
+    },
+    {
+      "claim_id": "C04",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "priority_score",
+      "value": "2654"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "value": "581"
+    },
+    {
+      "claim_id": "C12",
+      "issue_id": "usability.ads",
+      "metric": "severity_sum",
+      "value": "1238"
+    },
+    {
+      "claim_id": "C14",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "value": "1238"
+    },
+    {
+      "claim_id": "C16",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "complaint_count",
+      "value": "248"
+    },
+    {
+      "claim_id": "C17",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "severity_sum",
+      "value": "795"
+    },
+    {
+      "claim_id": "C19",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "priority_score",
+      "value": "795"
+    },
+    {
+      "claim_id": "C24",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "priority_score",
+      "value": "471"
+    },
+    {
+      "claim_id": "C26",
+      "issue_id": "access.login_failure",
+      "metric": "complaint_count",
+      "value": "118"
+    },
+    {
+      "claim_id": "C27",
+      "issue_id": "access.login_failure",
+      "metric": "severity_sum",
+      "value": "462"
+    },
+    {
+      "claim_id": "C29",
+      "issue_id": "access.login_failure",
+      "metric": "priority_score",
+      "value": "462"
+    }
+  ],
+  "input_fingerprint": "45ffcb5cf8f296ab7dcd026d8658f075ff6f243edcb3c81126b7d54111db90b0",
+  "memo": {
+    "body_markdown": "Recommendation\n\nPrioritize billing_support work this quarter, focusing first on the Free tier paywall and skip limits issue (billing.free_tier_restrictions) and adjacent billing/support flows that amplify user anger and cancellation intent. Fixes should include restoring expected basic playback behaviors for free users where feasible, clearer in-app messaging about limitations, and faster/responsive billing/support resolution paths tied to free/premium feature boundaries.\n\nEvidence\n\n- The top issue by baseline priority is Free tier paywall and skip limits: priority_score 2,654 [C04], complaint_count 920 [C01], severity_sum 2,654 [C02], mean_severity 2.884783 [C03], with reported cancellation intent members 190 [C05]. Representative reviewer excerpts: `628ffdd2-7107-4617-84f6-63140c6ee91c` (\"being denied to play a song\"), `0d28f052-7d14-4c47-a5d9-9188b1663103` (\"Problem with specific song selection\"), `f36cd96b-90da-4fd9-95b3-0ef85c3a7896` (\"Every single feature now requires you to purchase premium.\").\n\n- Billing/support area totals show concentrated volume and severity: complaints 1,036 [A2COM], severity_sum 2,978 [A2SEV], cancellations 203 [A2CAN], mean_severity 2.874517 [A2MEA]. These area-level aggregates indicate billing/support has the highest area-level severity among the four mapped areas.\n\nAlternatives considered\n\n- Usability was considered because it has broad complaint volume: usability complaints 1,079 [A3COM], severity_sum 2,563 [A3SEV], cancellations 106 [A3CAN], mean_severity 2.375348 [A3MEA]. The largest individual usability topic is Excessive and intrusive ads: complaint_count 581 [C11], severity_sum 1,238 [C12], priority_score 1,238 [C14], with cancellation intent members 53 [C15] and reviewer note `74d4c820-f915-406e-bfec-e837d2e4796f` (\"ads are very annoying\"). We deprioritize full usability rework this quarter because billing_support contains a higher single-issue priority and higher area severity.\n\n- Playback contains higher-severity complaints per incident (mean_severity 3.250426 [A4MEA]) but lower aggregate area severity: complaints 587 [A4COM], severity_sum 1,908 [A4SEV], cancellations 58 [A4CAN]. Top playback topics include Playback stops/skips: complaint_count 248 [C16], severity_sum 795 [C17], priority_score 795 [C19], cancellation intent members 29 [C20], and crashes/freezes: priority_score 471 [C24]. Representative reviewer note `83b0405d-879c-4056-8aa4-5a4568065d47` (\"it plays another completely random song\"). Playback is important but ranks behind the billing free-tier issue by baseline priority.\n\n- Access issues show high per-incident severity but much lower volume: access complaints 145 [A5COM], severity_sum 564 [A5SEV], cancellations 9 [A5CAN], mean_severity 3.889655 [A5MEA]. The top access issue, login failures, has complaint_count 118 [C26], severity_sum 462 [C27], priority_score 462 [C29], cancellation intent members 9 [C30], and reviewer note `19468f16-241a-4910-925f-a0d6b3526a9a` (\"Can't login\"). These are critical but smaller in aggregate impact than billing_support for this dataset.\n\nRisks and limitations\n\n- Data are self-selected Google Play reviews (May 2022–Nov 2023); not a representative customer sample. Do not infer causal or revenue effects from these aggregates.\n\n- Labels and severity come from a small model and verifier sample; see verifier agreement in method notes. Unresolved/quarantined records excluded; coverage shows source_rows 10,000 [K01], completed_records 9,997 [K02], quarantined_records 3 [K03].\n\n- What would change this recommendation: if downstream quantitative signals (support ticket volumes, actual cancellations, revenue telemetry) show a different ranking of impact, or if we learn billing fixes are infeasible in the quarter, shift effort to the next-highest area-level severity (usability) or high-severity playback problems.",
+    "cited_claim_ids": [
+      "C04",
+      "C01",
+      "C02",
+      "C03",
+      "C05",
+      "A2COM",
+      "A2SEV",
+      "A2CAN",
+      "A2MEA",
+      "C09",
+      "C06",
+      "C07",
+      "A3COM",
+      "A3SEV",
+      "A3CAN",
+      "A3MEA",
+      "C14",
+      "C11",
+      "C12",
+      "C15",
+      "A4MEA",
+      "A4COM",
+      "A4SEV",
+      "A4CAN",
+      "C19",
+      "C16",
+      "C17",
+      "C20",
+      "C24",
+      "A5COM",
+      "A5SEV",
+      "A5CAN",
+      "A5MEA",
+      "C29",
+      "C26",
+      "C27",
+      "C30",
+      "K01",
+      "K02",
+      "K03"
+    ],
+    "cited_review_ids": [
+      "628ffdd2-7107-4617-84f6-63140c6ee91c",
+      "0d28f052-7d14-4c47-a5d9-9188b1663103",
+      "f36cd96b-90da-4fd9-95b3-0ef85c3a7896",
+      "74d4c820-f915-406e-bfec-e837d2e4796f",
+      "83b0405d-879c-4056-8aa4-5a4568065d47",
+      "19468f16-241a-4910-925f-a0d6b3526a9a"
+    ],
+    "recommended_area": "billing_support",
+    "title": "Prioritize billing & free-tier playback restrictions"
+  },
+  "validation": "pass",
+  "violations": []
+}

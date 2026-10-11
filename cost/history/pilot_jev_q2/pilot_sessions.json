@@ -1,0 +1,48 @@
+{
+  "cold": {
+    "run_id": "run-20261011-114513",
+    "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+    "wall_clock_seconds": 61.303,
+    "stage_seconds": {
+      "enrich": 10.784,
+      "fallback": 0.0,
+      "group": 14.295,
+      "ingest": 0.031,
+      "memo": 24.603,
+      "rank": 0.075,
+      "verify": 11.469,
+      "write_enriched": 0.016
+    },
+    "workers": 1,
+    "phase": "initial",
+    "cache_hits": 0,
+    "calls": 105,
+    "completed_at_start": 0,
+    "mock": false,
+    "started_at": "2026-10-11T18:45:16+00:00",
+    "ended_at": "2026-10-11T18:46:17+00:00"
+  },
+  "warm": {
+    "run_id": "run-20261011-114513",
+    "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+    "wall_clock_seconds": 0.109,
+    "stage_seconds": {
+      "enrich": 0.008,
+      "fallback": 0.0,
+      "group": 0.006,
+      "ingest": 0.003,
+      "memo": 0.024,
+      "rank": 0.028,
+      "verify": 0.029,
+      "write_enriched": 0.005
+    },
+    "workers": 1,
+    "phase": "resume",
+    "cache_hits": 0,
+    "calls": 0,
+    "completed_at_start": 100,
+    "mock": false,
+    "started_at": "2026-10-11T18:46:20+00:00",
+    "ended_at": "2026-10-11T18:46:20+00:00"
+  }
+}

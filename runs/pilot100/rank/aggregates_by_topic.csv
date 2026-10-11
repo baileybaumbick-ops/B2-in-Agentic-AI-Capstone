@@ -1,0 +1,8 @@
+group,records,complaints,cancellations,severity_sum,sev4plus,mean_severity,share_of_completed_records
+billing,12,12,1,35,0,2.916667,0.120000
+usability,12,12,4,27,0,2.250000,0.120000
+other,53,11,3,22,0,2.000000,0.530000
+playback,6,6,0,20,2,3.333333,0.060000
+catalog,13,6,1,15,0,2.500000,0.130000
+access,2,2,0,8,2,4.000000,0.020000
+downloads,2,2,1,6,0,3.000000,0.020000

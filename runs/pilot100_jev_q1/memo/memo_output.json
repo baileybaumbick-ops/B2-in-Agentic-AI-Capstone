@@ -1,0 +1,105 @@
+{
+  "cited_issue_claims": [
+    {
+      "claim_id": "C01",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "value": "9"
+    },
+    {
+      "claim_id": "C02",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "value": "25"
+    },
+    {
+      "claim_id": "C04",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "priority_score",
+      "value": "25"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "value": "7"
+    },
+    {
+      "claim_id": "C12",
+      "issue_id": "usability.ads",
+      "metric": "severity_sum",
+      "value": "14"
+    },
+    {
+      "claim_id": "C14",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "value": "14"
+    },
+    {
+      "claim_id": "C16",
+      "issue_id": "usability.controls",
+      "metric": "complaint_count",
+      "value": "4"
+    },
+    {
+      "claim_id": "C17",
+      "issue_id": "usability.controls",
+      "metric": "severity_sum",
+      "value": "11"
+    },
+    {
+      "claim_id": "C19",
+      "issue_id": "usability.controls",
+      "metric": "priority_score",
+      "value": "11"
+    },
+    {
+      "claim_id": "C27",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "severity_sum",
+      "value": "8"
+    }
+  ],
+  "input_fingerprint": "2ecc30a94d9094ffd1ec5cda12a1d909b62e8f9f1d560e9db080e9275de511c9",
+  "memo": {
+    "body_markdown": "Recommendation\n\nPrioritize the billing/support area this quarter, focusing first on the Premium-only playback restrictions issue (billing.free_tier_restrictions). Tackle (1) the restrictions that prevent selecting specific songs and limit skips, and (2) the related communication/FAQ or in-app messaging that explains free-tier behavior. As secondary, coordinate with usability on ad frequency and basic playback controls (usability.ads, usability.controls) to address complaints that frame restrictions as part of a broader “forced upgrade” experience.\n\nEvidence\n\n- Highest single-issue priority (severity_sum) in the corpus is Premium-only playback restrictions with severity_sum 25 [C02] (priority_score 25 [C04]) and complaint_count 9 [C01]; there is also recorded cancellation language of 1 member for this issue [C05].\n- Billing/support area totals: complaints 9 [A3COM], severity_sum 25 [A3SEV], mean_severity 2.777778 [A3MEA].\n- Usability topics that amplify the anger around billing restrictions: Excessive or disruptive ads has complaint_count 7 [C11] and severity_sum 14 [C12] (priority_score 14 [C14]); Playback control and feature loss has complaint_count 4 [C16] and severity_sum 11 [C17] (priority_score 11 [C19]).\n\nRepresentative user voices (selected):\n- Premium-only playback restrictions: `d146397f-4a94-4980-be00-ae9212eca3a7` (\"you can't even pick a certain song\"), `89a8e180-7846-4421-a2b6-fa7787e9d0d2` (\"Too much restrictions\").\n- Ads pressure toward premium: `e5e6c55f-3069-4b7c-9807-f8b5d5bf2726` (\"Too many ads....\"), `3e8bdc92-4934-457e-85cc-8b9d14bf51c0` (\"always every 1 or 2 song then instant ads\").\n\nAlternatives considered\n\n- Usability: the usability area has a larger cumulative severity (severity_sum 30 [A2SEV]) and more complaints (complaints 13 [A2COM]), but no single usability sub-issue reaches the top individual priority score. The highest usability sub-issue is Excessive ads (severity_sum 14 [C12]), which amplifies frustration but ranks below the billing.free_tier_restrictions item by baseline priority.\n- Playback: playback area has severity_sum 21 [A4SEV] and a high mean_severity 3.500000 [A4MEA], with crash/freeze reports (severity_sum 8 [C27]) that are severe per instance but lower in aggregate than the billing issue. These technical fixes are important but are not the single highest-priority complaint by baseline score.\n- Access: access area shows mean_severity 4.000000 [A5MEA] for a small set of complaints (severity_sum 8 [A5SEV]), but the volume is low (complaints 2 [A5COM]), so it ranks lower by our baseline priority rule.\n\nRisks and limitations\n\n- Data are self-selected Google Play reviews (see method limitations); these are not a representative customer sample and do not measure actual churn or revenue impact.\n- Baseline priority uses complaint_count x mean_severity (severity_sum) as the primary ranking; that gives heavy weight to the single top billing issue (25 [C02]/25 [C04]) even though usability has larger cumulative severity (30 [A2SEV]). If leadership prefers maximizing total severity reduced each quarter, usability might instead be prioritized.\n- Coverage metadata: source_rows 100 [K01], completed_records 100 [K02], quarantined_records 0 [K03], pending_records 0 [K04], empty_text_quarantines 0 [K05].\n\nWhat would change the recommendation\n\n- If we observe widening cancellation behavior tied to ads or restrictions (higher cancellation counts), or quantitative signals from instrumentation showing large-scale upgrade conversions tied to restrictions, shift effort toward the area with the larger net impact. If product telemetry shows many crashes at scale, prioritize playback engineering instead.",
+    "cited_claim_ids": [
+      "C02",
+      "C04",
+      "C01",
+      "C05",
+      "A3COM",
+      "A3SEV",
+      "A3MEA",
+      "C12",
+      "C11",
+      "C14",
+      "C17",
+      "C16",
+      "C19",
+      "A2SEV",
+      "A2COM",
+      "A4SEV",
+      "A4MEA",
+      "A5SEV",
+      "A5MEA",
+      "A5COM",
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05"
+    ],
+    "cited_review_ids": [
+      "d146397f-4a94-4980-be00-ae9212eca3a7",
+      "89a8e180-7846-4421-a2b6-fa7787e9d0d2",
+      "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726",
+      "3e8bdc92-4934-457e-85cc-8b9d14bf51c0"
+    ],
+    "recommended_area": "billing_support",
+    "title": "Prioritize billing/support: fix premium-only playback restrictions first"
+  },
+  "validation": "pass",
+  "violations": []
+}

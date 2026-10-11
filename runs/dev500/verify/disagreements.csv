@@ -1,0 +1,6 @@
+review_id,enrich_topic,enrich_subtopic,enrich_intent,enrich_severity,verify_topic,verify_subtopic,verify_intent,verify_severity,verify_confidence,enrich_needs_review,fields_disagreeing
+3e82cf28-6b0a-4980-902c-b6aa154d353a,other,boycott_or_offtopic,complaint,2,other,boycott_or_offtopic,unclear,1,medium,1,"intent,severity"
+0839f80d-e672-4954-b50e-20f85c2b8d16,other,boycott_or_offtopic,unclear,1,other,general_praise,praise,1,high,0,intent
+f8a85378-c4dd-40e2-b548-beebcdf3b991,usability,queue_playlist_management,complaint,3,billing,free_tier_restrictions,complaint,3,high,0,topic
+a598cfe0-473b-4665-9eb2-4eebb3c1d877,other,general_negative,cancellation,2,playback,stops_or_skips,cancellation,3,medium,0,"topic,severity"
+a06df5ff-01c8-4aff-a89c-a0c2ddc88f76,billing,free_tier_restrictions,cancellation,3,other,general_negative,cancellation,3,medium,0,topic

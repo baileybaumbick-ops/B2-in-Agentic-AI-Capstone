@@ -1,0 +1,91 @@
+{
+  "cases": [
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "access",
+      "review_id": "e9a34387-a2a7-4adc-868b-5207dcaec1aa"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "89f75cd0-552e-406f-b370-ae4e1922cfd0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "downloads",
+      "planted": "access",
+      "review_id": "c6b1b49a-f921-4481-b6d0-5b7f5c535439"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "9c04d0c8-655d-4afc-a3b6-3c4e606e8d5f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "access",
+      "review_id": "d3d11e18-6bc3-4487-9134-d3d1fa47a788"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "1cf1a1ac-15e3-42d8-889b-a6c7963ad384"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "20873bd6-d252-4c5c-a552-5766f558457b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d2961f3d-021f-4518-9a47-68755c29672e"
+    }
+  ],
+  "comparator_report_on_test_copy": {
+    "agreement": {
+      "all3": 0.5294,
+      "intent": 0.8529,
+      "severity": 0.7941,
+      "severity_within_1": 0.9118,
+      "subtopic": 0.8235,
+      "topic": 0.7941
+    },
+    "disagreement_count": 16,
+    "needs_review_rate_among_disagreements": 0.125,
+    "sample_size_declared": 34,
+    "severity_mae": 0.2941,
+    "topic_confusion": {
+      "access->billing": 1,
+      "access->downloads": 1,
+      "access->other": 1,
+      "access->usability": 1,
+      "other->catalog": 1,
+      "usability->other": 1,
+      "usability->playback": 1
+    },
+    "verified": 34
+  },
+  "detected": 8,
+  "detection_rate": 1.0,
+  "note": "Test copy only; business records and aggregates are untouched. A planted error is detectable when the independent verifier disagrees with the corrupted label.",
+  "planted": 8,
+  "source_run": "runs\\dev10k",
+  "synthetic_test": true,
+  "verified_sample": 34
+}

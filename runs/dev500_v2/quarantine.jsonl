@@ -1,0 +1,2 @@
+{"attempts": 3, "reason": "fallback_invalid:missing_id_in_output", "review_id": "cc915d09-97ce-4d74-a04e-77d8f2d00e85", "source_sha256": "4968ae9b2ec9d8eba525d9ebb99ed0aad891f9855fb122a059f05b5c7a291b97", "status": "quarantined"}
+{"attempts": 2, "reason": "invalid_model_output:subtopic_topic_mismatch", "review_id": "a598cfe0-473b-4665-9eb2-4eebb3c1d877", "source_sha256": "59802754aed5dccf77fbbbbe5d1d71e1c46dd3dd566a8f0508e61b93b4161a6a", "status": "quarantined"}

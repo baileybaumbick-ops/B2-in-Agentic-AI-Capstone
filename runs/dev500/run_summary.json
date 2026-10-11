@@ -1,0 +1,159 @@
+{
+  "config": {
+    "enrich": {
+      "batch_size": 1,
+      "effort": null,
+      "max_output_tokens": 0,
+      "model": "jev-1.13.0",
+      "prompt": "jev_q2",
+      "provider": "jev",
+      "schema": "s1",
+      "taxonomy": "t1",
+      "thresholds": {
+        "injection": 0.5,
+        "intent": 0.5,
+        "severity": 0.4,
+        "subtopic_mass": 0.3,
+        "topic": 0.5
+      }
+    },
+    "fallback": {
+      "effort": "low",
+      "max_fraction": 0.002,
+      "max_output_tokens": 1500,
+      "model": "gpt-5-mini"
+    },
+    "group": {
+      "effort": "low",
+      "examples_per_issue": 12,
+      "issues_per_call": 8,
+      "max_output_tokens": 6000,
+      "model": "gpt-5-mini",
+      "prompt": "group_v1"
+    },
+    "limits": {
+      "consecutive_failure_stop": 3,
+      "max_attempts": 4,
+      "spend_cap_usd": 3.0,
+      "workers": 2
+    },
+    "memo": {
+      "effort": "medium",
+      "max_output_tokens": 12000,
+      "model": "gpt-5-mini",
+      "prompt": "memo_v1",
+      "quotes_per_issue": 3,
+      "top_issues": 12
+    },
+    "verify": {
+      "batch_size": 25,
+      "effort": "low",
+      "max_output_tokens": 5000,
+      "max_sample": 2000,
+      "min_sample": 20,
+      "model": "gpt-5-mini",
+      "prompt": "verify_v1",
+      "sample_fraction": 0.004,
+      "seed": "verify-2026-10"
+    }
+  },
+  "cost_note": "API cost recomputed from logged provider usage x cost/rates.csv; attempts with unknown usage are listed separately.",
+  "counts": {
+    "completed": 500
+  },
+  "input_sha256": "a94e31663ee7b7eaa77e23b7a8425b530cc0c866ed5e714953172a0afef6a12f",
+  "label_config": "jev-1.13.0|effort=None|prompt=jev_q2|schema=s1|taxonomy=t1|thr=injection:0.5,intent:0.5,severity:0.4,subtopic_mass:0.3,topic:0.5",
+  "run_id": "run-20261011-114632",
+  "sessions": [
+    {
+      "calls_this_session": 486,
+      "code_version": "HEAD",
+      "completed_at_start": 0,
+      "counts_after_enrich": {
+        "completed": 500
+      },
+      "ended_at": "2026-10-11T18:48:11+00:00",
+      "enrich_calls_made": 479,
+      "enrich_stats": {
+        "cache_hits": 0,
+        "completed": 500,
+        "failed_requests": 0,
+        "fallback_items": 0,
+        "quarantined": 0,
+        "quote_fallbacks": 0,
+        "requests": 479,
+        "retried_items": 0,
+        "seconds": 24.395,
+        "stopped_reason": null
+      },
+      "input": "data/checkpoint_500.csv",
+      "mock": false,
+      "phase": "initial",
+      "prior_calls_with_unknown_cost": 0,
+      "prior_spend_usd": 0.0,
+      "spend_cap_usd": 3.0,
+      "spend_usd_after": 0.068109,
+      "stage_seconds": {
+        "enrich": 24.401,
+        "fallback": 0.0,
+        "group": 25.539,
+        "ingest": 0.03,
+        "memo": 36.051,
+        "rank": 0.064,
+        "verify": 11.954,
+        "write_enriched": 0.049
+      },
+      "started_at": "2026-10-11T18:46:33+00:00",
+      "wall_clock_seconds": 98.111,
+      "workers": 2
+    }
+  ],
+  "total_cost_usd": 0.068109,
+  "updated_at": "2026-10-11T18:48:11+00:00",
+  "usage_by_role_model": {
+    "enrich|jev-1.13.0": {
+      "attempts": 479.0,
+      "cached_tokens": 0.0,
+      "cost_usd": 0.040609,
+      "failed": 0.0,
+      "input_tokens": 966882.0,
+      "output_tokens": 290758.0,
+      "reasoning_tokens": 0.0,
+      "succeeded": 479.0,
+      "unknown_cost_attempts": 0.0
+    },
+    "group|gpt-5-mini": {
+      "attempts": 4.0,
+      "cached_tokens": 0.0,
+      "cost_usd": 0.009487,
+      "failed": 0.0,
+      "input_tokens": 10563.0,
+      "output_tokens": 3423.0,
+      "reasoning_tokens": 1600.0,
+      "succeeded": 4.0,
+      "unknown_cost_attempts": 0.0
+    },
+    "memo|gpt-5-mini": {
+      "attempts": 2.0,
+      "cached_tokens": 6016.0,
+      "cost_usd": 0.01418,
+      "failed": 0.0,
+      "input_tokens": 12310.0,
+      "output_tokens": 6228.0,
+      "reasoning_tokens": 3776.0,
+      "succeeded": 2.0,
+      "unknown_cost_attempts": 0.0
+    },
+    "verify|gpt-5-mini": {
+      "attempts": 1.0,
+      "cached_tokens": 0.0,
+      "cost_usd": 0.003834,
+      "failed": 0.0,
+      "input_tokens": 2143.0,
+      "output_tokens": 1649.0,
+      "reasoning_tokens": 1024.0,
+      "succeeded": 1.0,
+      "unknown_cost_attempts": 0.0
+    }
+  }
+}

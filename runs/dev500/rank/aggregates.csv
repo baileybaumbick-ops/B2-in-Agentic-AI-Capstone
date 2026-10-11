@@ -1,0 +1,27 @@
+rank,issue_id,name,area,complaint_count,cancellations,severity_sum,mean_severity,priority_score
+1,billing.free_tier_restrictions,Free tier forced shuffle and limits,billing_support,47,5,136,2.893617,136
+2,other.general_negative,Generic negative feedback about app,outside_four_areas,51,6,106,2.078431,106
+3,usability.ads,Excessive or frequent ads interrupt listening,usability,26,1,56,2.153846,56
+4,playback.stops_or_skips,"Playback stops, pauses, or plays wrong songs",playback,12,1,43,3.583333,43
+5,playback.connectivity_errors,App reports no internet / connection errors,playback,10,1,36,3.600000,36
+6,access.login_failure,Unable to log in / unexpected logouts,access,7,1,28,4.000000,28
+7,playback.crash_or_freeze,"App crashes, freezes, or won't load",playback,7,1,28,4.000000,28
+8,usability.queue_playlist_management,Playlist and queue control problems,usability,9,0,26,2.888889,26
+9,usability.ui_redesign,Confusing or disruptive UI redesign,usability,9,0,22,2.444444,22
+10,catalog.missing_content,Songs or full tracks unavailable,outside_four_areas,6,1,18,3.000000,18
+11,other.boycott_or_offtopic,"Boycott, political or off-topic rants",outside_four_areas,7,3,17,2.428571,17
+12,playback.device_integration,Problems connecting or casting to other devices,playback,5,1,17,3.400000,17
+13,billing.subscription_activation,Premium purchase or activation failures,billing_support,4,1,16,4.000000,16
+14,catalog.lyrics,Song lyrics failing to load,outside_four_areas,5,0,14,2.800000,14
+15,usability.controls,Missing or changed playback controls/features,usability,5,2,13,2.600000,13
+16,downloads.offline_playback,Offline playback not working,outside_four_areas,3,0,12,4.000000,12
+17,downloads.download_failure,Unable or stuck downloading songs,outside_four_areas,3,1,11,3.666667,11
+18,catalog.recommendations,Unwanted or repetitive recommendations,outside_four_areas,4,1,9,2.250000,9
+19,other.other_specific,Miscellaneous specific complaints,outside_four_areas,3,2,8,2.666667,8
+20,usability.other_usability,General usability problems and bugs,usability,3,0,8,2.666667,8
+21,downloads.downloads_disappear,Downloaded content disappearing,outside_four_areas,2,1,6,3.000000,6
+22,playback.performance_battery,Background start and playback lag issues,playback,2,0,6,3.000000,6
+23,access.account_compromised,Account hacked and data lost,access,1,0,5,5.000000,5
+24,playback.audio_quality,Audio quality and playback glitches,playback,2,0,5,2.500000,5
+25,billing.price,Premium perceived as too expensive,billing_support,1,0,2,2.000000,2
+26,catalog.podcasts_audiobooks,Podcast content availability,outside_four_areas,1,1,2,2.000000,2

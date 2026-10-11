@@ -1,0 +1,7 @@
+review_id,enrich_topic,enrich_subtopic,enrich_intent,enrich_severity,verify_topic,verify_subtopic,verify_intent,verify_severity,verify_confidence,enrich_needs_review,fields_disagreeing
+3e82cf28-6b0a-4980-902c-b6aa154d353a,other,boycott_or_offtopic,complaint,2,other,boycott_or_offtopic,unclear,1,high,1,"intent,severity"
+3e8bdc92-4934-457e-85cc-8b9d14bf51c0,usability,ads,complaint,2,billing,free_tier_restrictions,complaint,3,high,1,"topic,severity"
+e5e6c55f-3069-4b7c-9807-f8b5d5bf2726,usability,ads,complaint,3,billing,free_tier_restrictions,complaint,3,high,0,topic
+d455c11e-c530-4c03-a395-38f5a5cdb8d3,usability,controls,complaint,2,usability,ui_redesign,complaint,3,high,0,severity
+67b21b33-e6b9-4d1a-b874-86bc182b9ada,other,other_specific,unclear,1,other,general_praise,praise,1,high,0,intent
+33526c6f-7a49-4b3d-bd20-d1bc191c494c,other,boycott_or_offtopic,complaint,2,other,boycott_or_offtopic,unclear,1,high,0,"intent,severity"

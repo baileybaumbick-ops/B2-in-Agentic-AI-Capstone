@@ -1,0 +1,12 @@
+{
+  "completed_records": 100,
+  "issues": 19,
+  "members": 52,
+  "top5": [
+    "billing.free_tier_restrictions",
+    "other.general_negative",
+    "usability.ads",
+    "usability.controls",
+    "access.login_failure"
+  ]
+}

@@ -1,0 +1,21 @@
+rank,issue_id,name,area,complaint_count,cancellations,severity_sum,mean_severity,priority_score
+1,billing.free_tier_restrictions,Free tier playback and skip restrictions,billing_support,9,1,25,2.777778,25
+2,other.general_negative,Generic negative feedback about the app,outside_four_areas,10,2,22,2.200000,22
+3,usability.ads,Excessive and intrusive ads,usability,7,1,15,2.142857,15
+4,usability.controls,Missing or worsened playback controls,usability,4,2,11,2.750000,11
+5,access.login_failure,Unable to access account or log in,access,2,0,8,4.000000,8
+6,playback.crash_or_freeze,App crashes or stuck on load,playback,2,0,8,4.000000,8
+7,other.boycott_or_offtopic,Boycott and off-topic political complaints,outside_four_areas,3,1,6,2.000000,6
+8,catalog.lyrics,Missing or inconsistent song lyrics,outside_four_areas,2,0,5,2.500000,5
+9,catalog.recommendations,Poor or unwanted recommendations,outside_four_areas,2,1,4,2.000000,4
+10,downloads.offline_playback,Offline mode not functioning,outside_four_areas,1,0,4,4.000000,4
+11,playback.device_integration,Voice assistant integration failure,playback,1,0,4,4.000000,4
+12,catalog.missing_content,Songs or artists unavailable,outside_four_areas,1,0,3,3.000000,3
+13,downloads.download_failure,Background downloads get stuck,outside_four_areas,1,1,3,3.000000,3
+14,playback.audio_quality,Audio adjustment/quality bug,playback,1,0,3,3.000000,3
+15,playback.connectivity_errors,Wi‑Fi connectivity problems,playback,1,0,3,3.000000,3
+16,playback.stops_or_skips,Playback stops mid-track or skips,playback,1,0,3,3.000000,3
+17,usability.queue_playlist_management,Playlist playback order issues,usability,1,0,3,3.000000,3
+18,catalog.podcasts_audiobooks,Podcast content availability,outside_four_areas,1,1,2,2.000000,2
+19,other.other_specific,Content-specific genre availability complaint,outside_four_areas,1,0,2,2.000000,2
+20,usability.ui_redesign,Disliked homescreen redesign,usability,1,0,2,2.000000,2

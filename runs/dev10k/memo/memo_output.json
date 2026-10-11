@@ -1,0 +1,105 @@
+{
+  "cited_issue_claims": [
+    {
+      "claim_id": "C01",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "value": "833"
+    },
+    {
+      "claim_id": "C02",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "value": "2424"
+    },
+    {
+      "claim_id": "C12",
+      "issue_id": "usability.ads",
+      "metric": "severity_sum",
+      "value": "1080"
+    },
+    {
+      "claim_id": "C17",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "severity_sum",
+      "value": "888"
+    },
+    {
+      "claim_id": "C22",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "severity_sum",
+      "value": "588"
+    },
+    {
+      "claim_id": "C27",
+      "issue_id": "usability.queue_playlist_management",
+      "metric": "severity_sum",
+      "value": "556"
+    },
+    {
+      "claim_id": "C32",
+      "issue_id": "usability.controls",
+      "metric": "severity_sum",
+      "value": "498"
+    },
+    {
+      "claim_id": "C37",
+      "issue_id": "access.login_failure",
+      "metric": "severity_sum",
+      "value": "497"
+    },
+    {
+      "claim_id": "C56",
+      "issue_id": "billing.subscription_activation",
+      "metric": "complaint_count",
+      "value": "51"
+    },
+    {
+      "claim_id": "C57",
+      "issue_id": "billing.subscription_activation",
+      "metric": "severity_sum",
+      "value": "187"
+    },
+    {
+      "claim_id": "C58",
+      "issue_id": "billing.subscription_activation",
+      "metric": "mean_severity",
+      "value": "3.666667"
+    }
+  ],
+  "input_fingerprint": "a963f7fcce2d7ec6bd6ee20c168af24009fdb0af2163984e0edc3de682f3836e",
+  "memo": {
+    "body_markdown": "Recommendation\n\nPrioritize the billing/support area this quarter, focusing first on the “Free tier locked behind premium features” issue and second on subscription activation failures. The free‑tier restriction is the single highest priority issue in our set and drives the largest volume of high‑severity complaints in the billing/support area; resolving its visibility and policy/UX around controls should reduce the leading source of user frustration. Address subscription activation (payment/entitlement) as a close follow‑up to prevent paid users from being blocked.\n\nEvidence\n\n- The free‑tier restrictions issue has total complaints 833 [C01] and severity_sum 2,424 [C02], with 158 stated cancellation intent members [C05]. Representative user language: `628ffdd2-7107-4617-84f6-63140c6ee91c` (\"denied to play a song\"), `a581ecb8-d021-4b0b-b5f2-f3f3b79e6ccd` (\"removed the repeating button... puted it into premium\"), `f36cd96b-90da-4fd9-95b3-0ef85c3a7896` (\"Every single feature now requires you to purchase premium.\").\n- At the billing/support area level, complaints total 958 [A2COM], cancellations total 174 [A2CAN], and severity_sum totals 2,801 [A2SEV], placing billing/support at the highest area severity among the four areas.\n- Subscription activation has complaints 51 [C56] and severity_sum 187 [C57]; its mean severity is 3.666667 [C58], indicating the issue is concentrated among relatively high‑severity reports.\n\nAlternatives considered\n\n- Usability: the area has severity_sum 2,544 [A3SEV], with high issues like intrusive ads (severity_sum 1,080 [C12]) and playlist/queue management (severity_sum 556 [C27]) and control regressions (severity_sum 498 [C32]). Usability is important and close in priority, but its aggregated severity and cancellation signals are slightly lower than billing/support when weighted by the largest single issue (free‑tier restrictions) and explicit cancellation intent in billing/support.\n- Playback: the area has severity_sum 2,128 [A4SEV]; top playback issues include stops/skips (severity_sum 888 [C17]) and crashes/freezes (severity_sum 588 [C22]). Playback problems are high severity per incident, but overall area severity and cancellation intent are lower than billing/support.\n- Access: the area has severity_sum 600 [A5SEV]; top access issue (login failures) has severity_sum 497 [C37]. Access is important for affected users, but it represents a smaller volume/aggregate severity than billing/support this quarter.\n\nRisks and limitations\n\n- Data source and coverage: evidence comes from self‑selected Google Play reviews (May 2022–Nov 2023) and completed records equal source_rows 10,000 [K01], completed_records 10,000 [K02]; this is not a representative customer sample. Use caution inferring population‑level impact.\n- Cancellation language is expressed intent, not observed churn; our priority baseline uses severity_sum as the primary ranking per method notes (priority = complaint_count x mean_severity). If future monitoring shows complaint volume or severity for billing.free_tier_restrictions decline materially, or if product telemetry indicates outsize impact in another area (e.g., playback telemetry confirming service outages), we should reallocate effort.\n- Labels derive from an automated topic model with verifier agreement reported in method notes; edge cases and mixed‑coherence issues may shift priorities for small clusters.\n\nNext steps\n\n- Convene billing/product + UX + legal to scope fixes for free‑tier control availability and messaging; measure review volume and cancellation intent post‑fix.\n- Parallel operational investigation by billing/entitlements to triage subscription activation errors and reduce blocked paid access.",
+    "cited_claim_ids": [
+      "C01",
+      "C02",
+      "C05",
+      "A2COM",
+      "A2CAN",
+      "A2SEV",
+      "C56",
+      "C57",
+      "C58",
+      "A3SEV",
+      "C12",
+      "C27",
+      "C32",
+      "A4SEV",
+      "C17",
+      "C22",
+      "A5SEV",
+      "C37",
+      "K01",
+      "K02"
+    ],
+    "cited_review_ids": [
+      "628ffdd2-7107-4617-84f6-63140c6ee91c",
+      "a581ecb8-d021-4b0b-b5f2-f3f3b79e6ccd",
+      "f36cd96b-90da-4fd9-95b3-0ef85c3a7896"
+    ],
+    "recommended_area": "billing_support",
+    "title": "Prioritize billing/support: fix free‑tier restrictions first, then subscription activation"
+  },
+  "validation": "pass",
+  "violations": []
+}

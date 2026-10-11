@@ -1,0 +1,135 @@
+{
+  "cited_issue_claims": [
+    {
+      "claim_id": "C01",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "value": "11"
+    },
+    {
+      "claim_id": "C02",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "value": "33"
+    },
+    {
+      "claim_id": "C03",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "mean_severity",
+      "value": "3.000000"
+    },
+    {
+      "claim_id": "C04",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "priority_score",
+      "value": "33"
+    },
+    {
+      "claim_id": "C11",
+      "issue_id": "usability.ads",
+      "metric": "complaint_count",
+      "value": "8"
+    },
+    {
+      "claim_id": "C12",
+      "issue_id": "usability.ads",
+      "metric": "severity_sum",
+      "value": "16"
+    },
+    {
+      "claim_id": "C14",
+      "issue_id": "usability.ads",
+      "metric": "priority_score",
+      "value": "16"
+    },
+    {
+      "claim_id": "C21",
+      "issue_id": "access.login_failure",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C22",
+      "issue_id": "access.login_failure",
+      "metric": "severity_sum",
+      "value": "8"
+    },
+    {
+      "claim_id": "C24",
+      "issue_id": "access.login_failure",
+      "metric": "priority_score",
+      "value": "8"
+    },
+    {
+      "claim_id": "C26",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "complaint_count",
+      "value": "2"
+    },
+    {
+      "claim_id": "C27",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "severity_sum",
+      "value": "8"
+    },
+    {
+      "claim_id": "C29",
+      "issue_id": "playback.crash_or_freeze",
+      "metric": "priority_score",
+      "value": "8"
+    }
+  ],
+  "input_fingerprint": "8b2defb79fa6f0c646e1d3b8fbe46868f910c526e64326d71685ff7267555fd1",
+  "memo": {
+    "body_markdown": "Recommendation\n\nPrioritize the billing/support area this quarter, focusing first on the Free tier forced shuffle and skip limits issue and adjacent billing-support friction. Specifically: (1) Fix or relax the forced-shuffle / strict-skip behavior (billing.free_tier_restrictions), and (2) surface clearer messaging and settings around free-tier limitations and upgrade options to reduce confusion and antagonism.\n\nEvidence\n\n- The top-ranked issue by our baseline priority (complaint_count x mean_severity = severity_sum) is billing.free_tier_restrictions: complaint_count 11 [C01], severity_sum 33 [C02], mean_severity 3.000000 [C03], priority_score 33 [C04], cancellation_intent_members 1 [C05].\n- At the area level, billing_support shows complaints 12 [A2COM], severity_sum 35 [A2SEV], cancellations 1 [A2CAN], mean_severity 2.916667 [A2MEA], indicating concentrated negative feedback tied to billing/support topics.\n- Representative user remarks (selected short quotes): `88439ec2-7c49-4c57-bedb-c5e098692aff` (\"I'll switch\"), `d146397f-4a94-4980-be00-ae9212eca3a7` (\"can't even pick\"), `e5e6c55f-3069-4b7c-9807-f8b5d5bf2726` (\"Too many ads....\"), `9e5f9745-f8be-48d3-b9de-4d118507d94a` (\"can't even go back\").\n\nWhy this vs. other areas\n\n- Usability: the usability area has complaints 12 [A3COM] and severity_sum 27 [A3SEV], but its top individual usability issue (ads) has priority_score 16 [C14] (complaint_count 8 [C11], severity_sum 16 [C12]). That is meaningfully lower than the billing free-tier priority_score 33 [C04], so incremental impact per effort is likely larger in billing/support.\n\n- Playback: the playback area shows complaints 6 [A4COM] and severity_sum 20 [A4SEV], with the top playback crash/freeze issue at priority_score 8 [C29] (complaint_count 2 [C26], severity_sum 8 [C27]). While playback has a higher mean severity 3.333333 [A4MEA] and sev4plus 2 [A4SEV], its lower volume keeps it behind billing_support by the priority metric.\n\n- Access: access area has complaints 2 [A5COM] and severity_sum 8 [A5SEV], with access.login_failure at priority_score 8 [C24] (complaint_count 2 [C21], severity_sum 8 [C22]). Access shows high mean_severity 4.000000 [A5MEA] and sev4plus 2 [A5SEV], but the low complaint volume means fewer reviews drive priority compared with the billing issue.\n\nRisks and limitations\n\n- Data are self-selected Google Play reviews (May 2022–Nov 2023) and are not a representative customer sample; do not infer population rates, causal churn, or revenue impact. Cancellation language is stated intent only.\n- Labels and severity come from a small model with verifier agreement limits (see method notes); severity labeling has uncertainty. The baseline priority uses severity_sum; if severity labeling shifts, priority ordering could change.\n- Coverage metrics: source_rows 100 [K01], completed_records 100 [K02], quarantined_records 0 [K03], pending_records 0 [K04], empty_text_quarantines 0 [K05].\n\nWhat would change the recommendation\n\n- If additional data showed higher-volume or higher-severity playback or access incidents (new crash spikes or widespread login failures), their severity_sum or complaint_count could overtake billing_support. Also, if qualitative research indicates billing complaints are driven primarily by misunderstanding rather than product limits, a messaging fix might suffice instead of product changes.",
+    "cited_claim_ids": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "A2COM",
+      "A2SEV",
+      "A2CAN",
+      "A2MEA",
+      "C11",
+      "C12",
+      "C14",
+      "A3COM",
+      "A3SEV",
+      "C26",
+      "C27",
+      "C29",
+      "A4COM",
+      "A4SEV",
+      "A4MEA",
+      "C21",
+      "C22",
+      "C24",
+      "A5COM",
+      "A5SEV",
+      "A5MEA",
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05",
+      "C06",
+      "C07",
+      "C09",
+      "C16",
+      "C17",
+      "C19"
+    ],
+    "cited_review_ids": [
+      "88439ec2-7c49-4c57-bedb-c5e098692aff",
+      "d146397f-4a94-4980-be00-ae9212eca3a7",
+      "e5e6c55f-3069-4b7c-9807-f8b5d5bf2726",
+      "9e5f9745-f8be-48d3-b9de-4d118507d94a"
+    ],
+    "recommended_area": "billing_support",
+    "title": "Prioritize billing/support: address free‑tier restrictions first"
+  },
+  "validation": "pass",
+  "violations": []
+}

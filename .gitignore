@@ -1,0 +1,16 @@
+# Course dataset + instructor materials are NOT redistributed here. Unzip the course ZIP into data/ (see README).
+data/*
+!data/WHERE_TO_PUT_THE_DATA.md
+tools/check_submission.py
+*.zip
+# Working state databases (large; all evidence is exported to runs/*/ files, grading/ and cost/)
+runs/*/state.sqlite*
+runs/mock*/
+runs/*/STOP
+__pycache__/
+*.pyc
+.env
+self-check.json
+local-reference.json
+runs/*/ref.json
+runs/*/self-check.json

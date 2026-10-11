@@ -1,1 +1,0 @@
-# B2-in-Agentic-AI-Capstone

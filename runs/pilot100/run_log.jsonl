@@ -1,0 +1,21 @@
+{"cap": 2.0, "event": "session start", "mock": false, "phase": "initial", "prior_spend": 0.0, "run_id": "run-20261011-120755", "stage": "run", "ts": "2026-10-11T19:07:56+00:00", "workers": 1}
+{"distinct_texts": 100, "empty": 0, "event": "done", "records": 100, "run_id": "run-20261011-120755", "seconds": 0.003, "stage": "ingest", "ts": "2026-10-11T19:07:56+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-120755", "stage": "enrich", "ts": "2026-10-11T19:07:56+00:00"}
+{"batches": 2, "distinct_texts": 100, "event": "queued", "run_id": "run-20261011-120755", "stage": "enrich", "ts": "2026-10-11T19:07:56+00:00", "workers": 1}
+{"cache_hits": 0, "completed": 100, "counts": {"completed": 100}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 0, "quote_fallbacks": 0, "requests": 3, "retried_items": 1, "run_id": "run-20261011-120755", "seconds": 88.396, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-11T19:09:24+00:00"}
+{"already_verified": 0, "event": "sample", "provider": "jev", "run_id": "run-20261011-120755", "sample_size": 20, "stage": "verify", "to_send": 20, "ts": "2026-10-11T19:09:24+00:00"}
+{"agreement": {"all3": 0.7, "intent": 0.85, "severity": 0.7, "severity_within_1": 1.0, "subtopic": 0.85, "topic": 0.9}, "disagreement_count": 6, "event": "compared", "run_id": "run-20261011-120755", "severity_mae": 0.3, "stage": "verify", "ts": "2026-10-11T19:09:25+00:00", "verified": 20}
+{"event": "done", "issues": 18, "members": 51, "named_by_model": 18, "run_id": "run-20261011-120755", "stage": "group", "ts": "2026-10-11T19:09:41+00:00"}
+{"attempt": 1, "event": "draft checked", "run_id": "run-20261011-120755", "stage": "memo", "ts": "2026-10-11T19:10:01+00:00", "violations": 0}
+{"event": "done", "recommended_area": "billing_support", "run_id": "run-20261011-120755", "stage": "memo", "ts": "2026-10-11T19:10:01+00:00", "validation": "pass"}
+{"calls": 27, "counts": {"completed": 100}, "event": "session end", "run_id": "run-20261011-120755", "spend": 0.015752, "stage": "run", "ts": "2026-10-11T19:10:01+00:00", "wall_s": 124.987}
+{"cap": 2.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 0.0158, "run_id": "run-20261011-120755", "stage": "run", "ts": "2026-10-11T19:10:02+00:00", "workers": 1}
+{"event": "skipped: state already holds this input", "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e", "run_id": "run-20261011-120755", "stage": "ingest", "ts": "2026-10-11T19:10:02+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-120755", "stage": "enrich", "ts": "2026-10-11T19:10:02+00:00"}
+{"batches": 0, "distinct_texts": 0, "event": "queued", "run_id": "run-20261011-120755", "stage": "enrich", "ts": "2026-10-11T19:10:02+00:00", "workers": 1}
+{"cache_hits": 0, "completed": 0, "counts": {"completed": 100}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 0, "quote_fallbacks": 0, "requests": 0, "retried_items": 0, "run_id": "run-20261011-120755", "seconds": 0.0, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-11T19:10:02+00:00"}
+{"already_verified": 20, "event": "sample", "provider": "jev", "run_id": "run-20261011-120755", "sample_size": 20, "stage": "verify", "to_send": 0, "ts": "2026-10-11T19:10:02+00:00"}
+{"agreement": {"all3": 0.7, "intent": 0.85, "severity": 0.7, "severity_within_1": 1.0, "subtopic": 0.85, "topic": 0.9}, "disagreement_count": 6, "event": "compared", "run_id": "run-20261011-120755", "severity_mae": 0.3, "stage": "verify", "ts": "2026-10-11T19:10:03+00:00", "verified": 20}
+{"event": "reused saved issue names (same inputs and config); no model call", "fingerprint": "f0bf45cea3b3", "run_id": "run-20261011-120755", "stage": "group", "ts": "2026-10-11T19:10:03+00:00"}
+{"event": "reused saved memo (same evidence pack and config); no model call", "run_id": "run-20261011-120755", "stage": "memo", "ts": "2026-10-11T19:10:03+00:00"}
+{"calls": 0, "counts": {"completed": 100}, "event": "session end", "run_id": "run-20261011-120755", "spend": 0.015752, "stage": "run", "ts": "2026-10-11T19:10:03+00:00", "wall_s": 0.117}

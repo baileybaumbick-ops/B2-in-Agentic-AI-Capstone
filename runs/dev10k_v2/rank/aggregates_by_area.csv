@@ -1,0 +1,6 @@
+group,records,complaints,cancellations,severity_sum,sev4plus,mean_severity,share_of_completed_records
+outside_four_areas,6562,1685,139,3751,32,2.226113,0.656397
+billing_support,1117,1036,203,2978,28,2.874517,0.111734
+usability,1431,1079,106,2563,17,2.375348,0.143143
+playback,736,587,58,1908,170,3.250426,0.073622
+access,151,145,9,564,125,3.889655,0.015105
