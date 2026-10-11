@@ -189,7 +189,7 @@ def report(args):
          f"- Pilot IDs: {len(records)} records - completed {status['completed']}, quarantined {status['quarantined']}, pending {status['pending']}",
          f"- Unique texts sent to the enricher: {texts_sent}; result-cache hits (cold): {cold.get('cache_hits', 0)}; "
          f"(warm): {warm.get('cache_hits', 0) + warm.get('completed_at_start', 0)} records served from saved results",
-         f"- Workers: {cold.get('workers')}; enrichment batch size: {assume['measured_settings']['enrich_batch_size']}; verification sample: {measured['verify']['n']} records",
+         f"- Workers: {cold.get('workers')}; enrichment batch size: {assume['measured_settings']['enrich_batch_size']}; verification sample: {int(measured['verify']['n'])} records",
          f"- **Cold run: wall-clock {fmt(cold.get('wall_clock_seconds', 0.0), 2)} s, API cost ${fmt(total_cold, 6)}, {len(cold_calls)} attempts**",
          f"- **Warm run (same run dir, saved results): wall-clock {fmt(warm.get('wall_clock_seconds', 0.0), 2)} s, "
          f"new enrichment calls {sum(1 for c in warm_calls if c['role'] == 'enrich')}, downstream calls {sum(1 for c in warm_calls if c['role'] != 'enrich')}, "
@@ -228,6 +228,31 @@ def report(args):
         flag = "**YES - exceeds limit**" if p["over_budget"] else "no"
         L.append(f"| {name} | {p['texts_classified']:,} | {p['enrich_usd']:.2f} | {p['fallback_usd']:.2f} | {p['verify_usd']:.2f} | "
                  f"{p['fixed_group_memo_usd']:.2f} | **{p['total_api_usd']:.2f}** | {p['workers']} | {p['hours']:.2f} | {flag} |")
+    # Estimate refreshes from later, larger measurements (same arithmetic, saved call logs only).
+    L += ["", "## Estimate refreshes (100 -> 500 -> 10,000) and the rejected alternative", "",
+          "Enrichment cost per distinct text from each saved run's call log, projected to 484,189 distinct texts "
+          "(enrichment stage only; verification/group/memo are small fixed or sampled costs shown above).", "",
+          "| Measurement | Enricher | Distinct texts sent | Enrich attempts (failed) | Enrich API $ | $ per distinct text | Projected full enrich $ | Enrich wall s | Texts/s | Workers |",
+          "|---|---|---|---|---|---|---|---|---|---|"]
+    for name, label in assume.get("refresh_runs", []):
+        rdir = ROOT / name
+        rc = load_jsonl(rdir / "calls.jsonl")
+        if not rc:
+            continue
+        ec = [c for c in rc if c["role"] == "enrich"]
+        texts = len({rid for c in ec if c["outcome"] == "succeeded" for rid in c["review_ids"]})
+        cost = sum(call_cost(c, rates) or 0 for c in ec)
+        summ = json.loads((rdir / "run_summary.json").read_text(encoding="utf-8")) if (rdir / "run_summary.json").exists() else {}
+        secs = sum((sx.get("stage_seconds") or {}).get("enrich", 0) for sx in summ.get("sessions", []))
+        workers = max((sx.get("workers") or 0 for sx in summ.get("sessions", [])), default=0)
+        per = cost / texts if texts else 0
+        L.append(f"| `{name}` | {label} | {texts:,} | {len(ec)} ({sum(c['outcome'] == 'failed' for c in ec)}) | {cost:.4f} | "
+                 f"{per:.8f} | {per * assume['full_run']['distinct_nonempty_texts']:.2f} | {secs:.0f} | "
+                 f"{texts / secs if secs else 0:.1f} | {workers} |")
+    L += ["", "Decision: the Jev enricher (one review per request, so the ~2,000-token question set is billed for every review) "
+          "projected about $41 for full-run enrichment alone, over the $10 limit; the batched GPT-6 Luna enricher (50 reviews/request, "
+          "provider prompt caching, Flex tier) projected about $5-6 and was chosen. Jev was kept as the independent verifier "
+          "and the cross-provider fallback. Rates for Jev are third-party figures and are marked UNVERIFIED in rates.csv."]
     L += ["", "## Controls", "",
           f"- Spending limit: ${ctrl['spending_limit_usd']:.2f} (enforced in code by a shared ledger that reserves worst-case cost before each request)",
           f"- Output-token cap per enrichment request: {ctrl['output_token_cap']:,}",

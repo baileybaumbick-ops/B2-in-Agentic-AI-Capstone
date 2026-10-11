@@ -47,5 +47,31 @@
   },
   "local_compute": {
     "note": "Local work (CSV parsing, SQLite, hashing, ranking) runs on a laptop CPU; measured inside the wall-clock times. Electricity/hardware cost is not metered and is listed as unknown, not zero."
-  }
+  },
+  "refresh_runs": [
+    [
+      "runs/pilot100",
+      "final: Luna v2 (100 pilot, 1 worker)"
+    ],
+    [
+      "runs/dev500_v2",
+      "final: Luna v2 (500, 4 workers)"
+    ],
+    [
+      "runs/dev10k_v2",
+      "final: Luna v2 (10,000, 16 workers)"
+    ],
+    [
+      "runs/pilot100_jev_q2",
+      "rejected alternative: Jev q2 (100 pilot)"
+    ],
+    [
+      "runs/dev500",
+      "rejected alternative: Jev q2 (500)"
+    ],
+    [
+      "runs/dev10k",
+      "rejected alternative: Jev q2 (10,000, 8 workers)"
+    ]
+  ]
 }

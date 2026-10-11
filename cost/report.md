@@ -7,7 +7,7 @@ Generated offline from saved evidence. Rates file: `rates.csv`; assumptions: `as
 - Input checksum: `c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e` (expected `c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e`; match: True)
 - Pilot IDs: 100 records - completed 100, quarantined 0, pending 0
 - Unique texts sent to the enricher: 100; result-cache hits (cold): 0; (warm): 100 records served from saved results
-- Workers: 1; enrichment batch size: 50; verification sample: 20.0 records
+- Workers: 1; enrichment batch size: 50; verification sample: 20 records
 - **Cold run: wall-clock 124.99 s, API cost $0.015752, 27 attempts**
 - **Warm run (same run dir, saved results): wall-clock 0.12 s, new enrichment calls 0, downstream calls 0, incremental API cost $0**
 - Cost per 1,000 input rows: $0.1575; per completed record: $0.000158
@@ -61,6 +61,21 @@ Per-unit inputs from the measurement: enrichment $0.00000986 and 0.8840 s per di
 | base|no_reuse | 660,609 | 6.84 | 0.47 | 0.16 | 0.03 | **7.50** | 16 | 13.56 | no |
 | conservative|reuse | 484,189 | 5.49 | 1.38 | 0.16 | 0.03 | **7.06** | 8 | 28.99 | no |
 | conservative|no_reuse | 660,609 | 7.49 | 1.88 | 0.16 | 0.03 | **9.56** | 8 | 39.36 | no |
+
+## Estimate refreshes (100 -> 500 -> 10,000) and the rejected alternative
+
+Enrichment cost per distinct text from each saved run's call log, projected to 484,189 distinct texts (enrichment stage only; verification/group/memo are small fixed or sampled costs shown above).
+
+| Measurement | Enricher | Distinct texts sent | Enrich attempts (failed) | Enrich API $ | $ per distinct text | Projected full enrich $ | Enrich wall s | Texts/s | Workers |
+|---|---|---|---|---|---|---|---|---|---|
+| `runs/pilot100` | final: Luna v2 (100 pilot, 1 worker) | 100 | 3 (0) | 0.0010 | 0.00000986 | 4.78 | 88 | 1.1 | 1 |
+| `runs/dev500_v2` | final: Luna v2 (500, 4 workers) | 479 | 16 (3) | 0.0062 | 0.00001303 | 6.31 | 125 | 3.8 | 4 |
+| `runs/dev10k_v2` | final: Luna v2 (10,000, 16 workers) | 8,448 | 301 (57) | 0.1020 | 0.00001207 | 5.84 | 517 | 16.3 | 16 |
+| `runs/pilot100_jev_q2` | rejected alternative: Jev q2 (100 pilot) | 100 | 100 (0) | 0.0085 | 0.00008486 | 41.09 | 11 | 9.3 | 1 |
+| `runs/dev500` | rejected alternative: Jev q2 (500) | 479 | 479 (0) | 0.0406 | 0.00008478 | 41.05 | 24 | 19.6 | 2 |
+| `runs/dev10k` | rejected alternative: Jev q2 (10,000, 8 workers) | 8,448 | 8448 (0) | 0.7174 | 0.00008492 | 41.12 | 110 | 77.1 | 8 |
+
+Decision: the Jev enricher (one review per request, so the ~2,000-token question set is billed for every review) projected about $41 for full-run enrichment alone, over the $10 limit; the batched GPT-6 Luna enricher (50 reviews/request, provider prompt caching, Flex tier) projected about $5-6 and was chosen. Jev was kept as the independent verifier and the cross-provider fallback. Rates for Jev are third-party figures and are marked UNVERIFIED in rates.csv.
 
 ## Controls
 
