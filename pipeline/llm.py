@@ -205,6 +205,9 @@ class Gateway:
                 # No usage on a transport failure: keep the reservation as spent (unknown charge). Exceptions: injected
                 # test faults and 429 rejections (the provider refuses the request before processing; not billed).
                 rejected = (record.get("error") or "").split(":")[0] in ("RateLimitError", "TypeSafeRateLimitError")
+                if not usage and record.get("injected_fault") == "rate_limit":
+                    record["cost_usd"] = 0.0
+                    record["cost_note"] = "injected test fault; no provider request sent; not billed"
                 if not usage and rejected:
                     record["cost_usd"] = 0.0
                     record["cost_note"] = "429 rejected before processing; not billed"

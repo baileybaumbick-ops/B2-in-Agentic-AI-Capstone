@@ -25,7 +25,7 @@ DEFAULTS = {
                "max_output_tokens": 0},
     "group": {"model": "gpt-5-mini", "effort": "low", "prompt": "group_v1", "examples_per_issue": 12,
               "issues_per_call": 8, "max_output_tokens": 6000},
-    "memo": {"model": "gpt-5-mini", "effort": "medium", "prompt": "memo_v1", "top_issues": 12,
+    "memo": {"model": "gpt-5-mini", "effort": "medium", "prompt": "memo_v2", "top_issues": 12,
              "quotes_per_issue": 3, "max_output_tokens": 12000},
     "limits": {"spend_cap_usd": 10.0, "workers": 1, "max_attempts": 6, "consecutive_failure_stop": 5},
 }
@@ -44,7 +44,7 @@ def label_config(cfg, role="enrich"):
     e = cfg["enrich"]
     if role == "fallback":  # fallback always uses the LLM prompt with the fallback model
         c = cfg["fallback"]
-        return f"{c['model']}|effort={c['effort']}|prompt=enrich_v1|schema={e['schema']}|taxonomy={e['taxonomy']}|fallback"
+        return f"{c['model']}|effort={c['effort']}|prompt=enrich_v1+issue|schema=s1i|taxonomy={e['taxonomy']}|fallback"
     extra = ""
     if e.get("thresholds"):
         extra = "|thr=" + ",".join(f"{k}:{v}" for k, v in sorted(e["thresholds"].items()))

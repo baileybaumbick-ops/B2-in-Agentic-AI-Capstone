@@ -134,6 +134,9 @@ def cmd_run(a):
             timed("group", lambda: run_group(state, gw, cfg, log, run_dir))
         if "rank" in stages:
             timed("rank", lambda: rank(run_dir / "enriched.jsonl.gz", run_dir / "group" / "membership.csv", run_dir / "rank"))
+            from pipeline.rank import monthly_trend
+            months = dict(state.db.execute("SELECT review_id, substr(review_timestamp, 1, 7) FROM source"))
+            monthly_trend(run_dir / "enriched.jsonl.gz", months, run_dir / "rank")
         if "memo" in stages:
             coverage = {"source_rows": summary["records"], "completed_records": counts.get("completed", 0),
                         "quarantined_records": counts.get("quarantined", 0), "pending_records": counts.get("pending", 0),

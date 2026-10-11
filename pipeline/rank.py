@@ -96,3 +96,32 @@ def _write_csv(path, fields, rows):
         w.writeheader()
         for r in rows:
             w.writerow({k: r[k] for k in fields})
+
+
+def monthly_trend(records_path, source_months, out_dir):
+    """Additional (non-baseline) trend table: per month, each area's share of completed records that are
+    complaints/cancellations in that area, with denominators. First (2022-05) and last (2023-11) months are partial."""
+    records = load_records(records_path)
+    per = defaultdict(lambda: defaultdict(int))
+    for rid, r in records.items():
+        if r.get("status") != "completed":
+            continue
+        m = source_months[rid]
+        per[m]["completed"] += 1
+        if r["intent"] in ("complaint", "cancellation"):
+            per[m]["complaints"] += 1
+            per[m][AREAS[r["topic"]]] += 1
+    areas = ["access", "usability", "playback", "billing_support", "outside_four_areas"]
+    rows = []
+    months = sorted(per)
+    for m in months:
+        d = per[m]
+        row = {"month": m, "partial_month": m in (months[0], months[-1]), "completed_records": d["completed"],
+               "complaints": d["complaints"]}
+        for a in areas:
+            row[f"{a}_complaints"] = d[a]
+            row[f"{a}_share_of_completed"] = mean6(d[a], d["completed"]) if d["completed"] else ""
+        rows.append(row)
+    fields = ["month", "partial_month", "completed_records", "complaints"] + [f"{a}_{k}" for a in areas for k in ("complaints", "share_of_completed")]
+    _write_csv(Path(out_dir) / "trend_by_month.csv", fields, rows)
+    return rows

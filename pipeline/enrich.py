@@ -40,6 +40,22 @@ def schema():
             "properties": {"results": {"type": "array", "items": item}}}
 
 
+def fallback_schema():
+    """Like schema() but topic+subtopic are one enum value 'topic.subtopic', so they cannot contradict."""
+    sch = schema()
+    item = sch["properties"]["results"]["items"]
+    props = item["properties"]
+    props.pop("topic")
+    props.pop("subtopic")
+    props["issue"] = {"type": "string", "enum": tx.issue_ids()}
+    item["required"] = ["key", "quote", "issue", "intent", "severity", "sentiment", "entities", "needs_review"]
+    return sch
+
+
+FALLBACK_NOTE = ("\n\nOUTPUT NOTE (fallback): instead of separate topic and subtopic fields, return issue = "
+                 "'<topic>.<subtopic>' using exactly one allowed value; the topic is the part before the dot.")
+
+
 def instructions(prompt_name):
     text = (ROOT / "prompts" / f"{prompt_name}.md").read_text(encoding="utf-8")
     return text.replace("{definitions}", tx.definitions_text())
@@ -105,6 +121,13 @@ def force_quote(labels_item, text):
 
 
 # ---------- offline mock (development only) ----------
+
+def _mock_fallback(user_input):
+    out = mock_fn(user_input)
+    for r in out["results"]:
+        r["issue"] = f"{r.pop('topic')}.{r.pop('subtopic')}"
+    return out
+
 
 MOCK_RULES = [
     (r"log ?in|sign ?in|password|account", "access", "login_failure", 4),
@@ -382,7 +405,8 @@ class Enricher:
             self._jev_fallback(refused[:cap])
         rows = self.state.db.execute(
             """SELECT r.review_id, s.review_text, r.attempts FROM records r JOIN source s USING(review_id)
-               WHERE r.status='quarantined' AND r.reason LIKE 'invalid_model_output%' ORDER BY s.row_idx""").fetchall()
+               WHERE r.status='quarantined' AND (r.reason LIKE 'invalid_model_output%' OR r.reason LIKE 'fallback_invalid%')
+               ORDER BY s.row_idx""").fetchall()
         if not rows:
             return 0
         lc = label_config(self.cfg, "fallback")
@@ -392,16 +416,20 @@ class Enricher:
             try:
                 # fallback always uses the v1 single-review prompt and schema (its label_config says prompt=enrich_v1)
                 parsed, call = self.gw.call(
-                    role="enrich", model=fc["model"], effort=fc["effort"], instructions=instructions("enrich_v1"),
-                    user_input=user, schema=schema(), review_ids=[rid], label_config=lc,
-                    max_output_tokens=fc["max_output_tokens"], mock_fn=mock_fn)
+                    role="enrich", model=fc["model"], effort=fc["effort"], instructions=instructions("enrich_v1") + FALLBACK_NOTE,
+                    user_input=user, schema=fallback_schema(), review_ids=[rid], label_config=lc,
+                    max_output_tokens=fc["max_output_tokens"], mock_fn=_mock_fallback)
             except BudgetExceeded:
                 break
             except Exception as e:
                 self.log("fallback", "failed", review_id=rid, error=str(e)[:200])
                 continue
             items = parsed.get("results", [])
-            item = items[0] if items else None
+            item = dict(items[0]) if items else None
+            if item and "." in str(item.get("issue", "")):
+                item["topic"], item["subtopic"] = item.pop("issue").split(".", 1)
+            if item and item.get("intent") in INTENTS and type(item.get("severity")) is int:
+                item["severity"] = tx.consistent_severity(item["intent"], item["severity"])
             clean, err = validate_item(item, text) if item else (None, "missing_id_in_output")
             if clean is None and item and err == "quote_not_in_source":
                 clean = force_quote(item, text)

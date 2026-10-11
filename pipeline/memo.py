@@ -53,6 +53,30 @@ def build_pack(run_dir, cfg, coverage, verify_report):
             claims.append({"claim_id": f"A{i}{metric[:3].upper()}", "scope": "area", "issue_id": "", "area": a["group"],
                            "metric": metric, "value": a[metric],
                            "display": a[metric] if metric == "mean_severity" else fmt_int(a[metric] or 0)})
+    # Trend context (code-computed): two comparable 3-month windows of full months, with denominators.
+    trend_path = run_dir / "rank" / "trend_by_month.csv"
+    if trend_path.exists():
+        rows = {r["month"]: r for r in _read_csv(trend_path)}
+        windows = {"early": ["2022-06", "2022-07", "2022-08"], "late": ["2023-08", "2023-09", "2023-10"]}
+        t = 0
+        for wname, months in windows.items():
+            if not all(m in rows for m in months):
+                continue
+            denom = sum(int(rows[m]["completed_records"]) for m in months)
+            t += 1
+            claims.append({"claim_id": f"T{t:02d}", "scope": "trend", "issue_id": "", "metric": f"{wname}_window_completed_records",
+                           "window": "+".join(months), "value": str(denom), "display": fmt_int(denom)})
+            for area in ("access", "usability", "playback", "billing_support"):
+                n_area = sum(int(rows[m][f"{area}_complaints"]) for m in months)
+                t += 1
+                claims.append({"claim_id": f"T{t:02d}", "scope": "trend", "issue_id": "", "area": area,
+                               "metric": f"{wname}_window_complaints", "window": "+".join(months),
+                               "value": str(n_area), "display": fmt_int(n_area)})
+                t += 1
+                pct = f"{100 * n_area / denom:.1f}%" if denom else "n/a"
+                claims.append({"claim_id": f"T{t:02d}", "scope": "trend", "issue_id": "", "area": area,
+                               "metric": f"{wname}_window_complaint_share_of_completed", "window": "+".join(months),
+                               "value": pct, "display": pct})
     for k, (metric, value) in enumerate(coverage.items(), 1):
         claims.append({"claim_id": f"K{k:02d}", "scope": "coverage", "issue_id": "", "metric": metric, "value": str(value),
                        "display": fmt_int(value) if isinstance(value, int) else str(value)})
@@ -66,7 +90,7 @@ def build_pack(run_dir, cfg, coverage, verify_report):
         for r in picks:
             texts_for[r] = None
     return {"question": "Where should the next quarter of product effort go: access, usability, playback, or billing/support?",
-            "claims": [{k: c[k] for k in ("claim_id", "scope", "issue_id", "metric", "display") if k in c} | ({"area": c["area"]} if "area" in c else {}) for c in claims],
+            "claims": [{k: c[k] for k in ("claim_id", "scope", "issue_id", "area", "window", "metric", "display") if k in c and c[k] != ""} for c in claims],
             "issues": evidence,
             "method": {"baseline": "priority = complaint_count x mean_severity = severity_sum over complaint+cancellation records; one issue per record (topic.subtopic)",
                        "area_mapping": "access=access; usability=usability; playback=playback; billing_support=billing+support; downloads/catalog/other are outside the four areas",
@@ -94,9 +118,10 @@ def check_memo(memo, claims, evidence_ids):
     """Code-side claim check. Returns list of violations (empty = pass)."""
     body = memo["body_markdown"]
     by_id = {c["claim_id"]: c for c in claims}
-    allowed = {c["display"].replace(",", "") for c in claims} | {str(c["value"]).replace(",", "") for c in claims}
+    allowed = ({c["display"].replace(",", "").rstrip("%") for c in claims}
+               | {str(c["value"]).replace(",", "").rstrip("%") for c in claims})
     violations = []
-    cited = set(re.findall(r"\[([CAK][0-9A-Z]+)\]", body))
+    cited = set(re.findall(r"\[([CAKT][0-9A-Z]+)\]", body))
     for cid in cited | set(memo["cited_claim_ids"]):
         if cid not in by_id:
             violations.append(f"unknown claim id {cid}")
@@ -176,7 +201,7 @@ def run_memo(state, gw, cfg, log, run_dir, coverage, verify_report):
 
 def render(path, memo, claims, violations, coverage):
     by_id = {c["claim_id"]: c for c in claims}
-    cited = sorted(set(re.findall(r"\[([CAK][0-9A-Z]+)\]", memo["body_markdown"])), key=lambda x: (x[0], x))
+    cited = sorted(set(re.findall(r"\[([CAKT][0-9A-Z]+)\]", memo["body_markdown"])), key=lambda x: (x[0], x))
     lines = [f"# {memo['title']}", "", f"**Recommended area:** `{memo['recommended_area']}`", ""]
     if violations:
         lines += ["> **Automated claim check FAILED** - the items below were not resolved; treat this draft with caution:", ""]
