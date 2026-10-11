@@ -16,7 +16,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+import re  # noqa: E402
+
 from pipeline.common import INTENTS, TOPICS, read_csv, write_json  # noqa: E402
+from pipeline.enrich import SUB_TO_TOPIC, locate_quote  # noqa: E402
 
 GOLD_DIR = ROOT / "evals" / "golden"
 SHEET = GOLD_DIR / "golden_50_label_sheet.xlsx"
@@ -31,24 +34,51 @@ def _bool(v):
 
 def cmd_import(a):
     from openpyxl import load_workbook
-    ws = load_workbook(SHEET, data_only=True)["label_here"]
+    ws = load_workbook(a.sheet or SHEET, data_only=True)["label_here"]
     header = [c.value for c in ws[1]]
-    rows, problems = [], []
+    rows, problems, warnings = [], [], []
+    corrections = {}
+    corr_path = GOLD_DIR / "human_corrections.csv"
+    if corr_path.exists():
+        for c in csv.DictReader(corr_path.open(encoding="utf-8", newline="")):
+            corrections.setdefault(c["row"], []).append(c)
     for r in ws.iter_rows(min_row=2, values_only=True):
         d = {h: ("" if v is None else str(v).strip()) for h, v in zip(header, r)}
         if not d["review_id"]:
             continue
+        for c in corrections.get(d["#"], []):  # human-approved corrections, logged in human_corrections.csv
+            if c["field"] == "evidence_quote":
+                d["evidence_quote"] = d["evidence_quote"].replace(c["old"], c["new"])
+            else:
+                if d[c["field"]] != c["old"]:
+                    problems.append(f"{d['#']}: correction expects {c['field']}={c['old']!r}, sheet has {d[c['field']]!r}")
+                d[c["field"]] = c["new"]
         for f, allowed in (("topic", TOPICS), ("intent", INTENTS)):
             if d[f] not in allowed:
                 problems.append(f"{d['#']}: {f}={d[f]!r}")
         if d["severity"] not in "12345" or not d["severity"]:
             problems.append(f"{d['#']}: severity={d['severity']!r}")
-        if d["evidence_quote"] and d["evidence_quote"] not in d["review_text"]:
-            problems.append(f"{d['#']}: evidence_quote is not an exact substring")
+        # Human quotes were typed with quotation marks / several snippets / different case: keep the original
+        # typing and map each snippet to its exact source span in code (formatting only; labels untouched).
+        d["evidence_quote_as_typed"] = d["evidence_quote"]
+        if d["evidence_quote"]:
+            spans, missing = [], []
+            for part in re.findall(r'"([^"]+)"', d["evidence_quote"]) or [d["evidence_quote"]]:
+                exact, _ = locate_quote(part, d["review_text"])
+                (spans if exact else missing).append(exact or part)
+            d["evidence_quote"] = " ... ".join(spans)
+            if missing:
+                warnings.append(f"{d['#']}: quote snippet(s) not found in text: {missing}")
+        sub = d.get("subtopic")
+        if sub and SUB_TO_TOPIC.get(sub) != d["topic"]:
+            warnings.append(f"{d['#']}: subtopic '{sub}' belongs to '{SUB_TO_TOPIC.get(sub)}', not topic '{d['topic']}'")
         rows.append(d)
     if problems:
         print("Fix these cells in the sheet first:\n  " + "\n  ".join(problems))
         sys.exit(1)
+    if warnings:
+        print("Warnings (labels kept as entered; review these):\n  " + "\n  ".join(warnings))
+    header = header + ["evidence_quote_as_typed"]
     with HUMAN_CSV.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=header, lineterminator="\n")
         w.writeheader()
@@ -155,6 +185,7 @@ def main():
     sub = p.add_subparsers(dest="cmd", required=True)
     i = sub.add_parser("import")
     i.add_argument("--reviewer", default="student")
+    i.add_argument("--sheet", help="path to the filled workbook (default evals/golden/golden_50_label_sheet.xlsx)")
     i.set_defaults(fn=cmd_import)
     s = sub.add_parser("score")
     s.add_argument("--run-dir", required=True)

@@ -1,0 +1,15 @@
+row,field,old,new,group,reason
+34,subtopic,off topic,boycott_or_offtopic,A typo,free-text typo for the allowed subtopic name
+40,subtopic,general praise,general_praise,A typo,free-text typo for the allowed subtopic name
+46,evidence_quote,too many ads,too much ad,A typo,quote typed from memory; corrected to the exact source words
+47,evidence_quote,free version is unusable,free version is pretty much unusable,A typo,quote typed from memory; corrected to the exact source words
+2,topic,usability,other,B topic/subtopic mismatch,general praise belongs under other (subtopic kept)
+49,topic,usability,other,B topic/subtopic mismatch,general praise belongs under other (subtopic kept)
+29,topic,usability,billing,B topic/subtopic mismatch,"can't choose songs" is a free-tier restriction
+29,subtopic,general_negative,free_tier_restrictions,B topic/subtopic mismatch,"can't choose songs" is a free-tier restriction
+48,topic,usability,other,B topic/subtopic mismatch,generic negative belongs under other (subtopic kept)
+16,subtopic,other_specific,ads,B topic/subtopic mismatch,complaint is about ads interrupting (topic kept)
+25,subtopic,other_usability,stops_or_skips,B topic/subtopic mismatch,cannot play songs is a playback subtopic (topic kept)
+32,topic,usability,playback,B topic/subtopic mismatch,crash_or_freeze belongs under playback (subtopic kept)
+38,topic,usability,catalog,B topic/subtopic mismatch,lyrics belongs under catalog (subtopic kept)
+45,topic,usability,downloads,B topic/subtopic mismatch,offline_playback belongs under downloads (subtopic kept)
