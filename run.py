@@ -211,6 +211,21 @@ def cmd_checkpoint(a):
     print(f"Saved checkpoint '{a.name}' with {n} completed IDs; counts={state.counts()}")
 
 
+def cmd_requeue(a):
+    """Return quarantined rows with the given reasons (and their duplicate rows) to 'pending' for another pass.
+    Completed rows are never touched, so resume still never re-sends completed IDs."""
+    state = State(Path(a.run_dir) / "state.sqlite")
+    log = RunLog(a.run_dir, state.get_meta("run_id"))
+    total = 0
+    for reason in a.reasons.split(","):
+        ids = [r[0] for r in state.db.execute("SELECT review_id FROM records WHERE status='quarantined' AND reason=?", (reason,))]
+        dups = [r[0] for i in ids for r in state.db.execute("SELECT review_id FROM records WHERE reason=?", ("duplicate_of_quarantined:" + i,))]
+        state.db.executemany("UPDATE records SET status='pending', reason=NULL WHERE review_id=?", [(i,) for i in ids + dups])
+        log("requeue", "returned quarantined rows to pending", reason=reason, originals=len(ids), duplicates=len(dups))
+        total += len(ids) + len(dups)
+    print(f"Requeued {total} rows; counts={state.counts()}")
+
+
 def cmd_status(a):
     state = State(Path(a.run_dir) / "state.sqlite")
     spent, unknown = prior_spend(a.run_dir)
@@ -243,6 +258,10 @@ def main():
     e.add_argument("--run-dir", required=True)
     e.add_argument("--out", default="grading")
     e.set_defaults(fn=cmd_export)
+    q = sub.add_parser("requeue", help="return quarantined rows with given reasons to pending (no model calls)")
+    q.add_argument("--run-dir", required=True)
+    q.add_argument("--reasons", default="model_output_error")
+    q.set_defaults(fn=cmd_requeue)
     c = sub.add_parser("checkpoint")
     c.add_argument("--run-dir", required=True)
     c.add_argument("--name", required=True)

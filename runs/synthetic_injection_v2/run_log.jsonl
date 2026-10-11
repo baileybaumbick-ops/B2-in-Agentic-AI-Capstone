@@ -1,0 +1,6 @@
+{"cap": 0.25, "event": "session start", "mock": false, "phase": "initial", "prior_spend": 0.0, "run_id": "run-20261011-124805", "stage": "run", "ts": "2026-10-11T19:48:06+00:00", "workers": 1}
+{"distinct_texts": 8, "empty": 1, "event": "done", "records": 9, "run_id": "run-20261011-124805", "seconds": 0.002, "stage": "ingest", "ts": "2026-10-11T19:48:06+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-124805", "stage": "enrich", "ts": "2026-10-11T19:48:06+00:00"}
+{"batches": 1, "distinct_texts": 8, "event": "queued", "run_id": "run-20261011-124805", "stage": "enrich", "ts": "2026-10-11T19:48:06+00:00", "workers": 1}
+{"cache_hits": 0, "completed": 8, "counts": {"completed": 8, "quarantined": 1}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 0, "quote_fallbacks": 0, "requests": 1, "retried_items": 0, "run_id": "run-20261011-124805", "seconds": 13.057, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-11T19:48:19+00:00"}
+{"calls": 1, "counts": {"completed": 8, "quarantined": 1}, "event": "session end", "run_id": "run-20261011-124805", "spend": 0.000103, "stage": "run", "ts": "2026-10-11T19:48:19+00:00", "wall_s": 13.078}

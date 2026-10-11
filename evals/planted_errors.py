@@ -36,9 +36,9 @@ def main():
     planted = []
     for k, rid in enumerate(ids[:max(1, int(len(ids) * a.fraction))]):
         e = copy[rid]
-        if k % 2 == 0:  # wrong topic: pick a topic that differs from BOTH enricher and verifier
-            vtopic = next(v["topic"] for v in vrows if v["review_id"] == rid)
-            wrong = next(t for t in TOPICS if t not in (e["topic"], vtopic))
+        if k % 2 == 0:  # wrong topic: seeded choice among topics != enricher's, chosen WITHOUT looking at the verifier
+            others = [t for t in TOPICS if t != e["topic"]]
+            wrong = others[int(hashlib.sha256(f"wrong:{rid}".encode()).hexdigest(), 16) % len(others)]
             planted.append({"review_id": rid, "field": "topic", "original": e["topic"], "planted": wrong})
             e["topic"] = wrong
         else:  # severity off by 2 in the safe direction

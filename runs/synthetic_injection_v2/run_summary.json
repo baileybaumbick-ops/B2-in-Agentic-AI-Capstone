@@ -1,0 +1,120 @@
+{
+  "config": {
+    "enrich": {
+      "batch_size": 50,
+      "effort": "none",
+      "max_output_tokens": 4000,
+      "model": "gpt-6-luna",
+      "prompt": "enrich_v2",
+      "provider": "openai",
+      "schema": "s2",
+      "service_tier": "flex",
+      "taxonomy": "t1"
+    },
+    "fallback": {
+      "effort": "low",
+      "max_fraction": 0.002,
+      "max_output_tokens": 1500,
+      "model": "gpt-5-mini"
+    },
+    "group": {
+      "effort": "low",
+      "examples_per_issue": 12,
+      "issues_per_call": 8,
+      "max_output_tokens": 6000,
+      "model": "gpt-5-mini",
+      "prompt": "group_v1"
+    },
+    "limits": {
+      "consecutive_failure_stop": 5,
+      "max_attempts": 6,
+      "spend_cap_usd": 0.25,
+      "workers": 1
+    },
+    "memo": {
+      "effort": "medium",
+      "max_output_tokens": 12000,
+      "model": "gpt-5-mini",
+      "prompt": "memo_v2",
+      "quotes_per_issue": 3,
+      "top_issues": 12
+    },
+    "verify": {
+      "batch_size": 1,
+      "effort": null,
+      "max_output_tokens": 0,
+      "max_sample": 2000,
+      "min_sample": 20,
+      "model": "jev-1.13.0",
+      "prompt": "jev_verify_q1",
+      "provider": "jev",
+      "sample_fraction": 0.004,
+      "seed": "verify-2026-10",
+      "workers": 4
+    }
+  },
+  "cost_note": "API cost recomputed from logged provider usage x cost/rates.csv; attempts with unknown usage are listed separately.",
+  "counts": {
+    "completed": 8,
+    "quarantined": 1
+  },
+  "input_sha256": "9182b870bf2e7bd1ad289906fff6fe7447b009021a30f70a01862cb074d3aab2",
+  "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1",
+  "run_id": "run-20261011-124805",
+  "sessions": [
+    {
+      "calls_this_session": 1,
+      "code_version": "5e6038c758657928d886091e0e3fef0cf132ef44",
+      "completed_at_start": 0,
+      "counts_after_enrich": {
+        "completed": 8,
+        "quarantined": 1
+      },
+      "ended_at": "2026-10-11T19:48:19+00:00",
+      "enrich_calls_made": 1,
+      "enrich_stats": {
+        "cache_hits": 0,
+        "completed": 8,
+        "failed_requests": 0,
+        "fallback_items": 0,
+        "quarantined": 0,
+        "quote_fallbacks": 0,
+        "requests": 1,
+        "retried_items": 0,
+        "seconds": 13.057,
+        "stopped_reason": null
+      },
+      "input": "C:\\Users\\bbaum\\OneDrive\\Documents\\Academics\\Year 2\\Agentic AI\\13OCT2026_Capstone Project\\evals\\synthetic\\injection_cases.csv",
+      "mock": false,
+      "phase": "initial",
+      "prior_calls_with_unknown_cost": 0,
+      "prior_spend_usd": 0.0,
+      "spend_cap_usd": 0.25,
+      "spend_usd_after": 0.000103,
+      "stage_seconds": {
+        "enrich": 13.06,
+        "fallback": 0.0,
+        "ingest": 0.006,
+        "write_enriched": 0.002
+      },
+      "started_at": "2026-10-11T19:48:06+00:00",
+      "wall_clock_seconds": 13.078,
+      "workers": 1
+    }
+  ],
+  "total_cost_usd": 0.000103,
+  "updated_at": "2026-10-11T19:48:19+00:00",
+  "usage_by_role_model": {
+    "enrich|gpt-6-luna": {
+      "attempts": 1.0,
+      "cached_tokens": 2103.0,
+      "cost_usd": 0.000103,
+      "failed": 0.0,
+      "input_tokens": 2380.0,
+      "output_tokens": 313.0,
+      "reasoning_tokens": 0.0,
+      "succeeded": 1.0,
+      "unknown_cost_attempts": 0.0
+    }
+  }
+}

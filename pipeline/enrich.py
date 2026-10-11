@@ -175,6 +175,7 @@ class Enricher:
         self.instr = instructions(self.ec["prompt"])
         self.instr_tokens = approx_tokens(self.instr)
         self.schema = schema()
+        self._splits = None
         self.stats = {"requests": 0, "failed_requests": 0, "cache_hits": 0, "completed": 0, "quarantined": 0,
                       "retried_items": 0, "quote_fallbacks": 0, "fallback_items": 0, "stopped_reason": None}
 
@@ -249,6 +250,16 @@ class Enricher:
                     for u in batch:
                         u[3] += 1
                     return batch  # retry whole batch once
+                if len(batch) > 1:
+                    # Failed twice as a whole (truncated/invalid JSON): split so one bad review cannot sink the rest.
+                    self.state.db.executemany("UPDATE records SET attempts=attempts+1 WHERE review_id=?", [(u[0],) for u in batch])
+                    for u in batch:
+                        u[3] += 1
+                    mid = len(batch) // 2
+                    self._splits = [batch[:mid], batch[mid:]]
+                    self.stats["batch_splits"] = self.stats.get("batch_splits", 0) + 1
+                    self.log("enrich", "batch failed twice; splitting", size=len(batch))
+                    return []
                 quarantined = [(u[0], "model_output_error", u[3] + 1) for u in batch]
                 quarantined += [(d, "duplicate_of_quarantined:" + u[0], 0) for u in batch for d in u[2]]
                 self.state.save_batch([], quarantined)
@@ -348,9 +359,12 @@ class Enricher:
                                 stop = stop or "consecutive_failures"
                             continue
                         consecutive_fail = 0
+                        self._splits = None
                         retry = self._process(batch, attempt, parsed, call)
                         if retry:
                             queue.insert(0, (retry, attempt + 1))
+                        if self._splits:
+                            queue[0:0] = [(half, 1) for half in self._splits]
                     if stop:
                         queue.clear()  # undispatched work simply stays 'pending' in the state DB
             except KeyboardInterrupt:
