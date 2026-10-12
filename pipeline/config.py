@@ -25,7 +25,7 @@ DEFAULTS = {
                "max_output_tokens": 0},
     "group": {"model": "gpt-5-mini", "effort": "low", "prompt": "group_v1", "examples_per_issue": 12,
               "issues_per_call": 8, "max_output_tokens": 6000},
-    "memo": {"model": "gpt-5-mini", "effort": "medium", "prompt": "memo_v2", "top_issues": 12,
+    "memo": {"model": "gpt-5-mini", "effort": "medium", "prompt": "memo_v3", "top_issues": 40,
              "quotes_per_issue": 3, "max_output_tokens": 12000},
     "limits": {"spend_cap_usd": 10.0, "workers": 1, "max_attempts": 6, "consecutive_failure_stop": 5},
 }

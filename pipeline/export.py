@@ -72,9 +72,18 @@ def export_grading(state, run_dir, out_dir, run_meta):
         if (run_dir / src).exists():
             shutil.copyfile(run_dir / src, out_dir / dst)
     calls = read_jsonl(run_dir / "calls.jsonl") if (run_dir / "calls.jsonl").exists() else []
+    # Integrity: every saved label must point to a logged enrichment call.
+    logged_ids = {c["request_id"] for c in calls}
+    accepted_by = dict(state.db.execute(
+        "SELECT review_id, enrich_request_id FROM records WHERE status='completed' AND enrich_request_id IS NOT NULL"))
+    lost = sorted({q for q in accepted_by.values() if q not in logged_ids})
+    if lost:
+        raise SystemExit(f"{len(lost)} enrich request ids referenced by records are missing from calls.jsonl: {lost[:5]}")
+    calls = _item_level(calls, accepted_by)
     keys = ("request_id", "role", "review_ids", "model", "phase", "outcome", "label_config", "input_tokens", "output_tokens",
             "cached_tokens", "reasoning_tokens", "cost_usd", "attempt", "error", "started_at", "latency_s", "artifacts",
-            "injected_fault", "provider_response_id", "usage_available", "effort")
+            "injected_fault", "provider_response_id", "usage_available", "effort", "service_tier", "cost_note",
+            "item_outcome_note", "parent_request_id")
     with gzip.open(out_dir / "calls.jsonl.gz", "wt", encoding="utf-8") as f:
         for c in calls:
             f.write(json.dumps({k: c.get(k) for k in keys}, ensure_ascii=False, sort_keys=True) + "\n")
@@ -84,3 +93,31 @@ def export_grading(state, run_dir, out_dir, run_meta):
             snap = read_json(p)
             write_json(out_dir / f"checkpoint_{name}.json", {"completed_ids": snap["completed_ids"], "taken_at": snap["taken_at"]})
     return out_dir
+
+
+def _item_level(calls, accepted_by):
+    """Grading view of enrichment calls with item-level outcomes. A request that returned (HTTP success) but whose
+    item for some review was rejected by validation, superseded by a retry, or relabeled by the fallback model is split:
+    the parent keeps its usage and lists the reviews whose labels were accepted from it; a companion entry
+    '<request_id>:rejected-items' (outcome failed, zero usage) lists the other reviews actually sent. If nothing was
+    accepted, the parent itself is marked failed. Raw transport outcomes stay in runs/<run>/calls.jsonl."""
+    out = []
+    for c in calls:
+        if c["role"] != "enrich" or c["outcome"] != "succeeded":
+            out.append(c)
+            continue
+        acc = [r for r in c["review_ids"] if accepted_by.get(r) == c["request_id"]]
+        rej = [r for r in c["review_ids"] if accepted_by.get(r) != c["request_id"]]
+        if not rej:
+            out.append(c)
+        elif not acc:
+            out.append(dict(c, outcome="failed", item_outcome_note="request returned, but no item was accepted "
+                            "(validation failure, retry or fallback); usage counted here"))
+        else:
+            out.append(dict(c, review_ids=acc, item_outcome_note=f"{len(rej)} other item(s) listed under "
+                            f"{c['request_id']}:rejected-items"))
+            out.append(dict(c, request_id=c["request_id"] + ":rejected-items", review_ids=rej, outcome="failed",
+                            input_tokens=0, output_tokens=0, cached_tokens=0, reasoning_tokens=0, cost_usd=0.0,
+                            parent_request_id=c["request_id"], item_outcome_note="items returned by the parent request "
+                            "failed validation or were superseded by a retry/fallback; usage is on the parent"))
+    return out

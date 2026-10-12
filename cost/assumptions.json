@@ -62,6 +62,10 @@
       "final: Luna v2 (10,000, 16 workers)"
     ],
     [
+      "runs/full",
+      "FULL RUN actual: Luna v2 (660,622 rows, 24 workers)"
+    ],
+    [
       "runs/pilot100_jev_q2",
       "rejected alternative: Jev q2 (100 pilot)"
     ],

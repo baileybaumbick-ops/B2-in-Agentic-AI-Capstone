@@ -1,0 +1,143 @@
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "initial", "prior_spend": 0.0, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T19:28:39+00:00", "workers": 24}
+{"distinct_texts": 484189, "empty": 13, "event": "done", "records": 660622, "run_id": "run-20261011-122837", "seconds": 49.494, "stage": "ingest", "ts": "2026-10-11T19:29:39+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:29:39+00:00"}
+{"batches": 9684, "distinct_texts": 484189, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:29:48+00:00", "workers": 24}
+{"cache_hits": 0, "completed": 100533, "counts": {"completed": 100533, "pending": 560070, "quarantined": 19}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 6, "quote_fallbacks": 0, "requests": 87, "retried_items": 38, "run_id": "run-20261011-122837", "seconds": 166.715, "stage": "enrich", "stopped_reason": "stop_file", "ts": "2026-10-11T19:32:35+00:00"}
+{"event": "enrichment incomplete; downstream stages skipped until all rows are completed or quarantined", "pending": 560070, "run_id": "run-20261011-122837", "stage": "run", "stopped_reason": "stop_file", "ts": "2026-10-11T19:32:48+00:00"}
+{"completed": 100533, "event": "checkpoint saved", "name": "before", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T19:32:49+00:00"}
+{"calls": 87, "counts": {"completed": 100533, "pending": 560070, "quarantined": 19}, "event": "session end", "run_id": "run-20261011-122837", "spend": 0.04076, "stage": "run", "ts": "2026-10-11T19:32:49+00:00", "wall_s": 249.88}
+{"event": "cleared STOP file left by the previous (interrupted) session", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T19:32:58+00:00"}
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 0.0408, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T19:32:58+00:00", "workers": 24}
+{"event": "skipped: state already holds this input", "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6", "run_id": "run-20261011-122837", "stage": "ingest", "ts": "2026-10-11T19:32:58+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:33:00+00:00"}
+{"batches": 9615, "distinct_texts": 480701, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:33:07+00:00", "workers": 24}
+{"event": "ignored unknown keys in output", "keys": ["k37"], "request_id": "local-83bafa395ec64808", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:35:56+00:00"}
+{"cache_hits": 0, "completed": 55006, "counts": {"completed": 155539, "pending": 505008, "quarantined": 75}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 56, "quote_fallbacks": 2, "requests": 645, "retried_items": 231, "run_id": "run-20261011-122837", "seconds": 721.017, "stage": "enrich", "stopped_reason": "stop_file", "ts": "2026-10-11T19:45:08+00:00"}
+{"event": "enrichment incomplete; downstream stages skipped until all rows are completed or quarantined", "pending": 505008, "run_id": "run-20261011-122837", "stage": "run", "stopped_reason": "stop_file", "ts": "2026-10-11T19:45:29+00:00"}
+{"completed": 155539, "event": "checkpoint saved", "name": "after", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T19:45:30+00:00"}
+{"calls": 645, "counts": {"completed": 155539, "pending": 505008, "quarantined": 75}, "event": "session end", "run_id": "run-20261011-122837", "spend": 0.314822, "stage": "run", "ts": "2026-10-11T19:45:30+00:00", "wall_s": 751.452}
+{"event": "cleared STOP file left by the previous (interrupted) session", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T19:45:40+00:00"}
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 0.3148, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T19:45:40+00:00", "workers": 24}
+{"event": "skipped: state already holds this input", "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6", "run_id": "run-20261011-122837", "stage": "ingest", "ts": "2026-10-11T19:45:40+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:45:46+00:00"}
+{"batches": 9150, "distinct_texts": 457457, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:45:56+00:00", "workers": 24}
+{"event": "ignored unknown keys in output", "keys": ["k24"], "request_id": "local-946547ac887e481b", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:59:05+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k29"], "request_id": "local-26968439afbd45a9", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T19:59:36+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k43"], "request_id": "local-869b50b8a2a142f9", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T20:15:14+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k24"], "request_id": "local-135d0e4926614755", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T20:18:57+00:00"}
+{"cache_hits": 0, "completed": 104768, "counts": {"completed": 260307, "pending": 399868, "quarantined": 447}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 372, "quote_fallbacks": 21, "requests": 2260, "retried_items": 781, "run_id": "run-20261011-122837", "seconds": 2621.192, "stage": "enrich", "stopped_reason": "stop_file", "ts": "2026-10-11T20:29:37+00:00"}
+{"event": "enrichment incomplete; downstream stages skipped until all rows are completed or quarantined", "pending": 399868, "run_id": "run-20261011-122837", "stage": "run", "stopped_reason": "stop_file", "ts": "2026-10-11T20:30:28+00:00"}
+{"completed": 260307, "event": "checkpoint saved", "name": "after", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T20:30:29+00:00"}
+{"calls": 2266, "counts": {"completed": 260307, "pending": 399868, "quarantined": 447}, "event": "session end", "run_id": "run-20261011-122837", "spend": 1.310353, "stage": "run", "ts": "2026-10-11T20:30:30+00:00", "wall_s": 2689.722}
+{"duplicates": 101, "event": "returned quarantined rows to pending", "originals": 106, "reason": "model_output_error", "run_id": "run-20261011-122837", "stage": "requeue", "ts": "2026-10-11T20:31:17+00:00"}
+{"event": "cleared STOP file left by the previous (interrupted) session", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T20:31:34+00:00"}
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 1.3104, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T20:31:34+00:00", "workers": 24}
+{"event": "skipped: state already holds this input", "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6", "run_id": "run-20261011-122837", "stage": "ingest", "ts": "2026-10-11T20:31:34+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T20:31:55+00:00"}
+{"batches": 7479, "distinct_texts": 373920, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T20:32:07+00:00", "workers": 24}
+{"event": "ignored unknown keys in output", "keys": ["k"], "request_id": "local-4249df995f074e28", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T20:40:00+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k10"], "request_id": "local-fe2ee7cbfa5c4c1d", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T20:40:34+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T20:41:01+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T20:42:29+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T20:44:47+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T20:47:15+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T20:48:26+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T20:55:00+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 2, "stage": "enrich", "ts": "2026-10-11T20:55:04+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k"], "request_id": "local-9cf9dfcc161b4825", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T20:56:52+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k20"], "request_id": "local-d6f9763f090b4b92", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:00:38+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k16"], "request_id": "local-b2bb056092f74700", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:01:16+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:02:27+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k"], "request_id": "local-a2dd453681454f82", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:02:57+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k"], "request_id": "local-3cebe650180f4f07", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:04:10+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:08:09+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k23"], "request_id": "local-23cf04951bdb4c83", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:08:56+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:14:17+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:15:06+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:18:21+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:18:26+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 3, "stage": "enrich", "ts": "2026-10-11T21:19:20+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:20:25+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k23"], "request_id": "local-483dfdc6293e4947", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:20:31+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 25, "stage": "enrich", "ts": "2026-10-11T21:20:43+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 4, "stage": "enrich", "ts": "2026-10-11T21:24:47+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:30:01+00:00"}
+{"batch_splits": 18, "cache_hits": 0, "completed": 131603, "counts": {"completed": 391910, "pending": 268045, "quarantined": 667}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 427, "quote_fallbacks": 44, "requests": 3590, "retried_items": 1654, "run_id": "run-20261011-122837", "seconds": 3539.028, "stage": "enrich", "stopped_reason": "stop_file", "ts": "2026-10-11T21:31:06+00:00"}
+{"event": "enrichment incomplete; downstream stages skipped until all rows are completed or quarantined", "pending": 268045, "run_id": "run-20261011-122837", "stage": "run", "stopped_reason": "stop_file", "ts": "2026-10-11T21:31:32+00:00"}
+{"completed": 391910, "event": "checkpoint saved", "name": "after", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T21:31:33+00:00"}
+{"calls": 3588, "counts": {"completed": 391910, "pending": 268045, "quarantined": 667}, "event": "session end", "run_id": "run-20261011-122837", "spend": 2.837752, "stage": "run", "ts": "2026-10-11T21:31:33+00:00", "wall_s": 3598.563}
+{"event": "cleared STOP file left by the previous (interrupted) session", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T21:40:02+00:00"}
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 2.8372, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-11T21:40:02+00:00", "workers": 24}
+{"event": "skipped: state already holds this input", "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6", "run_id": "run-20261011-122837", "stage": "ingest", "ts": "2026-10-11T21:40:02+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:40:10+00:00"}
+{"batches": 5006, "distinct_texts": 250257, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:40:13+00:00", "workers": 24}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:41:23+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k"], "request_id": "local-b6027c94e7e34e44", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:46:59+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k36"], "request_id": "local-a0efa0995e9c437c", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T21:58:48+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T21:59:18+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T22:05:02+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T22:28:22+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k24"], "request_id": "local-acc788edb9fb4b67", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T22:29:02+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T22:31:10+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 2, "stage": "enrich", "ts": "2026-10-11T22:31:34+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k"], "request_id": "local-6cac6ae32c124230", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T22:31:58+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 2, "stage": "enrich", "ts": "2026-10-11T22:51:28+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 2, "stage": "enrich", "ts": "2026-10-11T22:51:47+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:00:28+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:08:06+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:14:57+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:18:28+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:37:18+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:43:21+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:45:17+00:00"}
+{"event": "batch failed twice; splitting", "run_id": "run-20261011-122837", "size": 50, "stage": "enrich", "ts": "2026-10-11T23:48:37+00:00"}
+{"event": "policy refusal; bisecting batch", "run_id": "run-20261011-122837", "size": 25, "stage": "enrich", "ts": "2026-10-11T23:49:01+00:00"}
+{"event": "ignored unknown keys in output", "keys": ["k36"], "request_id": "local-3083390ed7c74748", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-11T23:51:44+00:00"}
+{"batch_splits": 16, "cache_hits": 0, "completed": 267757, "counts": {"completed": 659667, "quarantined": 955}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "policy_refusals": 1, "quarantined": 288, "quote_fallbacks": 89, "requests": 6701, "retried_items": 2048, "run_id": "run-20261011-122837", "seconds": 7951.094, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-11T23:52:44+00:00"}
+{"attempted": 940, "cap": 1321, "completed": 940, "eligible": 940, "event": "done", "run_id": "run-20261011-122837", "stage": "fallback", "ts": "2026-10-11T23:58:12+00:00"}
+{"already_verified": 0, "event": "sample", "provider": "jev", "run_id": "run-20261011-122837", "sample_size": 1937, "stage": "verify", "to_send": 1937, "ts": "2026-10-11T23:58:35+00:00"}
+{"agreement": {"all3": 0.6758, "intent": 0.8983, "severity": 0.841, "severity_within_1": 0.9788, "subtopic": 0.7491, "topic": 0.8384}, "disagreement_count": 628, "event": "compared", "run_id": "run-20261011-122837", "severity_mae": 0.1833, "stage": "verify", "ts": "2026-10-11T23:59:23+00:00", "verified": 1937}
+{"event": "done", "issues": 33, "members": 295790, "named_by_model": 33, "run_id": "run-20261011-122837", "stage": "group", "ts": "2026-10-12T00:00:05+00:00"}
+{"attempt": 1, "event": "draft checked", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:00:42+00:00", "violations": 0}
+{"event": "done", "recommended_area": "billing_support", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:00:42+00:00", "validation": "pass"}
+{"completed": 660609, "event": "checkpoint saved", "name": "after", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-12T00:00:43+00:00"}
+{"calls": 9589, "counts": {"completed": 660609, "quarantined": 13}, "event": "session end", "run_id": "run-20261011-122837", "spend": 6.871135, "stage": "run", "ts": "2026-10-12T00:00:44+00:00", "wall_s": 8441.008}
+{"duplicates": 4, "event": "relabel rows whose enrich call log line is missing", "lost_request_ids": ["local-5173a092a5c04ed7", "local-6646da56e4844d42", "local-682cf90437c64e58", "local-2a6e3d1479554e9a"], "originals": 102, "run_id": "run-20261011-122837", "stage": "requeue", "ts": "2026-10-12T00:03:42+00:00"}
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 6.866, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-12T00:04:05+00:00", "workers": 4}
+{"event": "skipped: state already holds this input", "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6", "run_id": "run-20261011-122837", "stage": "ingest", "ts": "2026-10-12T00:04:05+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-12T00:04:17+00:00"}
+{"batches": 3, "distinct_texts": 102, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-12T00:04:17+00:00", "workers": 4}
+{"cache_hits": 0, "completed": 106, "counts": {"completed": 660609, "quarantined": 13}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 0, "quote_fallbacks": 0, "requests": 4, "retried_items": 1, "run_id": "run-20261011-122837", "seconds": 50.272, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-12T00:05:07+00:00"}
+{"already_verified": 1937, "event": "sample", "provider": "jev", "run_id": "run-20261011-122837", "sample_size": 1937, "stage": "verify", "to_send": 0, "ts": "2026-10-12T00:05:28+00:00"}
+{"agreement": {"all3": 0.6758, "intent": 0.8983, "severity": 0.841, "severity_within_1": 0.9788, "subtopic": 0.7491, "topic": 0.8384}, "disagreement_count": 628, "event": "compared", "run_id": "run-20261011-122837", "severity_mae": 0.1833, "stage": "verify", "ts": "2026-10-12T00:05:28+00:00", "verified": 1937}
+{"event": "reused saved issue names (same inputs and config); no model call", "fingerprint": "9e01a1708c2d", "run_id": "run-20261011-122837", "stage": "group", "ts": "2026-10-12T00:05:30+00:00"}
+{"attempt": 1, "event": "draft checked", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:06:09+00:00", "violations": 2}
+{"attempt": 2, "event": "draft checked", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:06:30+00:00", "violations": 0}
+{"event": "done", "recommended_area": "billing_support", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:06:30+00:00", "validation": "pass"}
+{"completed": 660609, "event": "checkpoint saved", "name": "after", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-12T00:06:31+00:00"}
+{"calls": 7, "counts": {"completed": 660609, "quarantined": 13}, "event": "session end", "run_id": "run-20261011-122837", "spend": 6.884077, "stage": "run", "ts": "2026-10-12T00:06:31+00:00", "wall_s": 145.561}
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 6.8841, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-12T00:09:08+00:00", "workers": 4}
+{"event": "skipped: state already holds this input", "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6", "run_id": "run-20261011-122837", "stage": "ingest", "ts": "2026-10-12T00:09:08+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-12T00:09:20+00:00"}
+{"batches": 0, "distinct_texts": 0, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-12T00:09:20+00:00", "workers": 4}
+{"cache_hits": 0, "completed": 0, "counts": {"completed": 660609, "quarantined": 13}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 0, "quote_fallbacks": 0, "requests": 0, "retried_items": 0, "run_id": "run-20261011-122837", "seconds": 0.0, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-12T00:09:20+00:00"}
+{"already_verified": 1937, "event": "sample", "provider": "jev", "run_id": "run-20261011-122837", "sample_size": 1937, "stage": "verify", "to_send": 0, "ts": "2026-10-12T00:09:40+00:00"}
+{"agreement": {"all3": 0.6758, "intent": 0.8983, "severity": 0.841, "severity_within_1": 0.9788, "subtopic": 0.7491, "topic": 0.8384}, "disagreement_count": 628, "event": "compared", "run_id": "run-20261011-122837", "severity_mae": 0.1833, "stage": "verify", "ts": "2026-10-12T00:09:40+00:00", "verified": 1937}
+{"event": "reused saved issue names (same inputs and config); no model call", "fingerprint": "9e01a1708c2d", "run_id": "run-20261011-122837", "stage": "group", "ts": "2026-10-12T00:09:43+00:00"}
+{"attempt": 1, "event": "draft checked", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:10:18+00:00", "violations": 4}
+{"attempt": 2, "event": "draft checked", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:10:46+00:00", "violations": 0}
+{"event": "done", "recommended_area": "billing_support", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:10:46+00:00", "validation": "pass"}
+{"completed": 660609, "event": "checkpoint saved", "name": "after", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-12T00:10:47+00:00"}
+{"calls": 2, "counts": {"completed": 660609, "quarantined": 13}, "event": "session end", "run_id": "run-20261011-122837", "spend": 6.90339, "stage": "run", "ts": "2026-10-12T00:10:48+00:00", "wall_s": 99.053}
+{"cap": 10.0, "event": "session start", "mock": false, "phase": "resume", "prior_spend": 6.9034, "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-12T00:13:29+00:00", "workers": 4}
+{"event": "skipped: state already holds this input", "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6", "run_id": "run-20261011-122837", "stage": "ingest", "ts": "2026-10-12T00:13:29+00:00"}
+{"cache_hits": 0, "event": "cache lookup", "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-12T00:13:42+00:00"}
+{"batches": 0, "distinct_texts": 0, "event": "queued", "run_id": "run-20261011-122837", "stage": "enrich", "ts": "2026-10-12T00:13:42+00:00", "workers": 4}
+{"cache_hits": 0, "completed": 0, "counts": {"completed": 660609, "quarantined": 13}, "event": "stage end", "failed_requests": 0, "fallback_items": 0, "quarantined": 0, "quote_fallbacks": 0, "requests": 0, "retried_items": 0, "run_id": "run-20261011-122837", "seconds": 0.0, "stage": "enrich", "stopped_reason": null, "ts": "2026-10-12T00:13:42+00:00"}
+{"already_verified": 1937, "event": "sample", "provider": "jev", "run_id": "run-20261011-122837", "sample_size": 1937, "stage": "verify", "to_send": 0, "ts": "2026-10-12T00:14:02+00:00"}
+{"agreement": {"all3": 0.6758, "intent": 0.8983, "severity": 0.841, "severity_within_1": 0.9788, "subtopic": 0.7491, "topic": 0.8384}, "disagreement_count": 628, "event": "compared", "run_id": "run-20261011-122837", "severity_mae": 0.1833, "stage": "verify", "ts": "2026-10-12T00:14:02+00:00", "verified": 1937}
+{"event": "reused saved issue names (same inputs and config); no model call", "fingerprint": "9e01a1708c2d", "run_id": "run-20261011-122837", "stage": "group", "ts": "2026-10-12T00:14:05+00:00"}
+{"attempt": 1, "event": "draft checked", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:14:44+00:00", "violations": 0}
+{"event": "done", "recommended_area": "billing_support", "run_id": "run-20261011-122837", "stage": "memo", "ts": "2026-10-12T00:14:44+00:00", "validation": "pass"}
+{"completed": 660609, "event": "checkpoint saved", "name": "after", "run_id": "run-20261011-122837", "stage": "run", "ts": "2026-10-12T00:14:45+00:00"}
+{"calls": 1, "counts": {"completed": 660609, "quarantined": 13}, "event": "session end", "run_id": "run-20261011-122837", "spend": 6.912262, "stage": "run", "ts": "2026-10-12T00:14:45+00:00", "wall_s": 75.92}

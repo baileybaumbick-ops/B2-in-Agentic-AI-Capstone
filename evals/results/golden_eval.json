@@ -1,0 +1,98 @@
+{
+  "all_three_agreement": 0.62,
+  "ambiguous_cases": 10,
+  "cases": 50,
+  "confusion_intent_human_to_pred": {
+    "cancellation": {
+      "cancellation": 1,
+      "complaint": 2
+    },
+    "complaint": {
+      "complaint": 17
+    },
+    "praise": {
+      "praise": 19
+    },
+    "request": {
+      "request": 1
+    },
+    "unclear": {
+      "cancellation": 1,
+      "complaint": 2,
+      "praise": 1,
+      "request": 1,
+      "unclear": 5
+    }
+  },
+  "confusion_topic_human_to_pred": {
+    "billing": {
+      "billing": 3
+    },
+    "catalog": {
+      "catalog": 1
+    },
+    "downloads": {
+      "downloads": 1
+    },
+    "other": {
+      "catalog": 2,
+      "other": 27,
+      "usability": 3
+    },
+    "playback": {
+      "playback": 4
+    },
+    "usability": {
+      "billing": 2,
+      "catalog": 2,
+      "other": 1,
+      "usability": 4
+    }
+  },
+  "entities_not_found_in_text": 0,
+  "entities_predicted": 23,
+  "intent_agreement": 0.88,
+  "needs_review_vs_human_ambiguous": {
+    "fn": 5,
+    "fp": 2,
+    "precision": 0.7143,
+    "recall": 0.5,
+    "tp": 5
+  },
+  "note": "50 cases is a small diagnostic sample, not a precise population accuracy estimate.",
+  "per_topic": {
+    "billing": {
+      "correct": 3,
+      "support": 3
+    },
+    "catalog": {
+      "correct": 1,
+      "support": 1
+    },
+    "downloads": {
+      "correct": 1,
+      "support": 1
+    },
+    "other": {
+      "correct": 27,
+      "support": 32
+    },
+    "playback": {
+      "correct": 4,
+      "support": 4
+    },
+    "usability": {
+      "correct": 4,
+      "support": 9
+    }
+  },
+  "quote_exact_substring_rate": 1.0,
+  "run_dir": "runs/full",
+  "sentiment_mae": 0.12,
+  "sentiment_tolerance": 0.5,
+  "sentiment_within_tolerance": 0.98,
+  "severity_exact_agreement": 0.8,
+  "severity_mae": 0.26,
+  "topic_agreement": 0.8,
+  "valid_predictions": 50
+}

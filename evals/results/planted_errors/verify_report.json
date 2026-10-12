@@ -1,24 +1,37 @@
 {
   "agreement": {
-    "all3": 0.5294,
-    "intent": 0.8529,
-    "severity": 0.7941,
-    "severity_within_1": 0.9118,
-    "subtopic": 0.8235,
-    "topic": 0.7941
+    "all3": 0.5065,
+    "intent": 0.8983,
+    "severity": 0.7336,
+    "severity_within_1": 0.8616,
+    "subtopic": 0.7491,
+    "topic": 0.7315
   },
-  "disagreement_count": 16,
-  "needs_review_rate_among_disagreements": 0.125,
-  "sample_size_declared": 34,
-  "severity_mae": 0.2941,
+  "disagreement_count": 956,
+  "needs_review_rate_among_disagreements": 0.2092,
+  "sample_size_declared": 1937,
+  "severity_mae": 0.4177,
   "topic_confusion": {
-    "access->billing": 1,
-    "access->downloads": 1,
-    "access->other": 1,
-    "access->usability": 1,
-    "other->catalog": 1,
-    "usability->other": 1,
-    "usability->playback": 1
+    "access->other": 18,
+    "billing->other": 19,
+    "billing->playback": 12,
+    "billing->usability": 32,
+    "catalog->billing": 16,
+    "catalog->other": 52,
+    "catalog->playback": 8,
+    "catalog->usability": 21,
+    "downloads->other": 13,
+    "other->billing": 27,
+    "other->catalog": 22,
+    "other->playback": 8,
+    "playback->catalog": 10,
+    "playback->other": 26,
+    "playback->usability": 15,
+    "support->other": 17,
+    "usability->billing": 23,
+    "usability->catalog": 8,
+    "usability->other": 58,
+    "usability->playback": 13
   },
-  "verified": 34
+  "verified": 1937
 }

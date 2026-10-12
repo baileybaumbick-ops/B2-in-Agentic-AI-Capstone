@@ -14,3 +14,4 @@ self-check.json
 local-reference.json
 runs/*/ref.json
 runs/*/self-check.json
+runs/full/checkpoints/

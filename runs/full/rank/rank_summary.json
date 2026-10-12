@@ -1,0 +1,12 @@
+{
+  "completed_records": 660609,
+  "issues": 33,
+  "members": 295791,
+  "top5": [
+    "billing.free_tier_restrictions",
+    "other.general_negative",
+    "usability.ads",
+    "playback.stops_or_skips",
+    "access.login_failure"
+  ]
+}

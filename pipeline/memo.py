@@ -14,6 +14,9 @@ from .common import ROOT, read_json, write_json, atomic_write_text
 from .llm import BudgetExceeded, approx_tokens
 
 AREA_ENUM = ["access", "usability", "playback", "billing_support"]
+# Distinct, unambiguous claim-ID suffixes for area metrics (first-3-letter IDs collided: severity_sum vs sev4plus).
+AREA_ABBR = {"complaints": "COMPL", "cancellations": "CANCEL", "severity_sum": "SEVSUM", "sev4plus": "SEV4P",
+             "mean_severity": "MEANSEV"}
 
 
 def _read_csv(path):
@@ -50,7 +53,7 @@ def build_pack(run_dir, cfg, coverage, verify_report):
         n += 1
     for i, a in enumerate(areas, 1):
         for metric in ("complaints", "cancellations", "severity_sum", "sev4plus", "mean_severity"):
-            claims.append({"claim_id": f"A{i}{metric[:3].upper()}", "scope": "area", "issue_id": "", "area": a["group"],
+            claims.append({"claim_id": f"A{i}{AREA_ABBR[metric]}", "scope": "area", "issue_id": "", "area": a["group"],
                            "metric": metric, "value": a[metric],
                            "display": a[metric] if metric == "mean_severity" else fmt_int(a[metric] or 0)})
     # Trend context (code-computed): two comparable 3-month windows of full months, with denominators.
@@ -99,7 +102,12 @@ def build_pack(run_dir, cfg, coverage, verify_report):
             "limitations": ["Self-selected Google Play reviews, May 2022-Nov 2023; not a customer population sample.",
                             "No revenue, plan tier or observed churn; cancellation language is stated intent.",
                             "Labels come from a small model; see golden-set and verifier agreement.",
-                            "Unresolved or quarantined records are excluded from aggregates (see coverage claims)."]}, claims, issue_claims
+                            "Unresolved or quarantined records are excluded from aggregates (see coverage claims).",
+                            "Area assignment of free-tier limits depends on the shared definitions: premium-only controls (skip "
+                            "limits, forced shuffle, can't pick songs) are filed under billing. A reviewer who files them under "
+                            "usability would see usability, not billing/support, as the largest area; the top issue and the "
+                            "recommended work are the same either way. On the 50-review human golden set, topic agreement was "
+                            "0.80 and most disagreements were on the usability/billing/catalog/other boundaries."]}, claims, issue_claims
 
 
 def schema():
@@ -131,6 +139,20 @@ def check_memo(memo, claims, evidence_ids):
         if tok in allowed or (tok.isdigit() and int(tok) <= 10) or re.match(r"20\d\d", tok):
             continue  # claim values, small ordinals ("top 3"), years
         violations.append(f"number not in claims table: {m.group(0)} (near '{context}')")
+    # Each claim ID must be attached to the number it cites: the nearest number before a run of [IDs]
+    # (within 80 characters) must equal every cited claim's value.
+    for m in re.finditer(r"((?:\[[CAKT][0-9A-Z]+\])+)", body):
+        ids = re.findall(r"\[([CAKT][0-9A-Z]+)\]", m.group(1))
+        window = body[max(0, m.start() - 80):m.start()]
+        nums = list(NUM_RE.finditer(window))
+        if not nums:
+            violations.append(f"claim id(s) {ids} not attached to a number")
+            continue
+        n = nums[-1].group(0).rstrip(".,").replace(",", "")
+        for cid in ids:
+            c = by_id.get(cid)
+            if c and n not in {c["display"].replace(",", "").rstrip("%"), str(c["value"]).replace(",", "").rstrip("%")}:
+                violations.append(f"number {nums[-1].group(0)} is cited as [{cid}] but {cid} = {c['display']} ({c['metric']})")
     uuid_like = set(re.findall(r"`([0-9a-f]{8}-[0-9a-f-]{27,})`", body)) | set(memo["cited_review_ids"])
     for rid in uuid_like:
         if rid not in evidence_ids:

@@ -1,0 +1,37 @@
+{
+  "agreement": {
+    "all3": 0.6758,
+    "intent": 0.8983,
+    "severity": 0.841,
+    "severity_within_1": 0.9788,
+    "subtopic": 0.7491,
+    "topic": 0.8384
+  },
+  "disagreement_count": 628,
+  "needs_review_rate_among_disagreements": 0.2341,
+  "sample_size_declared": 1937,
+  "severity_mae": 0.1833,
+  "topic_confusion": {
+    "billing->catalog": 4,
+    "billing->other": 10,
+    "billing->playback": 11,
+    "billing->usability": 27,
+    "catalog->billing": 7,
+    "catalog->other": 35,
+    "catalog->playback": 4,
+    "catalog->usability": 17,
+    "other->billing": 17,
+    "other->catalog": 16,
+    "other->downloads": 5,
+    "other->playback": 5,
+    "playback->downloads": 10,
+    "playback->other": 15,
+    "playback->usability": 13,
+    "usability->billing": 17,
+    "usability->catalog": 6,
+    "usability->downloads": 5,
+    "usability->other": 50,
+    "usability->playback": 9
+  },
+  "verified": 1937
+}

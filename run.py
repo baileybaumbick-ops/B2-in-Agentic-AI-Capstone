@@ -217,7 +217,20 @@ def cmd_requeue(a):
     state = State(Path(a.run_dir) / "state.sqlite")
     log = RunLog(a.run_dir, state.get_meta("run_id"))
     total = 0
-    for reason in a.reasons.split(","):
+    if a.missing_call_logs:
+        # Completed rows whose enrich request has no line in calls.jsonl (log line lost): relabel with logged calls.
+        logged = {c["request_id"] for c in read_jsonl(Path(a.run_dir) / "calls.jsonl")}
+        reqs = [r[0] for r in state.db.execute("SELECT DISTINCT enrich_request_id FROM records WHERE enrich_request_id IS NOT NULL")]
+        lost = [r for r in reqs if r not in logged]
+        ids = [r[0] for q in lost for r in state.db.execute("SELECT review_id FROM records WHERE enrich_request_id=?", (q,))]
+        dups = [r[0] for i in ids for r in state.db.execute("SELECT review_id FROM records WHERE cache_source_id=?", (i,))]
+        state.db.executemany("UPDATE records SET status='pending', reason=NULL, enrich_request_id=NULL, cache_source_id=NULL "
+                             "WHERE review_id=?", [(i,) for i in ids + dups])
+        log("requeue", "relabel rows whose enrich call log line is missing", lost_request_ids=lost,
+            originals=len(ids), duplicates=len(dups))
+        total += len(ids) + len(dups)
+        a.reasons = ""
+    for reason in filter(None, a.reasons.split(",")):
         ids = [r[0] for r in state.db.execute("SELECT review_id FROM records WHERE status='quarantined' AND reason=?", (reason,))]
         dups = [r[0] for i in ids for r in state.db.execute("SELECT review_id FROM records WHERE reason=?", ("duplicate_of_quarantined:" + i,))]
         state.db.executemany("UPDATE records SET status='pending', reason=NULL WHERE review_id=?", [(i,) for i in ids + dups])
@@ -261,6 +274,7 @@ def main():
     q = sub.add_parser("requeue", help="return quarantined rows with given reasons to pending (no model calls)")
     q.add_argument("--run-dir", required=True)
     q.add_argument("--reasons", default="model_output_error")
+    q.add_argument("--missing-call-logs", action="store_true", help="requeue completed rows whose enrich call is not in calls.jsonl")
     q.set_defaults(fn=cmd_requeue)
     c = sub.add_parser("checkpoint")
     c.add_argument("--run-dir", required=True)

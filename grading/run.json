@@ -1,0 +1,18 @@
+{
+  "allow_multi_issue": false,
+  "analysis_count": 660622,
+  "analysis_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "classification_input_fields": [
+    "review_text"
+  ],
+  "code_version": "ec5052ad95a79a7bf84de43a6bce1fafdab5d708",
+  "counts": {
+    "completed": 660609,
+    "quarantined": 13
+  },
+  "exported_at": "2026-10-12T00:14:58+00:00",
+  "label_config": "gpt-6-luna|effort=none|prompt=enrich_v2|schema=s2|taxonomy=t1",
+  "run_id": "run-20261011-122837",
+  "source_run_dir": "runs\\full",
+  "version": "a5-audit-v1"
+}

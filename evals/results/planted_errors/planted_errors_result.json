@@ -3,8 +3,792 @@
     {
       "field": "topic",
       "flagged_by_comparator": true,
-      "original": "billing",
+      "original": "usability",
+      "planted": "billing",
+      "review_id": "989b2892-0cd2-48e7-bfb3-8c28f7f5bbf3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "b119d064-092a-42be-8b89-a0113db406ca"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
       "planted": "access",
+      "review_id": "b511e8e0-bf48-4697-a488-d415142052c3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": false,
+      "original": 2,
+      "planted": 4,
+      "review_id": "e432cc9e-0154-4157-a9a0-af82aa4ceb82"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "c52ccd2b-c5af-4f48-930d-b8e8873ae33b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "4df11147-db82-4b29-a9aa-e5433dce05a0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "ce6fff06-9523-4d27-b0f9-105715253e47"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d34731f6-12aa-42f6-8992-c862bc67f66d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "playback",
+      "review_id": "8279b4af-1df7-4c80-88da-b032bfec7e83"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "f1d14f01-7fbb-4e34-95ce-34bec672997a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "29cc90c8-e290-4db7-8a42-77cdf98b0525"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "0ac049d2-7257-4b0d-8e79-81c35306bc3c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "12936475-9d82-43e8-8e27-458a3a999062"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "571f0a2a-32b1-446e-8dac-26fabcde51b9"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "billing",
+      "review_id": "928c4be9-dc4c-4d3a-9f2e-c9c8e97ece62"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "0f5ad0ad-7ace-48c2-b092-e78cb9373a6a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "e60e429c-2fcf-4f67-b5b7-b9a1c22492d2"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "95f1c27c-9a87-49ab-8b1c-f5dc1dc10152"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "6b2c9ce1-d262-43a4-9006-f1eed4d41ae7"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "de588917-5a7f-419c-a0db-a2535b7127f2"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "downloads",
+      "review_id": "8a17303c-59d5-4f7d-bdec-686d665cd850"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "4bf80195-7779-4e44-81b6-312bf4626269"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "7ba4a829-7f1c-4e59-91e7-5843ccad2f26"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "cb085cda-c3d0-4533-8c77-bdffa4f8dcbe"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "5446bc68-9ade-44f8-a5da-5450bede855a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "7906fe69-57f6-43f2-b6c8-9f9c0f08c20a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "de310a61-804a-49d0-a349-152a168eb162"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "ea17e541-0756-489f-8a88-c0de715b7053"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "usability",
+      "review_id": "46a2307e-589b-45f9-ba5a-0edce69682b2"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d3fa58a5-0b5e-4176-a3ff-bbfcf357f0cf"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "4a958d2d-6d4f-41a7-b934-bad8878a8f6f"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "cdd28c57-6f9b-4dce-9fa1-634851c0f636"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "3237bf9b-a828-458c-b0d2-09c0aca1cb52"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "168a0ff8-c25b-4b48-9d09-b9c34f8698e0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "7d97a341-c90d-45ba-abc2-0517ab5c21ae"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "3d854112-afa5-41ad-b3b8-b9927959fcd7"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "usability",
+      "review_id": "f87abc85-fbe1-45ac-9088-144309b1f8be"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "cd3444ed-0bee-4a62-bba7-a86fdc582805"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "7d910cc0-1f8f-4060-a0d5-15b4d07bfca7"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "7b1c3b3f-4506-4a66-9d7d-e690625683fa"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "support",
+      "review_id": "c49d17a5-f9f5-46da-9b44-f0db0513b9d3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "b73487d6-9f9e-4712-85f3-5a780b39327a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "ab153629-1381-4a01-b789-fc2cca8172b3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "a955f70c-640d-4b81-b922-3469c6f77b45"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "billing",
+      "review_id": "a6ac569c-f8a1-4139-af2f-3ef3ebc481e6"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "86d5ff06-6b6b-4f69-8885-9d94e30ddb91"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "1888a9f2-4771-48d9-a166-86c2f13de7d7"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "bae34202-b363-458e-9685-b9b1636c2e2f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "89892e75-a10f-4b02-a37b-ff5d436af193"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "86c4acca-1a2c-4e7a-a209-e0e58fe82303"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "9980dcd7-fc96-4635-a0bc-3fcc74d17fb9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "72070fad-318f-4703-aa89-40d3a3644710"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "billing",
+      "review_id": "40ccc609-bb25-4956-b759-00d5392139b5"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "36c699ec-9dac-4c64-8b8f-d528c4cf8738"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "09bb7ed7-398a-4033-9bd9-9f069e1cc920"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "e4c69169-0933-4039-85ca-7a5221106f0b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "downloads",
+      "planted": "access",
+      "review_id": "46cd9bc6-b0f0-4ec0-b23b-cc072cd67025"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "cd5dc772-49fc-4840-a2fe-28a51fe478ae"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "c90a3a9e-5d15-444e-b50c-cd6d3107b71c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "74f2f0d2-9754-4a60-80af-b028cae76b9a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "be6b1545-dfbb-4a31-8747-24162ec7835f"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "a3bb4c26-f921-4f93-877e-9af79574c1cb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "billing",
+      "review_id": "3f9099f2-6901-4b6b-88b6-8b2a25124a56"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "96c2cdb6-a749-4c9e-b88a-93887302151c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "07b63f08-afb3-4622-b8aa-c7bb8bef13bd"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "1e4487fb-ded4-485a-ba4f-d24df0e17e36"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "d9733f1b-a131-4c8b-ab4c-2c1d497bdb42"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d45b55dc-8196-4d54-8da0-39f4cbc25fab"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "other",
+      "review_id": "52ad3180-5fc0-4250-a9a2-6dc1ed693170"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "3fb2ce12-2061-45a9-9556-ef66a4ec0e8d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "556504ba-9f5c-494f-b8df-51d1284605f6"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "7e7f77e9-6bcc-44e3-a3ea-57deb7e248ca"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "2aeca8a0-05b6-419c-99ee-5eba3500326f"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "9c2560eb-8437-460a-9f8a-711e6ecc9ef7"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "ac1ef879-5ca6-4e47-9570-6984c005ac0e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "27e4359f-d99b-472e-88a9-c9644cbfb851"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "689b3ce2-6aaf-4dca-b752-cf21ee65ac4e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "01be03a1-b1d1-43f9-a751-159e337049b9"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "usability",
+      "review_id": "56c4e32c-1c27-4508-8261-d3a2da1e2ffe"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "75b90ce3-d93c-4db7-92c3-54706e7d6379"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "6bbb335f-f3df-4f21-b345-2409eb8a402b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "ffed2a8b-6834-4ce2-99c6-c397d47ed4fb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "downloads",
+      "planted": "billing",
+      "review_id": "dba224e7-2c14-43ab-9520-70e8d6dcbac5"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d3417013-5d9f-4a58-bc0c-a97c6225a3a1"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": false,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "260c576c-d3c6-43e7-b011-25cb681c8cd2"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "5c2e7235-37aa-40aa-802b-ea2423e117b0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "bad47d42-462b-4b45-b7f2-79ab9f2e75cd"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "73035a1e-39e5-4ab5-98ae-581c894aecc4"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "playback",
+      "review_id": "4ebeba3a-c6f5-45a1-9b8f-40177884357d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "b5ebd03e-1f5e-4679-9d6b-3320d7afcdcf"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "0b1ff37a-3db4-4ebb-9929-6dd6d1bdd36a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "c613679a-22cd-4c62-8cc2-cd4bc24fc81e"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "support",
+      "review_id": "b93740bf-b532-46bf-839e-170115024ea9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "ae8bcb65-5446-45d6-8434-e914302515e8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "0b98b3e4-9291-4de3-aace-111379807b07"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "f7153c0f-c428-4bd2-bade-64805a93c46f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "other",
+      "review_id": "a9c343fa-622c-4fe9-ac2c-a56d654011da"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "1b9a5c25-d2db-4df2-bf3c-5685dd491833"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "c0f98393-4792-4110-8b34-18db02eac3f4"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "f22c1347-ec5f-4ed0-9512-51a90828cbb4"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "billing",
+      "review_id": "b1550771-4b34-4ba6-859e-1faa2e5bca6a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "340f1bf7-1bbf-4f8f-bc75-8f7e58afb7eb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "b42c3e6f-2f00-41f9-a696-eccc15725e30"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "33e6b0a5-00c8-4815-ad1c-5edcad93490a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "6da15f5e-2254-467b-923d-f8ecfe198670"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "0643fee1-12d9-40e7-9a4b-70b1f590c651"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "21d26fd5-f14e-4a8b-b807-cafc916a6815"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "26163b33-0d97-46d8-bf3a-a02cac628a53"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "downloads",
+      "review_id": "c6c5f46a-73d2-4d19-8dc0-55083acbfb36"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "e1fb1dd1-1f24-4de9-8452-7a6f0554f164"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "122dd2db-cfe1-4fc8-8fd0-cf0242b46ce0"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "f4272cce-c37e-4b30-8820-53cbccc5c69a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "usability",
       "review_id": "e9a34387-a2a7-4adc-868b-5207dcaec1aa"
     },
     {
@@ -12,80 +796,2641 @@
       "flagged_by_comparator": true,
       "original": 1,
       "planted": 3,
-      "review_id": "89f75cd0-552e-406f-b370-ae4e1922cfd0"
+      "review_id": "d74cd001-6698-4feb-925b-2dbae23c3dd3"
     },
     {
       "field": "topic",
       "flagged_by_comparator": true,
-      "original": "downloads",
-      "planted": "access",
-      "review_id": "c6b1b49a-f921-4481-b6d0-5b7f5c535439"
+      "original": "billing",
+      "planted": "other",
+      "review_id": "ff094355-2f95-41ee-9758-b392011f3f98"
     },
     {
       "field": "severity",
       "flagged_by_comparator": true,
       "original": 1,
       "planted": 3,
-      "review_id": "9c04d0c8-655d-4afc-a3b6-3c4e606e8d5f"
+      "review_id": "2705f108-7a58-473b-93bf-9a5ecbd88533"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "6c6966b3-167e-4079-a549-90908f8e24d0"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "9e226cb2-6fb6-4e8e-b209-c951aeaee9c4"
     },
     {
       "field": "topic",
       "flagged_by_comparator": true,
       "original": "usability",
       "planted": "access",
-      "review_id": "d3d11e18-6bc3-4487-9134-d3d1fa47a788"
+      "review_id": "eab13988-8fd0-4159-a35b-29e337a866e0"
     },
     {
       "field": "severity",
       "flagged_by_comparator": true,
       "original": 3,
       "planted": 5,
-      "review_id": "1cf1a1ac-15e3-42d8-889b-a6c7963ad384"
+      "review_id": "7fe89ba7-1e79-4296-a98a-5eece01eaa5b"
     },
     {
       "field": "topic",
       "flagged_by_comparator": true,
       "original": "other",
       "planted": "access",
-      "review_id": "20873bd6-d252-4c5c-a552-5766f558457b"
+      "review_id": "c761df2f-320f-4d00-9089-fea7814f27f4"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "4797ecd1-be6f-45ac-9551-c94ce47a8ddd"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "1311d964-139d-49be-a4cb-cc9dc4c953ba"
     },
     {
       "field": "severity",
       "flagged_by_comparator": true,
       "original": 1,
       "planted": 3,
+      "review_id": "3cd7cc5a-caf3-4c59-ac94-2c812eb88e18"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "billing",
+      "review_id": "a74243b5-3e5f-45d3-8aec-f092043ef878"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "931677ef-b28e-4dee-94d2-b3d70a0c75b3"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "catalog",
+      "review_id": "a8b76d45-3668-4832-9bd0-eb1f2e249654"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "2bf36877-107d-4ff6-a5cf-00c085babedf"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "access",
+      "review_id": "713779da-4f78-468d-9166-0a0ed944f3f3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "aefdb1e1-86c4-4b7c-a893-ce14583f0e0c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "usability",
+      "review_id": "d23afcd5-a532-4307-ade1-2f7ec4e4d65b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "570798aa-62ce-4604-bfde-4f5e4898e8dd"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "usability",
+      "review_id": "ce0f425b-144e-4916-a0c2-5bbeabf34c9f"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "3daa26c9-2715-4989-91da-b8983c3a7624"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "downloads",
+      "review_id": "df82059c-d0c2-4b49-ac18-edf56b1f59de"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "ba15717f-527c-4035-afb6-cd4051c325ea"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "other",
+      "review_id": "b051018b-a9a7-4101-bc35-a041150fd4aa"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "8ec57e7b-785b-4858-b8c1-8f1c4f5b0fd8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "9f1caf5e-c1d9-4993-8b7d-c922a568f648"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "07db43b5-8e82-4a98-abda-74f323f6307d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "1e0896ef-93a4-49c0-98ae-ec560ca46fc5"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "435b2d34-61b6-43e2-ab9d-a54718fe667f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "efd8b86e-67f3-4917-b74a-4590c55051c3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "ea13c812-9e64-4e4e-a535-4f9693fd062d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "bd8f4268-d255-4b7a-a86f-41994c1bb1d7"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "b4058ac4-db6e-42e3-b4ad-635c801a9d15"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "4b678461-78a2-45b5-8866-8ccdc94a1df9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "20f71d46-d538-4626-8bac-3edde5abc3e8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "access",
+      "review_id": "3d1e93c0-2def-486e-a88e-71c42f6e70a9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "c1d2d774-1d43-43ce-9304-372543e01f2a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "e1e018c3-e642-43fb-b557-0c25dd262fb5"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "20a95ba1-dc16-42fb-a8f0-e55ce5496447"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "other",
+      "review_id": "57943c46-ffe3-4aab-8b12-7b18bfad9e04"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "86da4ad8-a46a-477f-b5d8-03b63652d0d9"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "access",
+      "planted": "playback",
+      "review_id": "ed930d98-00d1-4e0a-8620-1478b539dd57"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "d36f1422-8acb-41cb-9cad-b688844b2bd9"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "b8a20015-dcaf-4129-a19e-cdb80dbcced8"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "76c753dc-8a1d-4525-ac6c-21128477c4fd"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "4fbab3d5-25df-4fb9-9366-add2d6e7e49e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "feef927a-ce46-44a6-9c95-56ba01701e2e"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "45b4033e-7853-41e0-a5b4-d387178d5c3d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "273c5a9f-2448-4029-a886-9b52e87d3825"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "32eb7b4c-4638-4d5d-aed5-f7a9f24531a1"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "ca7bf4ff-73db-4db1-8782-e667d6ff48cc"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "3e94c47e-76d8-47f6-9a25-72b82470a077"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "0775bc10-27ff-40ba-9033-0f75c4c16c73"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "downloads",
+      "review_id": "17ee91d0-47ff-4a8f-895f-8c552b73ea6c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "e0da6544-f967-43e0-8d16-f1ebb7d1623b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "bf1aa916-384c-4f59-8390-40f84dacd5a7"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "3a51bfb9-c8aa-4818-b6a5-05ae672d10c6"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "downloads",
+      "planted": "support",
+      "review_id": "0b858b28-fa42-4f37-870b-b0df790266e5"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "5ea6be54-1675-421a-a7d2-61d18efa7d8b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "31062d4d-2d79-49fb-9c31-5f341819647a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "01dafc61-45bc-47c9-b203-9aea8627b969"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "e90fd7d0-45e1-4198-a26f-05036a67ca5e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "601c84ab-c19f-42d4-ab26-89be35807e86"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "0aaefb3b-137b-4b7e-9f82-f6762e85e190"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "c75a27da-dfe6-46dc-be46-a25c54488ab5"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "access",
+      "planted": "other",
+      "review_id": "084b38ad-51ea-487c-b745-d88f7dbbb3cc"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "7d086b93-63e6-4728-9cd5-14d2de1ea886"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "89f75cd0-552e-406f-b370-ae4e1922cfd0"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "5bb0cd43-a2f8-41b2-be2b-3a9e16e2e0ea"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "other",
+      "review_id": "819d275e-98a3-437f-820f-8a59d9c9b86f"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "5ca87085-d0db-4bb0-9209-26eb77599d29"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "e8f7937d-738d-47fb-8424-1bee0c399408"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "ca36f9f0-5a6f-4219-bc92-14369f0dc293"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "usability",
+      "review_id": "393eee96-b7a2-4164-8811-d0a1e11fe91b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "98c67bf9-6d1a-46ce-86d0-75f557a07628"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "d9b4688d-5554-44ca-97d3-a0630cb7b5bd"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "de1b0aac-a814-467c-aaa8-9a2a20f22a14"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "aac69f9c-9ebf-4826-9885-e4f26bb22f20"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "51cfaab1-4a89-43cc-923f-99468e93f11c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "downloads",
+      "review_id": "9d33b8b2-ac1c-4036-8453-d484ff63a3ea"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "3ea45c21-94d7-4bd4-85a8-a49e40faa49f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "access",
+      "review_id": "39a13f48-c595-43d5-b1ee-c06e25d55b20"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "d820d294-028d-4b0b-b750-cbc87ba0c587"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "920eed90-3ec6-46fc-a300-fc6e23e97932"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "074a9f9f-ec46-4097-a6de-c75164cf8755"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "usability",
+      "review_id": "d59b651e-937c-4be5-a698-38c3d46b76c0"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d1778ee3-857d-4a22-815a-cc208d2ab59d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "f1cd0970-b6b6-40e4-9776-520a69b21ce6"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "f1a66549-f5ca-4ba0-9e63-f3578061ceca"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "support",
+      "review_id": "890cd1c2-20d0-4aaf-99e3-132ecae28303"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "3bf6c0ba-395f-436d-a620-e1ff3d59ff97"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "a283df6b-f8f7-4299-9f07-82c3dd2d6189"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "37713187-f9b1-4652-bc8e-8e0da65bcbd0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "4500fe21-bcd2-4a0d-baee-e3c97c088960"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "30ed43a5-cdf0-4830-8102-a83d1091e015"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "downloads",
+      "review_id": "b702ab9d-9051-40d8-a52f-959a89e682ca"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "6e62af0a-95b7-47ed-a01b-b0eadf107065"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "0d811210-8e87-4617-8857-073ffd356774"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "998d2847-3e34-400b-b61c-f3b1378a4bbb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "billing",
+      "review_id": "64fd7d3b-a642-4f0b-90db-28fdad751ad1"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "248b5bd3-b6d9-46f1-8ed7-a4adee908e0e"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "catalog",
+      "review_id": "155549c3-1d42-491c-9c7d-00ec47c78b5d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "58688efb-9eb5-463e-8662-78cab8bacfc4"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "fa5f86f2-03d8-4cb2-89cd-71fa9e278242"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "7246a5b2-62b7-4eaf-9a78-9557571ab127"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "catalog",
+      "review_id": "b5fe3e9d-5128-408a-a607-2093a6e7033e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "cf430f95-03a8-4130-86f7-e10075e10e56"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "usability",
+      "review_id": "3f47be6e-ad32-44ef-87f0-5cac2271bba4"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "0e42b996-7bc3-4910-a7d1-bd488fb23c64"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "d95b011a-76f6-479a-b0c4-9713bc04265c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "0d8308a8-237d-4a47-9b16-fcef24d57448"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "cc5d6976-af53-41be-b7c3-1e8cbaa77265"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "7ab1993b-5c74-44b1-91c0-476108d19b60"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "downloads",
+      "planted": "other",
+      "review_id": "0de1a9de-e065-4c47-aae9-e24aa6ea0c93"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "9acef86d-d77d-4654-b5e7-ac105ee66714"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "support",
+      "review_id": "1c0cfee7-e91d-4267-b320-1fa876f3d05d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "57908665-3528-4df9-85a7-8549d829625b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "usability",
+      "review_id": "f92cfbc0-41d3-424d-85bd-54056a9dfbef"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "660e375a-e190-4103-8d3a-ea2f1e7bb419"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "ea05fd97-56f9-403c-a032-d09c92c0cf3d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "1953a1c6-55dd-4b11-a10e-5705dcadc223"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "playback",
+      "review_id": "baae5288-e311-486c-8a92-6cafe0b7b994"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d8ac9135-e8b7-4d5f-90bd-20d46650bccb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "playback",
+      "review_id": "514a3914-0363-4c21-8ed2-faddd9f42372"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "30b66498-a58e-4a87-a726-3332d2c24041"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "usability",
+      "review_id": "f6d6412e-3370-4402-af7b-a4edb0b924eb"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "124e9cac-8bdf-43e5-b53c-cda8c73c768a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "1a4cc93b-b233-493b-a0db-b475e394fd00"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "a9893d44-d5da-4984-a934-87de7dbe893f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "9d945d1c-a773-4986-8c2a-95163acb9438"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "0446694a-97f5-44b2-b70c-b3a860365631"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "0f3eccaa-eb67-4b18-ba53-2c0f694039ec"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "59725ca8-c7a3-4b72-860e-25eb59258292"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "ccb0f6f5-6e5f-4e3d-8110-4469cacb80bb"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "17ebaadb-3f37-4b7b-aeca-0441acaf4262"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "c29867de-297b-4bb7-90bc-a303dd0594ba"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "3e1804eb-d0d4-47a2-8d2a-a09a3a9c4e05"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "playback",
+      "review_id": "ce374fc7-c09b-4056-8d0c-cdd6725f6dd9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "9f03e868-7671-4c5e-9589-99acad0dc7e9"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "23a8ac05-244e-47fc-9003-922a8efc8a39"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "16cc6295-c362-4513-9b1e-e4024e28e520"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "3f108c9e-7fb9-4105-a86e-d1d0adcc9661"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "88949598-cc44-4c65-92ea-8090db51def8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "downloads",
+      "review_id": "0945f087-bc10-40b8-8939-5c1f4664f7d7"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "f5e476e7-4698-4ad7-bdfc-8480f99fa91d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "c17ca172-d7d4-4846-9ca2-4373d33214fc"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "939dcb57-f2a2-4b08-b6e0-c11669d0db43"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "4bdda67b-f048-4591-8a5e-9608bead31bf"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "508beae4-f5d9-4987-822e-bd8f6078138c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "1848265f-4be0-4c84-9697-afc351ce88c8"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "f260b950-ad90-467d-b8be-e8492afca5e0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "catalog",
+      "review_id": "9da99937-a3fc-4d36-a8d2-dca9e9954f64"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "2dce74a4-3be2-471b-b5b9-98c390802e89"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "e711c5a4-7de6-4a21-aee9-052a4f363893"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "2fc98a53-7bd8-4d73-842d-f3341cac7076"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "playback",
+      "review_id": "c489e734-ca09-44c5-892f-8da20e4dfc61"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "07de82aa-93bd-4f0e-afeb-7bcb2110df86"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "ff814a6d-cfc1-4aa1-a325-796645fbbb44"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "9c6b331e-d771-4e88-b139-e53a3d8fd62e"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "d3c25d57-2a48-48f2-898f-061ca93a899b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "b97e811d-21b3-4625-9a12-57b35bb65210"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "bd99d8f9-13c3-40aa-8a07-32734233f8df"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "75319099-5825-4479-96e5-b1c40d7f4988"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "501da103-d777-435f-b010-dbea7b33b480"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "5bd77f03-0c0d-4536-9717-4fcba15973f7"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "4d839adb-b232-44c6-9168-4407fc132e5a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "22f0914d-86ab-4462-a5b8-fb2611800ad2"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "other",
+      "review_id": "a717745e-1488-4849-86af-0f4ff4e9c98a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "cd3ff6e2-8653-4faa-aa37-a8a59f627b8a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "30a3d1a3-b5c3-45dc-9989-2f06e7d25b03"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "2c01397a-fb40-458c-8e2d-cec8e803df15"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "2aae8946-a776-416f-8240-40db5459c1d3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "0e13967b-d93e-4758-8be1-91b76ded8f8b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "9a4eed6f-42d9-4ab8-b3ff-918f314c4908"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "eab008d4-077d-4490-b063-e7e2ddeab4fb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "abab5600-bf7c-419a-9dc9-ac3b33bf391c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "1b539353-6ed4-4828-92d1-4ffb171189ad"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "catalog",
+      "review_id": "dec213d9-3e56-40e5-93eb-4cb7f218d16b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "2076309a-f686-444e-8dfb-1b9c914f32bf"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "8e64a7ec-e5b6-49ba-9dd4-8b36eb29f957"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "38d653bb-874a-47b3-a129-d63cc51b893a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "5b9e94f5-3196-45b5-aa30-96a0e1805960"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "b9c423e2-abfb-40eb-8439-5a2d93b1551b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "access",
+      "review_id": "d0e535d3-9cd2-4096-9b23-2d1a703a6c15"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "a17c3ee2-8db0-4be3-95c5-cbc81a729515"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "2af2970e-7235-443f-816c-f68892b3a583"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "7050f081-8bb1-4a20-84cb-07282f82086f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "cf0f9128-5732-4738-af80-6cc91bf6b300"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d2bc0900-b540-45bd-a4a8-1f81512b3fd0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "billing",
+      "review_id": "9c2f98e9-c17e-4848-9a7f-c49db3283442"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "3611febd-b397-4601-8819-a4daf332ee8c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "4d02665a-49c1-45f5-802f-3e82f25401e4"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "9cbfcc91-d525-4310-85d5-f6d2f4504187"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "c40bfb79-6f0b-4480-a274-e664edfd092c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "7b1abd5d-deac-4112-9c9d-0a14a31c01b0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "691db2df-a627-412f-a171-94a805ba4406"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "f5c299c3-0725-4aea-9079-3292e8caba32"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "e819924f-5047-45d4-9c72-34131aaafd54"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "c6b1b49a-f921-4481-b6d0-5b7f5c535439"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "8ee716e6-9bb9-445d-aaef-cbcecf4edae2"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "70332160-58b8-4bd2-997e-2be4940cca7b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "access",
+      "review_id": "c194d9ef-3aae-457f-8876-df55a2d163e8"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "ea086cc7-922d-4e48-bd46-425e9e6025b4"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "75d20427-e58f-46c2-90b0-72305789669d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "989059a0-274e-44d4-a823-e81fe541df2b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "playback",
+      "review_id": "3f59c2ea-2a20-49e3-a2e0-9cdcbdb5b02d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "8f9329cb-2ce1-48ca-8477-e227ed7550ce"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "billing",
+      "review_id": "131c2525-ecf3-4b23-aab3-fc1bf51f8cb9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "645250cd-90b4-455c-a8a1-e9f1e22eb6bd"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "3b9c709a-6fb6-4e83-acce-859b6944422e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "93be6e23-14d0-49b1-a31d-d82df3e5b03a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "downloads",
+      "review_id": "1b72a43a-0608-4b73-991a-b9fbe84a5ebc"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "7da15632-1d1d-4514-96ff-24302f1630bc"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "catalog",
+      "review_id": "2697f401-f93a-453d-90a0-35982d8bedc1"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "b0cd4f3c-f823-4732-b592-34a52bc217ad"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "9c04d0c8-655d-4afc-a3b6-3c4e606e8d5f"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "6d20ad0f-cc49-41e5-a6c9-dbdd45b1ffcb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "4ac50cb2-0e8d-4858-a7a9-8e53107d7c51"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "718f88be-0473-4b45-b4f8-58d865fe01a6"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "58b5bed1-6a8e-40f1-afcb-8c32cccd161c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "fe14fcd2-76fe-4e83-bba2-a587ac5e9cbd"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "playback",
+      "review_id": "92d6f96b-b84e-444c-8ee3-3d2afd89d4c6"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "e204c999-f4e4-4fcb-9d79-d1a84d2b96d7"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "820578e3-42ef-4977-8240-723e4b4e4eba"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "998a16e5-355b-49bd-870b-d6f849f9e268"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "access",
+      "review_id": "78311519-c0db-4468-9d73-f8a992f9cac3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "7ae01705-6612-46f8-886f-96f69921c21e"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "24682287-aebb-42b5-a27a-9604694ecf72"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "71e27a3f-e453-4a80-b3b6-e880a2068213"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "4998485e-1564-4290-b205-f6fcf084ddbb"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "12da089b-32d6-43b7-8892-4d557885ead4"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "billing",
+      "review_id": "a55a4e85-9fb6-4107-85c5-8fad8868d688"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "c7e3b958-cc5c-422f-a350-1ad715f80175"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "f3d72976-846e-47e8-b9f6-f0e65845b56c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "803f5199-8f8b-424b-ae59-9224b4885241"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "support",
+      "review_id": "3426a05f-168c-4abc-8427-9e717b91da52"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "bd9b62d0-e303-4736-a07c-1934c8f86d5c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "079ac28e-f573-4678-b05d-920a87b37e15"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "134a9272-e060-41b4-955f-a795567c8f75"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "38b1a569-fe0e-4700-a1b4-ded2f27fb2c1"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "ae3c0c77-f4f1-4d30-8546-7f91c17bc594"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "0c51ac22-9e81-4799-a762-f63173c27510"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "d69b04fe-421c-404f-8de0-04ea981bf5a0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "f1246e3f-38a7-4e38-a751-74af934ce13b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "c3a4eadd-157e-4305-a10e-d900046fe73e"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "fd9ff323-9d21-42f7-bbe3-0ec04d0df8e9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "bdafc380-462b-438a-a302-c47ca56b41a8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "playback",
+      "review_id": "00671a28-3737-4942-abba-fa8a35972155"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "8d9a36a5-d762-496c-9bb9-9dcbb2b71efb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "2b533fb9-1cd9-4128-bc51-832e04eb38a2"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "5b79a424-70d9-4a0a-abba-46f1a7ac762d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "downloads",
+      "planted": "catalog",
+      "review_id": "71890e0e-26bd-4162-bcc7-67857005eb92"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "67aec2e3-4357-4c84-9e38-5cd5ef3fe08e"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "587bbbeb-3cb7-46ae-a176-bd2ab65c474b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "5b804f41-8128-4c20-b524-fbbedcd04c70"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "billing",
+      "review_id": "ee0e5e48-7b4c-4ad8-9252-6a5c99001291"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "9076e0ac-9687-4678-95cd-b46a52b0d878"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "access",
+      "review_id": "e5a8ddfa-4b8c-4b95-9ec5-c2a9ea65bd72"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "7d70016f-851d-4f65-a23d-35aa6a935aee"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "playback",
+      "review_id": "21d849ef-d775-4803-8dd8-58d47e78b623"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "a860d5ce-ba18-4cda-84db-2535ea0a56ec"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "other",
+      "review_id": "6fef5c58-382b-4c6b-8396-a4765a74971a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "84571669-8175-4b68-aa77-f93298ed079d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "f0e13e9c-1a6e-4cdf-b3c0-0c83025cda50"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "0fc197c4-b057-447d-9e4f-a1f46549265d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "ddc11994-6580-451c-832b-da19ca5d5d02"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "6c9f7391-f2c2-468c-af0e-41fb081eeac1"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": false,
+      "original": "catalog",
+      "planted": "usability",
+      "review_id": "ecdd54d0-a9f5-4680-8915-537baa9954c7"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "77fe0e3c-2df1-4e6e-b6e1-9247c2542ef4"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "downloads",
+      "review_id": "fb09f7b6-6cf5-4b59-a169-4fdb1659428b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "b41d901b-6f9c-4284-aca8-728283cba141"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "f945f72a-c72e-4958-a263-2bbd350bf6ee"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "246cca68-6a24-44f1-9ca8-9c7645bbecd2"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "downloads",
+      "review_id": "036584a9-f72c-49bb-b0d5-ab8d3cbb6b34"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "6f396b2b-eaeb-4a2d-b592-e0b3d3c3ab2b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "playback",
+      "review_id": "b2b0fb31-0075-4431-9983-8faef4580bcc"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "2c71ddc2-f32f-48e0-93d6-fbfcbea3e687"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "a3f6ce7a-023c-481d-bb8e-0c1b8de53ac8"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "3543d783-2c5a-4498-9da4-f6f55a445f09"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "catalog",
+      "review_id": "7f5112cb-49a5-4f58-a255-b426cf328a83"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "b87be322-b6cc-492e-bc63-9f666dcf9d9d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "3be86629-1fbe-4adc-b138-168162406547"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "1ea40ad7-00ca-4135-b734-5129dfb2c9de"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "c1b81aee-cd2f-4a01-a43c-807538174ff1"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "529065e7-f6ad-4e45-a68e-b8bfcf4e1bc7"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "billing",
+      "review_id": "d3d11e18-6bc3-4487-9134-d3d1fa47a788"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "331fe458-c4fc-411d-8871-2d26053b31db"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "30b66ce2-0153-426a-b2ff-b87a7a5c4009"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "cd1111e0-ca01-4606-ab7a-b17ff8b50fa3"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "usability",
+      "review_id": "88b108ed-9b2c-413e-8695-cdddea4eebcc"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "b3708630-d6da-449b-bdb4-38b94a965f41"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "50fd7c16-e915-4b65-8430-49b6fdf93c63"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "fc792ccc-9c25-484f-aaca-e0ff93b56819"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "access",
+      "planted": "support",
+      "review_id": "c4139bef-e133-43fc-ae88-0eacba584e09"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "cad3ff9c-316d-4c45-b9fc-a15657aca881"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "billing",
+      "review_id": "a57b8adb-cdb5-4640-a3a5-0bedbb8d5330"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "36aa3fee-2ee9-4bbb-bc67-c147dbf449bb"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "d4eba8dd-5ce5-4ffd-bcd9-d213ac1294f2"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "45f5fda1-53cf-4369-971b-16630f08692a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "6de64d3d-23b9-4c38-b106-fdc6568f74de"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "4f46d128-6468-48cd-9aa4-cdfc63f048d0"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "4ac1e194-0aed-4e90-b98d-7d0eecdec63e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "24d7e9aa-cfbf-4f37-851e-7289c75475a1"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "21298229-6818-4b7a-b0af-7b845f8e6b6a"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "6cd9594b-5e16-4ef5-bf71-ad2f7fc2f911"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "access",
+      "planted": "billing",
+      "review_id": "8cc5f783-b85a-4bb6-8152-92f2b15ab47d"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "0b28fc0d-d82c-423e-93bd-26bbdde12a8b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "playback",
+      "planted": "billing",
+      "review_id": "149d7fdc-9f3c-4a9c-bbe6-038d123f43d4"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "e9917ff7-d148-4f89-9363-8c91cb8f3d95"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "downloads",
+      "review_id": "461d5e1b-bbae-42ee-ac5b-e73b71ddc595"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "886b9939-1cb9-4bcf-85b2-0e4ad5345f07"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "1ba36e55-adc0-4dcd-8ec8-8bb80aa5d9b0"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "199d7bb9-f33e-4c7a-991a-f81ab2ce7f7f"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "992932ee-1b50-4bf3-88a5-04c11c64ada9"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "cf8e53e9-b414-4ed7-829e-9ef0dd5e75d8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "4eb2a628-19a2-42b6-be92-584ba594bbe8"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "20873bd6-d252-4c5c-a552-5766f558457b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "catalog",
+      "review_id": "6f83c201-824f-4f33-bcad-dcbae819036b"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "69a03b9d-edf1-459b-aad0-926adf3058b4"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "other",
+      "review_id": "6c590135-e489-49be-a38b-6d64a4c14220"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "9bb48d94-7d8f-4cd5-8aff-8dc5982bacf7"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "playback",
+      "review_id": "4a4dd7cc-99aa-4919-bc09-7336aee78604"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "b0884ce6-d6fe-4ee3-bdb5-94b0d9b6b96a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "bcc634ed-5912-4cbf-8785-bba40acbeaf4"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "a80ac080-05c3-47da-84c5-7df96a5d35af"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "downloads",
+      "review_id": "8071cf5c-91d3-4564-9f9c-84e5d0e150d3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "a69616b1-2e5f-4f60-b080-d08c7bea0609"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "other",
+      "review_id": "164d1a4d-9b2b-4036-b810-5d2286f6386c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "0ef92fa2-cc94-4c4f-b797-b27282968310"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "playback",
+      "review_id": "07860eaa-e840-4d2a-89e4-ef3cb3a19c60"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "92fa2f0f-a744-4a9c-85af-8eb62c7b32ac"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "support",
+      "review_id": "d1c51db1-efaf-431e-b414-ba738d8c7369"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "2a27faae-edec-4e44-a4d9-260f4a4d8ca6"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "downloads",
       "review_id": "d2961f3d-021f-4518-9a47-68755c29672e"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "e92cce8b-e306-490e-9af3-89c4d0a7a669"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "usability",
+      "review_id": "59322c7b-c3cc-4009-9725-fdfe87108b44"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "9725e79a-8522-4c8d-b3c3-c7162789e00a"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "usability",
+      "review_id": "ee3eae5c-ff6b-4b81-9524-54f13528c7be"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "6ea285e3-3b46-49f9-90c7-fd2c46d47404"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "downloads",
+      "review_id": "d81a7fd7-228e-4e74-bbb5-79ed13525334"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "4c25d284-9fec-4f2a-b5b9-ece81b723091"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "access",
+      "review_id": "a3126b32-0bd2-49ba-923c-e341fcb3fedb"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 4,
+      "planted": 2,
+      "review_id": "b70589de-1e14-4c0b-a189-db5e1d98d429"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "catalog",
+      "review_id": "1d87527f-55da-4478-83a9-263d7ce25a77"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "d265f6eb-1026-4484-9eef-d04b045f08ad"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "playback",
+      "review_id": "32c211e5-64d1-4eb2-b0cc-6ead592138af"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "70ecaf2c-ce0d-4f2e-b599-e0e9b3dd34f1"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": false,
+      "original": "usability",
+      "planted": "other",
+      "review_id": "ff0a56b5-1f3e-4c34-8123-733d6d1bb508"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "30c0b54e-18a5-4c3c-aa89-fcf8ac1b2d5c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "downloads",
+      "review_id": "a31db65b-41d9-46ad-bb94-c26d9d25c8f8"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "03d87ad5-3718-4db6-b705-cf9b1c8c5ae3"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "support",
+      "review_id": "540442a5-6415-426a-a7b7-2fe40c3373df"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "74c9e474-2308-46c4-8126-2cbed5fe6e0c"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "billing",
+      "review_id": "e1c329c0-a971-4d25-97e1-54fca6604f33"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "2493f6f5-66d9-475c-8711-9fdb55d10b2b"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "playback",
+      "review_id": "597cac5d-13cf-4569-9c64-cfddf830f7f3"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "04f1e41c-35b3-4394-bb4b-6c4d115d7468"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "catalog",
+      "review_id": "0310a021-afa5-4138-bad5-71de3b8643d5"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "2d877506-4a77-4958-b0af-97d6500eaf50"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "billing",
+      "review_id": "3292a8a0-9980-4012-a967-6353b57ada14"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "a3e42413-4994-4e86-b45e-9fa1e2ea0ab9"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "other",
+      "review_id": "2c4ede5b-96fa-422e-b07e-6bf9948e3770"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "07b418c6-7e8a-43c1-8270-11935e1b58cd"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "catalog",
+      "planted": "playback",
+      "review_id": "e2988886-fae4-404c-880a-23ec591738d8"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "2fcc8331-e04c-4a8c-bf77-2760ea738a6d"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "usability",
+      "planted": "access",
+      "review_id": "a981afe1-eb9c-4a41-b3fd-9c3c074f4240"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 3,
+      "planted": 5,
+      "review_id": "c9b156c5-6ae4-434e-a3a0-a54447daecc8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "billing",
+      "planted": "usability",
+      "review_id": "6fe9b901-ac59-48f2-bb3b-dac432308e8c"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 2,
+      "planted": 4,
+      "review_id": "c699b60a-f8a2-4af7-a863-778463f8f5b8"
+    },
+    {
+      "field": "topic",
+      "flagged_by_comparator": true,
+      "original": "other",
+      "planted": "access",
+      "review_id": "a0bff833-6b84-4462-b8f2-6b7ca1d5fb69"
+    },
+    {
+      "field": "severity",
+      "flagged_by_comparator": true,
+      "original": 1,
+      "planted": 3,
+      "review_id": "3cba1fce-8cd4-4046-9c2f-abb30e68973b"
     }
   ],
   "comparator_report_on_test_copy": {
     "agreement": {
-      "all3": 0.5294,
-      "intent": 0.8529,
-      "severity": 0.7941,
-      "severity_within_1": 0.9118,
-      "subtopic": 0.8235,
-      "topic": 0.7941
+      "all3": 0.5065,
+      "intent": 0.8983,
+      "severity": 0.7336,
+      "severity_within_1": 0.8616,
+      "subtopic": 0.7491,
+      "topic": 0.7315
     },
-    "disagreement_count": 16,
-    "needs_review_rate_among_disagreements": 0.125,
-    "sample_size_declared": 34,
-    "severity_mae": 0.2941,
+    "disagreement_count": 956,
+    "needs_review_rate_among_disagreements": 0.2092,
+    "sample_size_declared": 1937,
+    "severity_mae": 0.4177,
     "topic_confusion": {
-      "access->billing": 1,
-      "access->downloads": 1,
-      "access->other": 1,
-      "access->usability": 1,
-      "other->catalog": 1,
-      "usability->other": 1,
-      "usability->playback": 1
+      "access->other": 18,
+      "billing->other": 19,
+      "billing->playback": 12,
+      "billing->usability": 32,
+      "catalog->billing": 16,
+      "catalog->other": 52,
+      "catalog->playback": 8,
+      "catalog->usability": 21,
+      "downloads->other": 13,
+      "other->billing": 27,
+      "other->catalog": 22,
+      "other->playback": 8,
+      "playback->catalog": 10,
+      "playback->other": 26,
+      "playback->usability": 15,
+      "support->other": 17,
+      "usability->billing": 23,
+      "usability->catalog": 8,
+      "usability->other": 58,
+      "usability->playback": 13
     },
-    "verified": 34
+    "verified": 1937
   },
-  "detected": 8,
-  "detection_rate": 1.0,
+  "detected": 480,
+  "detection_rate": 0.9917,
   "note": "Test copy only; business records and aggregates are untouched. A planted error is detectable when the independent verifier disagrees with the corrupted label.",
-  "planted": 8,
-  "source_run": "runs\\dev10k",
+  "planted": 484,
+  "source_run": "runs\\full",
   "synthetic_test": true,
-  "verified_sample": 34
+  "verified_sample": 1937
 }

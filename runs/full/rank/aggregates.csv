@@ -1,0 +1,34 @@
+rank,issue_id,name,area,complaint_count,cancellations,severity_sum,mean_severity,priority_score
+1,billing.free_tier_restrictions,"Free tier limits: skips, shuffle, playback restrictions",billing_support,61438,12317,177926,2.896025,177926
+2,other.general_negative,Generic negative feedback about the app,outside_four_areas,82595,6284,165286,2.001162,165286
+3,usability.ads,Too many or intrusive ads,usability,36315,2665,77577,2.136225,77577
+4,playback.stops_or_skips,"Playback stops, pauses, or won't play",playback,15891,1581,50941,3.205651,50941
+5,access.login_failure,Unable to log in or stays logged out,access,8214,487,32189,3.918797,32189
+6,playback.crash_or_freeze,"App crashes, freezes, or won't open",playback,8628,679,31105,3.605123,31105
+7,usability.queue_playlist_management,Queue and playlist management issues,usability,10145,788,30404,2.996944,30404
+8,usability.ui_redesign,"Confusing, worse UI after redesign",usability,10878,1526,24563,2.258044,24563
+9,catalog.missing_content,Songs or albums missing from catalog,outside_four_areas,6013,516,17293,2.875935,17293
+10,usability.controls,Broken or missing playback controls and widgets,usability,5883,595,16589,2.819820,16589
+11,catalog.lyrics,Lyrics missing or failing to load,outside_four_areas,5663,255,16471,2.908529,16471
+12,playback.connectivity_errors,Connection and offline/online errors,playback,4376,275,14469,3.306444,14469
+13,catalog.recommendations,Poor or unwanted recommendations/shuffle,outside_four_areas,5291,488,14263,2.695710,14263
+14,playback.device_integration,"Device, Bluetooth, and car integration issues",playback,4096,608,12616,3.080078,12616
+15,billing.subscription_activation,Premium not activating or entitlements lost,billing_support,2920,222,9530,3.263699,9530
+16,playback.performance_battery,Slow performance and high battery/storage use,playback,2924,252,8414,2.877565,8414
+17,downloads.offline_playback,Downloaded content won't play offline,outside_four_areas,2447,177,7912,3.233347,7912
+18,billing.price,Premium price is too high,billing_support,3309,434,6722,2.031429,6722
+19,playback.audio_quality,Poor audio quality and glitches,playback,2452,214,6544,2.668842,6544
+20,downloads.download_failure,Unable to download content,outside_four_areas,2066,68,6403,3.099226,6403
+21,other.other_specific,Miscellaneous single-point complaints,outside_four_areas,2092,159,5344,2.554493,5344
+22,catalog.search_discovery,Search and discovery failing or inaccurate,outside_four_areas,1822,153,5287,2.901756,5287
+23,other.boycott_or_offtopic,Political boycott and off-topic complaints,outside_four_areas,2538,1447,5086,2.003940,5086
+24,usability.other_usability,Other usability regressions and bugs,usability,2095,139,5025,2.398568,5025
+25,billing.charges_refunds,"Unexpected, duplicate, or wrongful charges",billing_support,922,179,4246,4.605206,4246
+26,catalog.podcasts_audiobooks,Podcasts/audiobooks not available or not playing,outside_four_areas,1415,162,4080,2.883392,4080
+27,downloads.downloads_disappear,Downloaded content deleted or removed,outside_four_areas,1127,106,3687,3.271517,3687
+28,access.account_management,"Problems managing accounts, family/duo access",access,662,86,2189,3.306647,2189
+29,access.signup_verification,Sign-up or verification failures and region gating,access,566,34,2065,3.648410,2065
+30,access.account_compromised,Accounts being hacked or taken over,access,264,38,1216,4.606061,1216
+31,support.support_unhelpful,Support responses unhelpful or ineffective,billing_support,290,43,783,2.700000,783
+32,other.general_praise,General positive or mild praise/neutral feedback,outside_four_areas,277,109,558,2.014440,558
+33,support.support_unresponsive,Hard to reach or no live support,billing_support,177,23,496,2.802260,496

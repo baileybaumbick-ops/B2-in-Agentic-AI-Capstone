@@ -1,0 +1,109 @@
+{
+  "cited_issue_claims": [
+    {
+      "claim_id": "C01",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "complaint_count",
+      "value": "61438"
+    },
+    {
+      "claim_id": "C02",
+      "issue_id": "billing.free_tier_restrictions",
+      "metric": "severity_sum",
+      "value": "177926"
+    },
+    {
+      "claim_id": "C06",
+      "issue_id": "other.general_negative",
+      "metric": "complaint_count",
+      "value": "82595"
+    },
+    {
+      "claim_id": "C07",
+      "issue_id": "other.general_negative",
+      "metric": "severity_sum",
+      "value": "165286"
+    },
+    {
+      "claim_id": "C08",
+      "issue_id": "other.general_negative",
+      "metric": "mean_severity",
+      "value": "2.001162"
+    },
+    {
+      "claim_id": "C16",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "complaint_count",
+      "value": "15891"
+    },
+    {
+      "claim_id": "C17",
+      "issue_id": "playback.stops_or_skips",
+      "metric": "severity_sum",
+      "value": "50941"
+    },
+    {
+      "claim_id": "C21",
+      "issue_id": "access.login_failure",
+      "metric": "complaint_count",
+      "value": "8214"
+    },
+    {
+      "claim_id": "C22",
+      "issue_id": "access.login_failure",
+      "metric": "severity_sum",
+      "value": "32189"
+    }
+  ],
+  "input_fingerprint": "f8ff3e78e9b75be2c95181890c6f4d0dfdd72c48c266cc967c5fd3ae837500e6",
+  "memo": {
+    "body_markdown": "Recommendation\n\nPrioritize billing/support work focused first on the free‑tier restrictions (skip limits, forced shuffle, inability to play/seek specific songs) with three concrete tracks: (1) a policy/design review and controlled experiments of skip/seek/shuffle limits, (2) clearer in‑app messaging and affordances that explain limitations, and (3) targeted support flows and FAQ updates for affected users. The free‑tier restrictions issue is a deliberate product/pricing policy (not a pure bug) and therefore requires redesign, A/B tests and updated communication rather than only engineering bug‑fixes.\n\nEvidence\n\n- The top issue by priority is free‑tier restrictions: 61,438 complaints [C01] and severity_sum 177,926 [C02] (priority_score 177,926) with stated cancellation intent of 12,317 members [C05]. Representative review snippets: \"moving to a particular place in a song\" `56cf7357-1247-4089-b7df-1989f407c48a`, \"can only skip 6 times\" `ce8fd257-552a-41ac-be85-ad238ffbc8b8`.\n- Billing/support area totals are large: complaints 69,056 [A2COMPL], severity_sum 199,703 [A2SEVSUM], cancellations 13,218 [A2CANCEL].\n- Trend (early vs late windows): billing/support complaints rose from 4,928 in the early window [T08] to 37,572 in the late window [T17]; share moved from 5.3% [T09] to 23.3% [T18]. By contrast, usability complaints rose from 9,100 in the early window [T04] to 16,569 in the late window [T13] (share 9.7% [T05] → 10.3% [T14]). These trend numbers indicate a recent and sharp concentration of complaints in billing/support.\n- The broad “generic negative” category has sizable volume (82,595 complaints [C06], severity_sum 165,286 [C07]) but a lower mean severity 2.001162 [C08]. Example: \"No work properly\" `3aaed105-bc67-416e-8c83-ad474b31c4ff`.\n\nWhy this area\n\n- The single top issue (free‑tier restrictions) dominates priority by severity_sum and complaint volume, and it is fundamentally a policy/UX design problem that product and design can address through experiments and messaging rather than a backend bug fix. The billing/support area also shows the largest recent uptick in complaints (see T08 → T17) which means addressing policy clarity and tradeoffs is timely.\n\nAlternatives considered (why they are secondary)\n\n- Usability: largest complaint volume among the four areas with complaints 65,316 [A3COMPL] and severity_sum 154,158 [A3SEVSUM], so it’s a strong case on volume; it rose moderately in the late window (9,100 [T04] → 16,569 [T13]). Still secondary because usability mean severity is lower (mean_severity 2.360187 [A3MEANSEV]) and the billing/support spike is larger and concentrated on a single actionable policy issue.\n- Playback: high mean severity (mean_severity 3.234264 [A4MEANSEV]) and many high‑severity records (sev4plus 10,712 [A4SEV4P]); notable issues include stops/skips with 15,891 complaints [C16] and severity_sum 50,941 [C17]. Important but trend shows a smaller late‑window share (8,671 [T06] → 6,902 [T15]).\n- Access: highest mean severity per complaint (mean_severity 3.879971 [A5MEANSEV]) and concentrated severe cases (sev4plus 8,433 [A5SEV4P]); notable login failures have 8,214 complaints [C21] and severity_sum 32,189 [C22]. Lower overall complaint volume (9,706 [A5COMPL]) makes it lower priority than billing/support right now.\n\nRisks and limitations\n\n- Data are self‑selected Google Play reviews (May 2022–Nov 2023) and not a representative customer sample; cancellation counts are expressed intent, not observed churn. See coverage: completed_records 660,609 [K02].\n- Topic labeling has model/verifier limits and boundary ambiguity between billing/usability/catalog (method notes). If follow‑up analysis (surveys, A/B tests, backend telemetry) shows free‑tier concerns are primarily misclassified usability or technical defects, or if experimentation shows limits are immaterial to retention, we should reallocate to playback or usability. Additional evidence that would change this recommendation: representative survey of free vs premium users, telemetry linking free‑tier events to cancellation, or A/B test results showing negligible user impact from policy changes.\n\nRepresentative additional review IDs cited above: `50c9ebad-64f2-4311-810e-abc4b03991e9`, `20ee5ee2-b47b-4c1c-976a-f7e3bf3dd2c8`, `be9c4a9c-e48f-4a13-9e66-3a82d8b33ccc`, `f1073cca-fefa-42a3-982d-4a502881990f`.",
+    "cited_claim_ids": [
+      "C01",
+      "C02",
+      "C05",
+      "A2COMPL",
+      "A2SEVSUM",
+      "A2CANCEL",
+      "T08",
+      "T17",
+      "T09",
+      "T18",
+      "T04",
+      "T13",
+      "T05",
+      "T14",
+      "C06",
+      "C07",
+      "C08",
+      "A3COMPL",
+      "A3SEVSUM",
+      "A3MEANSEV",
+      "A4MEANSEV",
+      "A4SEV4P",
+      "C16",
+      "C17",
+      "T06",
+      "T15",
+      "A5MEANSEV",
+      "A5SEV4P",
+      "A5COMPL",
+      "C21",
+      "C22",
+      "K02"
+    ],
+    "cited_review_ids": [
+      "56cf7357-1247-4089-b7df-1989f407c48a",
+      "ce8fd257-552a-41ac-be85-ad238ffbc8b8",
+      "50c9ebad-64f2-4311-810e-abc4b03991e9",
+      "3aaed105-bc67-416e-8c83-ad474b31c4ff",
+      "20ee5ee2-b47b-4c1c-976a-f7e3bf3dd2c8",
+      "be9c4a9c-e48f-4a13-9e66-3a82d8b33ccc",
+      "f1073cca-fefa-42a3-982d-4a502881990f"
+    ],
+    "recommended_area": "billing_support",
+    "title": "Prioritize billing/support: address free‑tier restrictions (policy + messaging) this quarter"
+  },
+  "validation": "pass",
+  "violations": []
+}

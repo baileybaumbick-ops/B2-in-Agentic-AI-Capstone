@@ -71,6 +71,7 @@ Enrichment cost per distinct text from each saved run's call log, projected to 4
 | `runs/pilot100` | final: Luna v2 (100 pilot, 1 worker) | 100 | 3 (0) | 0.0010 | 0.00000986 | 4.78 | 88 | 1.1 | 1 |
 | `runs/dev500_v2` | final: Luna v2 (500, 4 workers) | 479 | 16 (3) | 0.0062 | 0.00001303 | 6.31 | 125 | 3.8 | 4 |
 | `runs/dev10k_v2` | final: Luna v2 (10,000, 16 workers) | 8,448 | 301 (57) | 0.1020 | 0.00001207 | 5.84 | 517 | 16.3 | 16 |
+| `runs/full` | FULL RUN actual: Luna v2 (660,622 rows, 24 workers) | 484,189 | 14237 (222) | 6.6860 | 0.00001381 | 6.69 | 15164 | 31.9 | 24 |
 | `runs/pilot100_jev_q2` | rejected alternative: Jev q2 (100 pilot) | 100 | 100 (0) | 0.0085 | 0.00008486 | 41.09 | 11 | 9.3 | 1 |
 | `runs/dev500` | rejected alternative: Jev q2 (500) | 479 | 479 (0) | 0.0406 | 0.00008478 | 41.05 | 24 | 19.6 | 2 |
 | `runs/dev10k` | rejected alternative: Jev q2 (10,000, 8 workers) | 8,448 | 8448 (0) | 0.7174 | 0.00008492 | 41.12 | 110 | 77.1 | 8 |
